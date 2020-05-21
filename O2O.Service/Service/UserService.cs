@@ -11,26 +11,33 @@ namespace O2O.Service
 {
     public class UserService : IUserService
     {
-        
-        public UserService(DbContext db)
-        { 
-            
+        BaseService<UserEntity> _service;
+
+        public UserService(O2OContext db)
+        {
+            _service = new BaseService<UserEntity>(db);
         }
 
-        public IQueryable<UserDTO> GetAll()
+        public List<UserDTO> GetAll()
         {
-            using (O2OContext db = new O2OContext())
+            List<UserDTO> list = new List<UserDTO>();
+            foreach (var entity in _service.Entities)
             {
-                //db.get
+                list.Add(ToDTO(entity));
             }
 
-
-            throw new NotImplementedException();
+            return list;
         }
 
-        private UserDTO ToDTO(UserEntity e)
+        private UserDTO ToDTO(UserEntity entity)
         {
-            return null; 
+            UserDTO dto = new UserDTO()
+            {
+                UserNo = entity.UserNo,
+                UserName= entity.UserName,
+            };
+
+            return dto;
         }
     }
 }
