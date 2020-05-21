@@ -1,0 +1,4 @@
+D:\Projects\GitHubProjects\O2O\O2O.DTO\bin\Debug\O2O.DTO.dll
+D:\Projects\GitHubProjects\O2O\O2O.DTO\bin\Debug\O2O.DTO.pdb
+D:\Projects\GitHubProjects\O2O\O2O.DTO\obj\Debug\O2O.DTO.dll
+D:\Projects\GitHubProjects\O2O\O2O.DTO\obj\Debug\O2O.DTO.pdb

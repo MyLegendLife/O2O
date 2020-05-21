@@ -1,0 +1,8 @@
+D:\Projects\GitHubProjects\O2O\O2O.IService\bin\Debug\O2O.IService.dll
+D:\Projects\GitHubProjects\O2O\O2O.IService\bin\Debug\O2O.IService.pdb
+D:\Projects\GitHubProjects\O2O\O2O.IService\obj\Debug\O2O.IService.dll
+D:\Projects\GitHubProjects\O2O\O2O.IService\obj\Debug\O2O.IService.pdb
+D:\Projects\GitHubProjects\O2O\O2O.IService\bin\Debug\O2O.DTO.dll
+D:\Projects\GitHubProjects\O2O\O2O.IService\bin\Debug\O2O.DTO.pdb
+D:\Projects\GitHubProjects\O2O\O2O.IService\obj\Debug\O2O.IService.csprojAssemblyReference.cache
+D:\Projects\GitHubProjects\O2O\O2O.IService\obj\Debug\O2O.IService.csproj.CopyComplete
