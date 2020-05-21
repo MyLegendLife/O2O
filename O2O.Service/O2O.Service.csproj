@@ -71,6 +71,11 @@
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Meituan\MtConfigEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
+    <Compile Include="Migrations\202005210842479_init.cs" />
+    <Compile Include="Migrations\202005210842479_init.designer.cs">
+      <DependentUpon>202005210842479_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="O2OContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\BaseService.cs" />
@@ -95,9 +100,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Migrations\" />
     <Folder Include="Service\Eleme\" />
     <Folder Include="Service\Meituan\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202005210842479_init.resx">
+      <DependentUpon>202005210842479_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

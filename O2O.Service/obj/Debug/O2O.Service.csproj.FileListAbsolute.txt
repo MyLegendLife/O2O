@@ -33,3 +33,5 @@ D:\Projects\GitHubProjects\O2O\O2O.Service\bin\Debug\zh-Hans\System.Web.WebPages
 D:\Projects\GitHubProjects\O2O\O2O.Service\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
 D:\Projects\GitHubProjects\O2O\O2O.Service\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
 D:\Projects\GitHubProjects\O2O\O2O.Service\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Projects\GitHubProjects\O2O\O2O.Service\obj\Debug\O2O.Service.Migrations.init.resources
+D:\Projects\GitHubProjects\O2O\O2O.Service\obj\Debug\O2O.Service.csproj.GenerateResource.cache
