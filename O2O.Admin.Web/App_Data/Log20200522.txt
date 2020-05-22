@@ -1,0 +1,956 @@
+2020-05-22 11:27:26,255 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:27:26 +08:00
+
+2020-05-22 11:27:26,265 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Ele_Config','dbo.T_User','dbo.Ele_Shop','dbo.Mt_Config','dbo.Mt_Shop','dbo.Ele_Order','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-05-22 11:27:26,265 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:27:26,266 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:27:26 +08:00
+
+2020-05-22 11:27:26,679 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 411 ms with result: 8
+
+2020-05-22 11:27:26,679 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:27:26,679 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:27:26 +08:00
+
+2020-05-22 11:27:26,805 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:27:26 +08:00
+
+2020-05-22 11:27:27,585 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-05-22 11:27:27,585 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:27:27,587 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:27:27,587 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:27:27 +08:00
+
+2020-05-22 11:27:27,650 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 62 ms with result: SqlDataReader
+
+2020-05-22 11:27:27,650 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:27:27,656 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:27:27 +08:00
+
+2020-05-22 11:27:27,670 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:27:27 +08:00
+
+2020-05-22 11:27:27,725 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-05-22 11:27:27,725 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:27:27,725 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:27:27,725 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:27:27 +08:00
+
+2020-05-22 11:27:27,777 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-05-22 11:27:27,777 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:27:27,781 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:27:27 +08:00
+
+2020-05-22 11:27:34,270 [8] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:28:19,770 [6] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:28:20,583 [7] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:30:42,276 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:30:42 +08:00
+
+2020-05-22 11:30:42,287 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Ele_Config','dbo.T_User','dbo.Ele_Shop','dbo.Mt_Config','dbo.Mt_Shop','dbo.Ele_Order','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-05-22 11:30:42,287 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:30:42,288 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:30:42 +08:00
+
+2020-05-22 11:30:42,361 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 72 ms with result: 8
+
+2020-05-22 11:30:42,361 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:30:42,362 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:30:42 +08:00
+
+2020-05-22 11:30:42,478 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:30:42 +08:00
+
+2020-05-22 11:30:43,206 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-05-22 11:30:43,206 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:30:43,207 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:30:43,207 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:30:43 +08:00
+
+2020-05-22 11:30:43,286 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 78 ms with result: SqlDataReader
+
+2020-05-22 11:30:43,286 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:30:43,292 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:30:43 +08:00
+
+2020-05-22 11:30:43,301 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:30:43 +08:00
+
+2020-05-22 11:30:43,357 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-05-22 11:30:43,357 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:30:43,357 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:30:43,357 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:30:43 +08:00
+
+2020-05-22 11:30:43,417 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 59 ms with result: SqlDataReader
+
+2020-05-22 11:30:43,417 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:30:43,421 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:30:43 +08:00
+
+2020-05-22 11:31:04,976 [7] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:31:04,976 [8] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:31:12,780 [6] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:31:24,510 [7] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:32:11,449 [6] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:32:29,937 [14] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:32:38,275 [6] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:33:42,817 [6] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:35:58,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Failed to open connection at 2020-05-22 11:35:58 +08:00 with error: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+
+2020-05-22 11:35:58,870 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Failed to open connection at 2020-05-22 11:35:58 +08:00 with error: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+
+2020-05-22 11:35:58,879 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Failed to open connection at 2020-05-22 11:35:58 +08:00 with error: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+
+2020-05-22 11:36:09,882 [6] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Data.DataException: An exception occurred while initializing the database. See the InnerException for details. ---> System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception: 找不到网络路径。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<>c.<Open>b__13_0(DbConnection t, DbConnectionInterceptionContext c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__55_0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<>c__14`1.<GetElementFunction>b__14_1(IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 System.Data.Entity.Internal.EdmMetadataRepository.QueryForModelHash(Func`2 createContext)
+   在 System.Data.Entity.Internal.InternalContext.QueryForModelHash()
+   在 System.Data.Entity.Internal.ModelCompatibilityChecker.CompatibleWithModel(InternalContext internalContext, ModelHashCalculator modelHashCalculator, Boolean throwIfNoMetadata, DatabaseExistenceState existenceState)
+   在 System.Data.Entity.Internal.InternalContext.CompatibleWithModel(Boolean throwIfNoMetadata, DatabaseExistenceState existenceState)
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<>c.<InitializeDatabase>b__58_0(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   在 O2O.Service.UserService.GetAll() 位置 D:\Projects\GitHubProjects\O2O\O2O.Service\Service\UserService.cs:行号 24
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:36:10,135 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:36:10 +08:00
+
+2020-05-22 11:36:10,136 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Ele_Config','dbo.T_User','dbo.Ele_Shop','dbo.Mt_Config','dbo.Mt_Shop','dbo.Ele_Order','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-05-22 11:36:10,136 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:36:10,137 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:36:10 +08:00
+
+2020-05-22 11:36:10,220 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 80 ms with result: 8
+
+2020-05-22 11:36:10,220 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:36:10,220 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:36:10 +08:00
+
+2020-05-22 11:36:10,228 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:36:10 +08:00
+
+2020-05-22 11:36:11,030 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-05-22 11:36:11,030 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:36:11,031 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:36:11,031 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:36:11 +08:00
+
+2020-05-22 11:36:11,081 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-05-22 11:36:11,081 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:36:11,092 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:36:11 +08:00
+
+2020-05-22 11:36:11,096 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:36:11 +08:00
+
+2020-05-22 11:36:11,152 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-05-22 11:36:11,152 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:36:11,152 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:36:11,152 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:36:11 +08:00
+
+2020-05-22 11:36:11,268 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 115 ms with result: SqlDataReader
+
+2020-05-22 11:36:11,268 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:36:11,280 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:36:11 +08:00
+
+2020-05-22 11:36:14,261 [5] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:36:14,261 [9] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:36:22,040 [5] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Admin.Web.Controllers.UserController.Index() 位置 D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Controllers\UserController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:40:22,591 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:40:22 +08:00
+
+2020-05-22 11:40:22,602 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Ele_Config','dbo.T_User','dbo.Ele_Shop','dbo.Mt_Config','dbo.Mt_Shop','dbo.Ele_Order','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-05-22 11:40:22,602 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:40:22,602 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:40:22 +08:00
+
+2020-05-22 11:40:22,661 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 57 ms with result: 8
+
+2020-05-22 11:40:22,661 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:40:22,661 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:40:22 +08:00
+
+2020-05-22 11:40:22,783 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:40:22 +08:00
+
+2020-05-22 11:40:23,534 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-05-22 11:40:23,534 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:40:23,535 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:40:23,535 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:40:23 +08:00
+
+2020-05-22 11:40:23,583 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-05-22 11:40:23,583 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:40:23,588 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:40:23 +08:00
+
+2020-05-22 11:40:23,598 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:40:23 +08:00
+
+2020-05-22 11:40:23,656 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-05-22 11:40:23,656 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:40:23,656 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:40:23,656 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:40:23 +08:00
+
+2020-05-22 11:40:23,706 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-05-22 11:40:23,706 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:40:23,711 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:40:23 +08:00
+
+2020-05-22 11:40:23,744 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:40:23 +08:00
+
+2020-05-22 11:40:23,836 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[MtConfigId] AS [MtConfigId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[T_User] AS [Extent1]
+2020-05-22 11:40:23,836 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:40:23,836 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:40:23 +08:00
+
+2020-05-22 11:40:23,883 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 46 ms with result: SqlDataReader
+
+2020-05-22 11:40:23,884 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:40:23,884 [9] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:40:23 +08:00
+
+2020-05-22 11:40:29,828 [9] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: 未找到视图“index”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/user/index.aspx
+~/Views/user/index.ascx
+~/Views/Shared/index.aspx
+~/Views/Shared/index.ascx
+~/Views/user/index.cshtml
+~/Views/user/index.vbhtml
+~/Views/Shared/index.cshtml
+~/Views/Shared/index.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:43:50,697 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:43:50 +08:00
+
+2020-05-22 11:43:50,708 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Ele_Config','dbo.T_User','dbo.Ele_Shop','dbo.Mt_Config','dbo.Mt_Shop','dbo.Ele_Order','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-05-22 11:43:50,708 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:43:50,709 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:43:50 +08:00
+
+2020-05-22 11:43:50,864 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 153 ms with result: 8
+
+2020-05-22 11:43:50,864 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:43:50,864 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:43:50 +08:00
+
+2020-05-22 11:43:50,980 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:43:50 +08:00
+
+2020-05-22 11:43:51,677 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-05-22 11:43:51,677 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:43:51,678 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:43:51,678 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:43:51 +08:00
+
+2020-05-22 11:43:51,772 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 94 ms with result: SqlDataReader
+
+2020-05-22 11:43:51,772 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:43:51,778 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:43:51 +08:00
+
+2020-05-22 11:43:51,787 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:43:51 +08:00
+
+2020-05-22 11:43:51,838 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-05-22 11:43:51,838 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:43:51,838 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:43:51,838 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:43:51 +08:00
+
+2020-05-22 11:43:51,900 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 61 ms with result: SqlDataReader
+
+2020-05-22 11:43:51,900 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:43:51,908 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:43:51 +08:00
+
+2020-05-22 11:43:51,940 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:43:51 +08:00
+
+2020-05-22 11:43:51,947 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:43:51 +08:00
+
+2020-05-22 11:44:30,405 [6] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.NotSupportedException: LINQ to Entities does not recognize the method 'O2O.DTO.UserDTO ToDTO(O2O.Service.UserEntity)' method, and this method cannot be translated into a store expression.
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SelectTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__1()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Service.UserService.GetAll() 位置 D:\Projects\GitHubProjects\O2O\O2O.Service\Service\UserService.cs:行号 25
+   在 O2O.Admin.Web.Controllers.UserController.Index()
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 11:44:59,450 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:44:59 +08:00
+
+2020-05-22 11:44:59,451 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:44:59 +08:00
+
+2020-05-22 11:45:41,081 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:45:41 +08:00
+
+2020-05-22 11:45:41,090 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Ele_Config','dbo.T_User','dbo.Ele_Shop','dbo.Mt_Config','dbo.Mt_Shop','dbo.Ele_Order','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-05-22 11:45:41,090 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:45:41,090 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:45:41 +08:00
+
+2020-05-22 11:45:41,144 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 51 ms with result: 8
+
+2020-05-22 11:45:41,144 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:45:41,144 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:45:41 +08:00
+
+2020-05-22 11:45:41,257 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:45:41 +08:00
+
+2020-05-22 11:45:41,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-05-22 11:45:41,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:45:41,971 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:45:41,971 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:45:41 +08:00
+
+2020-05-22 11:45:42,065 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 93 ms with result: SqlDataReader
+
+2020-05-22 11:45:42,065 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:45:42,076 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:45:42 +08:00
+
+2020-05-22 11:45:42,092 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:45:42 +08:00
+
+2020-05-22 11:45:42,143 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-05-22 11:45:42,144 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:45:42,144 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-05-22 11:45:42,144 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-05-22 11:45:42 +08:00
+
+2020-05-22 11:45:42,211 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 67 ms with result: SqlDataReader
+
+2020-05-22 11:45:42,211 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-05-22 11:45:42,217 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:45:42 +08:00
+
+2020-05-22 11:45:42,250 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-05-22 11:45:42 +08:00
+
+2020-05-22 11:45:42,251 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-05-22 11:45:42 +08:00
+
+2020-05-22 16:05:08,174 [7] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Web.HttpCompileException (0x80004005): D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Views\Test\Index.cshtml(20): error CS1002: ; expected
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 16:05:33,686 [28] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Web.HttpCompileException (0x80004005): D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Views\Test\Index.cshtml(20): error CS1002: ; expected
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-05-22 16:05:48,932 [6] ERROR O2O.Admin.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Web.HttpCompileException (0x80004005): D:\Projects\GitHubProjects\O2O\O2O.Admin.Web\Views\Test\Index.cshtml(20): error CS1002: ; expected
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)

@@ -4,8 +4,10 @@ using System.Linq;
 
 namespace O2O.IService
 {
-    public interface IUserService
+    public interface IUserService : IServiceSupport
     {
         List<UserDTO> GetAll();
+
+        //UserDTO 
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace O2O.DTO
 {
-    public class BaseDTO
+    public abstract class BaseDTO
     {
         public Guid Id { get; set; }
 
