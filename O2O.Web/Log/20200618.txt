@@ -1,0 +1,1911 @@
+2020-06-18 09:04:13,295 [6] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Web.HttpException (0x80004005): 服务器无法在已发送 HTTP 标头之后设置状态。
+   在 System.Web.HttpResponse.set_StatusCode(Int32 value)
+   在 System.Web.HttpResponseWrapper.set_StatusCode(Int32 value)
+   在 System.Web.Mvc.HttpStatusCodeResult.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-06-18 09:04:30,059 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:04:30 +08:00
+
+2020-06-18 09:04:30,061 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Ele_Account','dbo.Ele_Shop','dbo.T_User','dbo.Mt_Account','dbo.T_Order','dbo.T_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-18 09:04:30,061 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:30,061 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:04:30 +08:00
+
+2020-06-18 09:04:30,118 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 54 ms with result: 6
+
+2020-06-18 09:04:30,118 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:30,118 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:04:30 +08:00
+
+2020-06-18 09:04:30,239 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:04:30 +08:00
+
+2020-06-18 09:04:30,935 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-18 09:04:30,935 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:30,936 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Model.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-18 09:04:30,936 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:04:30 +08:00
+
+2020-06-18 09:04:30,986 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:04:30,986 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:30,991 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:04:30 +08:00
+
+2020-06-18 09:04:31,001 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,048 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-18 09:04:31,048 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:31,048 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Model.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-18 09:04:31,048 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,099 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:04:31,099 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:31,103 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,128 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,211 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (2) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[LoginName] = @p__linq__0
+2020-06-18 09:04:31,211 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:31,211 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'addlove' (Type = AnsiString, Size = 8000)
+
+2020-06-18 09:04:31,211 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,265 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 53 ms with result: SqlDataReader
+
+2020-06-18 09:04:31,265 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:31,278 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,290 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,292 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[LoginName] = @p__linq__0
+2020-06-18 09:04:31,292 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:31,292 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'addlove' (Type = AnsiString, Size = 8000)
+
+2020-06-18 09:04:31,292 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,343 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:04:31,343 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:31,343 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,398 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,400 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:04:31,401 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:31,401 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:04:31,401 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:04:31,451 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-18 09:04:31,451 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:04:31,451 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:04:31 +08:00
+
+2020-06-18 09:09:15,253 [6] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Web.HttpException (0x80004005): 服务器无法在已发送 HTTP 标头之后设置状态。
+   在 System.Web.HttpResponse.set_StatusCode(Int32 value)
+   在 System.Web.HttpResponseWrapper.set_StatusCode(Int32 value)
+   在 System.Web.Mvc.HttpStatusCodeResult.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-06-18 09:09:39,661 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:09:39 +08:00
+
+2020-06-18 09:09:39,663 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Ele_Account','dbo.Ele_Shop','dbo.T_User','dbo.Mt_Account','dbo.T_Order','dbo.T_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-18 09:09:39,663 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:39,663 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:09:39 +08:00
+
+2020-06-18 09:09:39,718 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 53 ms with result: 6
+
+2020-06-18 09:09:39,718 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:39,718 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:09:39 +08:00
+
+2020-06-18 09:09:39,960 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:09:39 +08:00
+
+2020-06-18 09:09:40,683 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-18 09:09:40,683 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:40,684 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Model.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-18 09:09:40,685 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:09:40 +08:00
+
+2020-06-18 09:09:40,734 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:09:40,734 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:40,744 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:09:40 +08:00
+
+2020-06-18 09:09:40,772 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:09:40 +08:00
+
+2020-06-18 09:09:40,836 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-18 09:09:40,836 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:40,837 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Model.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-18 09:09:40,837 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:09:40 +08:00
+
+2020-06-18 09:09:40,886 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:09:40,886 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:40,892 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:09:40 +08:00
+
+2020-06-18 09:09:40,936 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:09:40 +08:00
+
+2020-06-18 09:09:41,030 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (2) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[LoginName] = @p__linq__0
+2020-06-18 09:09:41,030 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:41,030 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'addlove' (Type = AnsiString, Size = 8000)
+
+2020-06-18 09:09:41,030 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:09:41 +08:00
+
+2020-06-18 09:09:41,078 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:09:41,078 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:41,089 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:09:41 +08:00
+
+2020-06-18 09:09:41,097 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:09:41 +08:00
+
+2020-06-18 09:09:41,100 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[LoginName] = @p__linq__0
+2020-06-18 09:09:41,100 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:41,100 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'addlove' (Type = AnsiString, Size = 8000)
+
+2020-06-18 09:09:41,100 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:09:41 +08:00
+
+2020-06-18 09:09:41,148 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:09:41,148 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:41,149 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:09:41 +08:00
+
+2020-06-18 09:09:41,189 [9] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:09:41 +08:00
+
+2020-06-18 09:09:41,191 [9] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:09:41,191 [9] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:41,191 [9] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:09:41,191 [9] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:09:41 +08:00
+
+2020-06-18 09:09:41,240 [9] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:09:41,240 [9] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:41,240 [9] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:09:41 +08:00
+
+2020-06-18 09:09:53,821 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:09:53 +08:00
+
+2020-06-18 09:09:53,844 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:09:53,844 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:53,844 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:09:53,845 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:09:53 +08:00
+
+2020-06-18 09:09:53,904 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 59 ms with result: SqlDataReader
+
+2020-06-18 09:09:53,904 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:09:53,910 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:09:53 +08:00
+
+2020-06-18 09:09:54,362 [8] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Web.HttpCompileException (0x80004005): C:\Users\18372\AppData\Local\Temp\Temporary ASP.NET Files\vs\676e4faa\65e2ef04\App_Web_list.cshtml.f3d9ce5b.thynbysw.0.cs(32): error CS0246: The type or namespace name 'AccountEleDTO' could not be found (are you missing a using directive or an assembly reference?)
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-06-18 09:11:08,346 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:11:08 +08:00
+
+2020-06-18 09:11:08,347 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:11:08,347 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:11:08,347 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:11:08,347 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:11:08 +08:00
+
+2020-06-18 09:11:08,395 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:11:08,395 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:11:08,395 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:11:08 +08:00
+
+2020-06-18 09:14:49,672 [6] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Web.HttpException (0x80004005): 服务器无法在已发送 HTTP 标头之后设置状态。
+   在 System.Web.HttpResponse.set_StatusCode(Int32 value)
+   在 System.Web.HttpResponseWrapper.set_StatusCode(Int32 value)
+   在 System.Web.Mvc.HttpStatusCodeResult.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-06-18 09:15:06,956 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:06 +08:00
+
+2020-06-18 09:15:06,957 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Ele_Account','dbo.Ele_Shop','dbo.T_User','dbo.Mt_Account','dbo.T_Order','dbo.T_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-18 09:15:06,957 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:06,957 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:06 +08:00
+
+2020-06-18 09:15:07,025 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 66 ms with result: 6
+
+2020-06-18 09:15:07,025 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:07,025 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:07 +08:00
+
+2020-06-18 09:15:07,133 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:07 +08:00
+
+2020-06-18 09:15:07,834 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-18 09:15:07,834 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:07,835 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Model.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-18 09:15:07,835 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:07 +08:00
+
+2020-06-18 09:15:07,885 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-18 09:15:07,886 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:07,891 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:07 +08:00
+
+2020-06-18 09:15:07,901 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:07 +08:00
+
+2020-06-18 09:15:07,950 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-18 09:15:07,950 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:07,951 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Model.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-18 09:15:07,951 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:07 +08:00
+
+2020-06-18 09:15:08,014 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 63 ms with result: SqlDataReader
+
+2020-06-18 09:15:08,014 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:08,018 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:08,046 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:08,125 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (2) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[LoginName] = @p__linq__0
+2020-06-18 09:15:08,125 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:08,125 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'addlove' (Type = AnsiString, Size = 8000)
+
+2020-06-18 09:15:08,125 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:08,177 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:15:08,177 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:08,181 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:08,184 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:08,185 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[LoginName] = @p__linq__0
+2020-06-18 09:15:08,185 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:08,185 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'addlove' (Type = AnsiString, Size = 8000)
+
+2020-06-18 09:15:08,185 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:08,234 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:15:08,234 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:08,234 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:08,260 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:08,261 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:15:08,262 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:08,262 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:15:08,262 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:08,315 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 53 ms with result: SqlDataReader
+
+2020-06-18 09:15:08,315 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:08,315 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:08 +08:00
+
+2020-06-18 09:15:16,527 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:16 +08:00
+
+2020-06-18 09:15:16,545 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:15:16,545 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:16,545 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:15:16,545 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:16 +08:00
+
+2020-06-18 09:15:16,595 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-18 09:15:16,595 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:16,596 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:16 +08:00
+
+2020-06-18 09:15:20,226 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,227 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:15:20,227 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:20,228 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:15:20,228 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,286 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 58 ms with result: SqlDataReader
+
+2020-06-18 09:15:20,286 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:20,287 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,289 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,289 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:15:20,289 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:20,289 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:15:20,289 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,349 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 59 ms with result: SqlDataReader
+
+2020-06-18 09:15:20,349 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:20,349 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,378 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,401 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-18 09:15:20,401 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:20,401 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'SCDY0001' (Type = String, IsNullable = false, Size = 128)
+
+2020-06-18 09:15:20,401 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,463 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 62 ms with result: SqlDataReader
+
+2020-06-18 09:15:20,464 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:20,466 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,484 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,494 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[AccountId] = @EntityKeyValue1
+2020-06-18 09:15:20,494 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:20,494 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid, IsNullable = false)
+
+2020-06-18 09:15:20,495 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:20,551 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 56 ms with result: SqlDataReader
+
+2020-06-18 09:15:20,551 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:20,551 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:20 +08:00
+
+2020-06-18 09:15:29,453 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:29 +08:00
+
+2020-06-18 09:15:29,454 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:15:29,454 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:29,454 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:15:29,454 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:29 +08:00
+
+2020-06-18 09:15:29,500 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:15:29,501 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:29,501 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:29 +08:00
+
+2020-06-18 09:15:35,880 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:35 +08:00
+
+2020-06-18 09:15:35,881 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:15:35,881 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:35,881 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:15:35,881 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:35 +08:00
+
+2020-06-18 09:15:35,930 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-18 09:15:35,930 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:35,930 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:35 +08:00
+
+2020-06-18 09:15:35,932 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:35 +08:00
+
+2020-06-18 09:15:35,932 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:15:35,932 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:35,932 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:15:35,932 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:35 +08:00
+
+2020-06-18 09:15:35,982 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-18 09:15:35,982 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:35,982 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:35 +08:00
+
+2020-06-18 09:15:35,982 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:35 +08:00
+
+2020-06-18 09:15:35,983 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-18 09:15:35,983 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:35,983 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'SCDY0001' (Type = String, IsNullable = false, Size = 128)
+
+2020-06-18 09:15:35,983 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:35 +08:00
+
+2020-06-18 09:15:36,031 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:15:36,031 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:36,031 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:36 +08:00
+
+2020-06-18 09:15:36,031 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:15:36 +08:00
+
+2020-06-18 09:15:36,031 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[AccountId] = @EntityKeyValue1
+2020-06-18 09:15:36,031 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:36,031 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid, IsNullable = false)
+
+2020-06-18 09:15:36,031 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:15:36 +08:00
+
+2020-06-18 09:15:36,079 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 46 ms with result: SqlDataReader
+
+2020-06-18 09:15:36,079 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:15:36,079 [8] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:15:36 +08:00
+
+2020-06-18 09:19:41,240 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:19:41 +08:00
+
+2020-06-18 09:19:41,241 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:19:41,241 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:41,241 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:19:41,241 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:19:41 +08:00
+
+2020-06-18 09:19:41,290 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:19:41,290 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:41,290 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:19:41 +08:00
+
+2020-06-18 09:19:42,765 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,765 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:19:42,766 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:42,766 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:19:42,766 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,816 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-18 09:19:42,816 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:42,816 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,817 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,818 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:19:42,818 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:42,818 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:19:42,818 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,868 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:19:42,868 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:42,868 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,869 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,869 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-18 09:19:42,869 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:42,869 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'SCDY0001' (Type = String, IsNullable = false, Size = 128)
+
+2020-06-18 09:19:42,869 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,919 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-18 09:19:42,919 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:42,919 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,919 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,919 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[AccountId] = @EntityKeyValue1
+2020-06-18 09:19:42,919 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:42,919 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid, IsNullable = false)
+
+2020-06-18 09:19:42,919 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:19:42,969 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:19:42,969 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:19:42,969 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:19:42 +08:00
+
+2020-06-18 09:20:04,385 [6] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Net.WebException: 未能解析此远程名称: 'open-api.shop.ele.me'
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 O2O.Common.HttpCommon.Post(String url, String contentType, Dictionary`2 headers, String content) 位置 D:\Projects\GitHubProjects\O2O\O2O.Common\HttpCommon.cs:行号 193
+   在 O2O.Service.Eleme.EleUserApiService.GetUser(String token) 位置 D:\Projects\GitHubProjects\O2O\O2O.Service\Eleme\EleUserApiService.cs:行号 22
+   在 O2O.Web.Areas.Eleme.Controllers.ShopMapController.GetList(String type) 位置 D:\Projects\GitHubProjects\O2O\O2O.Web\Areas\Eleme\Controllers\ShopMapController.cs:行号 59
+   在 O2O.Web.Areas.Eleme.Controllers.ShopMapController.List() 位置 D:\Projects\GitHubProjects\O2O\O2O.Web\Areas\Eleme\Controllers\ShopMapController.cs:行号 29
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-06-18 09:20:10,048 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,048 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:20:10,048 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:10,048 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:20:10,048 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,103 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 55 ms with result: SqlDataReader
+
+2020-06-18 09:20:10,103 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:10,103 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,105 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,105 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:20:10,105 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:10,105 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:20:10,105 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,153 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:20:10,153 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:10,154 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,154 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,154 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-18 09:20:10,155 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:10,155 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'SCDY0001' (Type = String, IsNullable = false, Size = 128)
+
+2020-06-18 09:20:10,155 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,204 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:20:10,205 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:10,205 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,206 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,206 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[AccountId] = @EntityKeyValue1
+2020-06-18 09:20:10,206 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:10,207 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid, IsNullable = false)
+
+2020-06-18 09:20:10,207 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:10,255 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:20:10,255 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:10,256 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:20:10 +08:00
+
+2020-06-18 09:20:18,277 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:20:18 +08:00
+
+2020-06-18 09:20:18,278 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:20:18,278 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:18,278 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:20:18,278 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:20:18 +08:00
+
+2020-06-18 09:20:18,326 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:20:18,326 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:18,326 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:20:18 +08:00
+
+2020-06-18 09:20:19,694 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,694 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:20:19,694 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:19,694 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:20:19,694 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,745 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:20:19,745 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:19,745 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,746 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,747 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:20:19,747 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:19,747 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:20:19,747 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,802 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 55 ms with result: SqlDataReader
+
+2020-06-18 09:20:19,802 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:19,802 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,803 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,803 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-18 09:20:19,803 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:19,803 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'SCDY0001' (Type = String, IsNullable = false, Size = 128)
+
+2020-06-18 09:20:19,803 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,856 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-18 09:20:19,856 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:19,856 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,856 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,856 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[AccountId] = @EntityKeyValue1
+2020-06-18 09:20:19,856 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:19,856 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid, IsNullable = false)
+
+2020-06-18 09:20:19,856 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:20:19,910 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 53 ms with result: SqlDataReader
+
+2020-06-18 09:20:19,910 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:20:19,910 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:20:19 +08:00
+
+2020-06-18 09:21:04,332 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:04 +08:00
+
+2020-06-18 09:21:04,332 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:21:04,332 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:04,332 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:04,332 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:04 +08:00
+
+2020-06-18 09:21:04,380 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:21:04,380 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:04,381 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:04 +08:00
+
+2020-06-18 09:21:07,319 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:07 +08:00
+
+2020-06-18 09:21:07,319 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:21:07,319 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:07,319 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:07,319 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:07 +08:00
+
+2020-06-18 09:21:07,367 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:21:07,367 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:07,368 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:07 +08:00
+
+2020-06-18 09:21:08,939 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:08 +08:00
+
+2020-06-18 09:21:08,939 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:21:08,939 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:08,940 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:08,940 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:08 +08:00
+
+2020-06-18 09:21:09,004 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 64 ms with result: SqlDataReader
+
+2020-06-18 09:21:09,005 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:09,005 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:09,007 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:09,007 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:21:09,007 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:09,007 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:09,008 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:09,058 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:21:09,058 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:09,059 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:09,059 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:09,059 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-18 09:21:09,059 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:09,059 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'SCDY0001' (Type = String, IsNullable = false, Size = 128)
+
+2020-06-18 09:21:09,059 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:09,111 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 53 ms with result: SqlDataReader
+
+2020-06-18 09:21:09,111 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:09,112 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:09,112 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:09,112 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[AccountId] = @EntityKeyValue1
+2020-06-18 09:21:09,112 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:09,112 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid, IsNullable = false)
+
+2020-06-18 09:21:09,112 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:09,165 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-18 09:21:09,165 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:09,165 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:09 +08:00
+
+2020-06-18 09:21:15,737 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:15 +08:00
+
+2020-06-18 09:21:15,737 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:21:15,737 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:15,737 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:15,737 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:15 +08:00
+
+2020-06-18 09:21:15,788 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:21:15,788 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:15,788 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:15 +08:00
+
+2020-06-18 09:21:17,852 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:17 +08:00
+
+2020-06-18 09:21:17,852 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:21:17,853 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:17,853 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:17,853 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:17 +08:00
+
+2020-06-18 09:21:17,901 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:21:17,901 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:17,901 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:17 +08:00
+
+2020-06-18 09:21:17,902 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:17 +08:00
+
+2020-06-18 09:21:17,903 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:21:17,903 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:17,903 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:17,903 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:17 +08:00
+
+2020-06-18 09:21:17,954 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:21:17,954 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:17,954 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:17 +08:00
+
+2020-06-18 09:21:17,954 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:17 +08:00
+
+2020-06-18 09:21:17,954 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-18 09:21:17,954 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:17,954 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'SCDY0001' (Type = String, IsNullable = false, Size = 128)
+
+2020-06-18 09:21:17,954 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:17 +08:00
+
+2020-06-18 09:21:18,003 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:21:18,003 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:18,003 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:18 +08:00
+
+2020-06-18 09:21:18,003 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:18 +08:00
+
+2020-06-18 09:21:18,003 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[AccountId] = @EntityKeyValue1
+2020-06-18 09:21:18,003 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:18,003 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid, IsNullable = false)
+
+2020-06-18 09:21:18,003 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:18 +08:00
+
+2020-06-18 09:21:18,051 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:21:18,051 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:18,051 [38] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:18 +08:00
+
+2020-06-18 09:21:34,317 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:34 +08:00
+
+2020-06-18 09:21:34,318 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:21:34,318 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:34,318 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:34,318 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:34 +08:00
+
+2020-06-18 09:21:34,366 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:21:34,366 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:34,367 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:34 +08:00
+
+2020-06-18 09:21:36,423 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,423 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:21:36,423 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:36,423 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:36,423 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,477 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 53 ms with result: SqlDataReader
+
+2020-06-18 09:21:36,477 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:36,477 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,478 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,479 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:21:36,479 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:36,479 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:21:36,479 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,530 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:21:36,530 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:36,530 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,530 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,530 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-18 09:21:36,530 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:36,530 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'SCDY0001' (Type = String, IsNullable = false, Size = 128)
+
+2020-06-18 09:21:36,530 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,577 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:21:36,577 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:36,578 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,578 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,578 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[AccountId] = @EntityKeyValue1
+2020-06-18 09:21:36,578 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:36,578 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- EntityKeyValue1: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid, IsNullable = false)
+
+2020-06-18 09:21:36,578 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:36,625 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 46 ms with result: SqlDataReader
+
+2020-06-18 09:21:36,625 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:36,625 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:36 +08:00
+
+2020-06-18 09:21:59,316 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:59 +08:00
+
+2020-06-18 09:21:59,328 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[ShopId] = @p__linq__0
+2020-06-18 09:21:59,328 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:59,328 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: '161227677' (Type = Int64, IsNullable = false)
+
+2020-06-18 09:21:59,328 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:59 +08:00
+
+2020-06-18 09:21:59,379 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:21:59,379 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:59,379 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:59 +08:00
+
+2020-06-18 09:21:59,454 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:21:59 +08:00
+
+2020-06-18 09:21:59,508 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Started transaction at 2020-06-18 9:21:59 +08:00
+
+2020-06-18 09:21:59,595 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Ele_Shop]([ShopNo], [ShopId], [AccountId], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Ele_Shop] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-18 09:21:59,595 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:59,595 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @0: '8003' (Type = AnsiString, Size = 10)
+
+2020-06-18 09:21:59,595 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @1: '161227677' (Type = Int64)
+
+2020-06-18 09:21:59,595 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @2: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid)
+
+2020-06-18 09:21:59,595 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @3: '2020-06-18 9:21:59' (Type = DateTime2)
+
+2020-06-18 09:21:59,595 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:21:59 +08:00
+
+2020-06-18 09:21:59,657 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 61 ms with result: SqlDataReader
+
+2020-06-18 09:21:59,658 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:21:59,745 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Committed transaction at 2020-06-18 9:21:59 +08:00
+
+2020-06-18 09:21:59,746 [6] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:21:59 +08:00
+
+2020-06-18 09:22:28,238 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:22:28 +08:00
+
+2020-06-18 09:22:28,239 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[ShopId] = @p__linq__0
+2020-06-18 09:22:28,239 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:28,239 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: '161227677' (Type = Int64, IsNullable = false)
+
+2020-06-18 09:22:28,239 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:22:28 +08:00
+
+2020-06-18 09:22:28,289 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-18 09:22:28,289 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:28,303 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:22:28 +08:00
+
+2020-06-18 09:22:28,338 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:22:28 +08:00
+
+2020-06-18 09:22:28,387 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Started transaction at 2020-06-18 9:22:28 +08:00
+
+2020-06-18 09:22:28,393 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:DELETE [dbo].[Ele_Shop]
+WHERE ([Id] = @0)
+2020-06-18 09:22:28,394 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:28,394 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @0: 'f011e41a-02b1-ea11-abb4-cc3286d9e115' (Type = Guid)
+
+2020-06-18 09:22:28,394 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:22:28 +08:00
+
+2020-06-18 09:22:28,449 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 51 ms with result: 1
+
+2020-06-18 09:22:28,449 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:28,504 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Committed transaction at 2020-06-18 9:22:28 +08:00
+
+2020-06-18 09:22:28,505 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:22:28 +08:00
+
+2020-06-18 09:22:35,551 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:22:35 +08:00
+
+2020-06-18 09:22:35,551 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[ShopId] = @p__linq__0
+2020-06-18 09:22:35,551 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:35,551 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: '161227677' (Type = Int64, IsNullable = false)
+
+2020-06-18 09:22:35,551 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:22:35 +08:00
+
+2020-06-18 09:22:35,599 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:22:35,599 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:35,599 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:22:35 +08:00
+
+2020-06-18 09:22:35,601 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:22:35 +08:00
+
+2020-06-18 09:22:35,648 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:Started transaction at 2020-06-18 9:22:35 +08:00
+
+2020-06-18 09:22:35,648 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Ele_Shop]([ShopNo], [ShopId], [AccountId], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Ele_Shop] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-18 09:22:35,648 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:35,648 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @0: '8003' (Type = AnsiString, Size = 10)
+
+2020-06-18 09:22:35,648 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @1: '161227677' (Type = Int64)
+
+2020-06-18 09:22:35,648 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @2: 'b173eefa-a5af-ea11-946d-9a96dd6d2da1' (Type = Guid)
+
+2020-06-18 09:22:35,648 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @3: '2020-06-18 9:22:35' (Type = DateTime2)
+
+2020-06-18 09:22:35,648 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:22:35 +08:00
+
+2020-06-18 09:22:35,697 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:22:35,697 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:35,746 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:Committed transaction at 2020-06-18 9:22:35 +08:00
+
+2020-06-18 09:22:35,746 [39] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:22:35 +08:00
+
+2020-06-18 09:22:40,682 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:22:40 +08:00
+
+2020-06-18 09:22:40,682 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ShopNo] AS [ShopNo], 
+    [Extent1].[ShopId] AS [ShopId], 
+    [Extent1].[AccountId] AS [AccountId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Shop] AS [Extent1]
+    WHERE [Extent1].[ShopId] = @p__linq__0
+2020-06-18 09:22:40,682 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:40,682 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: '161227677' (Type = Int64, IsNullable = false)
+
+2020-06-18 09:22:40,682 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:22:40 +08:00
+
+2020-06-18 09:22:40,740 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 57 ms with result: SqlDataReader
+
+2020-06-18 09:22:40,740 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:40,740 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:22:40 +08:00
+
+2020-06-18 09:22:40,741 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:22:40 +08:00
+
+2020-06-18 09:22:41,094 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Started transaction at 2020-06-18 9:22:41 +08:00
+
+2020-06-18 09:22:41,095 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:DELETE [dbo].[Ele_Shop]
+WHERE ([Id] = @0)
+2020-06-18 09:22:41,095 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:41,095 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- @0: '068e5f30-02b1-ea11-abb4-cc3286d9e115' (Type = Guid)
+
+2020-06-18 09:22:41,095 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:22:41 +08:00
+
+2020-06-18 09:22:41,155 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 59 ms with result: 1
+
+2020-06-18 09:22:41,155 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:41,214 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Committed transaction at 2020-06-18 9:22:41 +08:00
+
+2020-06-18 09:22:41,214 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:22:41 +08:00
+
+2020-06-18 09:22:47,224 [41] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:22:47 +08:00
+
+2020-06-18 09:22:47,225 [41] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:22:47,225 [41] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:47,225 [41] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:22:47,225 [41] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:22:47 +08:00
+
+2020-06-18 09:22:47,277 [41] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-18 09:22:47,277 [41] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:22:47,277 [41] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:22:47 +08:00
+
+2020-06-18 09:23:09,716 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:23:09 +08:00
+
+2020-06-18 09:23:09,717 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:23:09,717 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:23:09,717 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:23:09,717 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:23:09 +08:00
+
+2020-06-18 09:23:09,765 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:23:09,765 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:23:09,765 [34] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:23:09 +08:00
+
+2020-06-18 09:23:11,387 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:23:11 +08:00
+
+2020-06-18 09:23:11,387 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:23:11,387 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:23:11,387 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:23:11,387 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:23:11 +08:00
+
+2020-06-18 09:23:11,436 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 48 ms with result: SqlDataReader
+
+2020-06-18 09:23:11,436 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:23:11,436 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:23:11 +08:00
+
+2020-06-18 09:23:20,036 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:23:20 +08:00
+
+2020-06-18 09:23:20,036 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[LoginName] AS [LoginName], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDate] AS [CreateDate]
+    FROM [dbo].[T_User] AS [Extent1]
+    WHERE [Extent1].[Id] = @p__linq__0
+2020-06-18 09:23:20,036 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:23:20,036 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:23:20,036 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:23:20 +08:00
+
+2020-06-18 09:23:20,087 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-18 09:23:20,087 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:23:20,092 [7] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:23:20 +08:00
+
+2020-06-18 09:23:21,703 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Opened connection at 2020-06-18 9:23:21 +08:00
+
+2020-06-18 09:23:21,703 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[AccountNo] AS [AccountNo], 
+    [Extent1].[AccountName] AS [AccountName], 
+    [Extent1].[AccessToken] AS [AccessToken], 
+    [Extent1].[TokenType] AS [TokenType], 
+    [Extent1].[RefreshToken] AS [RefreshToken], 
+    [Extent1].[Scope] AS [Scope], 
+    [Extent1].[ExpiresDate] AS [ExpiresDate], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Ele_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @p__linq__0
+2020-06-18 09:23:21,704 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:23:21,704 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = String, Size = 4000)
+
+2020-06-18 09:23:21,704 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Executing at 2020-06-18 9:23:21 +08:00
+
+2020-06-18 09:23:21,752 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:-- Completed in 47 ms with result: SqlDataReader
+
+2020-06-18 09:23:21,752 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:
+
+2020-06-18 09:23:21,752 [30] DEBUG O2O.Model.O2OContext - EF执行SQL:Closed connection at 2020-06-18 9:23:21 +08:00
+
+2020-06-18 10:01:30,280 [6] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Web.HttpException (0x80004005): 服务器无法在已发送 HTTP 标头之后设置状态。
+   在 System.Web.HttpResponse.set_StatusCode(Int32 value)
+   在 System.Web.HttpResponseWrapper.set_StatusCode(Int32 value)
+   在 System.Web.Mvc.HttpStatusCodeResult.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-06-18 10:02:37,346 [6] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Web.HttpException (0x80004005): 服务器无法在已发送 HTTP 标头之后设置状态。
+   在 System.Web.HttpResponse.set_StatusCode(Int32 value)
+   在 System.Web.HttpResponseWrapper.set_StatusCode(Int32 value)
+   在 System.Web.Mvc.HttpStatusCodeResult.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)

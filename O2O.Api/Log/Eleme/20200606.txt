@@ -1,0 +1,4 @@
+2020-06-06 17:04:31,881 [5] DEBUG Eleme - 【信息记录】类型:OrderCanceled  信息
+2020-06-06 17:05:23,951 [6] DEBUG Meituan - 【信息记录】类型:OrderCanceled  信息
+2020-06-06 17:06:13,011 [5] DEBUG Meituan - 【信息记录】类型:OrderCanceled  信息
+2020-06-06 17:07:15,995 [7] DEBUG  - 【信息记录111】类型:OrderCanceled  信息

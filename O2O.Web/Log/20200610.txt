@@ -1,0 +1,122 @@
+2020-06-10 13:42:48,905 [7] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: 未找到视图“Add”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Account/Add.aspx
+~/Views/Account/Add.ascx
+~/Views/Shared/Add.aspx
+~/Views/Shared/Add.ascx
+~/Views/Account/Add.cshtml
+~/Views/Account/Add.vbhtml
+~/Views/Shared/Add.cshtml
+~/Views/Shared/Add.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-06-10 13:45:24,485 [6] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: 在从服务器接收结果时发生传输级错误。 (provider: Session Provider, error: 19 - 物理连接不可用)
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c.<Reader>b__6_0(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__1()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 O2O.Service.NewFolder1.AccountEleService.GetAccounts(String userId) 位置 D:\Projects\GitHubProjects\O2O\O2O.Service\AccountEleService.cs:行号 64
+   在 O2O.Web.Areas.Eleme.Controllers.AccountController.List() 位置 D:\Projects\GitHubProjects\O2O\O2O.Web\Areas\Eleme\Controllers\AccountController.cs:行号 24
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-06-10 14:17:06,315 [6] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: 未找到视图“https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Areas/Eleme/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.aspx
+~/Areas/Eleme/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.ascx
+~/Areas/Eleme/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.aspx
+~/Areas/Eleme/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.ascx
+~/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.aspx
+~/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.ascx
+~/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.aspx
+~/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.ascx
+~/Areas/Eleme/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.cshtml
+~/Areas/Eleme/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.vbhtml
+~/Areas/Eleme/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.cshtml
+~/Areas/Eleme/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.vbhtml
+~/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.cshtml
+~/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.vbhtml
+~/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.cshtml
+~/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2020-06-10 14:17:16,013 [6] ERROR O2O.Web.App_Start.O2OExceptionFilter - 出现未处理的异常System.InvalidOperationException: 未找到视图“https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Areas/Eleme/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.aspx
+~/Areas/Eleme/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.ascx
+~/Areas/Eleme/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.aspx
+~/Areas/Eleme/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.ascx
+~/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.aspx
+~/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.ascx
+~/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.aspx
+~/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.ascx
+~/Areas/Eleme/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.cshtml
+~/Areas/Eleme/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.vbhtml
+~/Areas/Eleme/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.cshtml
+~/Areas/Eleme/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.vbhtml
+~/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.cshtml
+~/Views/Account/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.vbhtml
+~/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.cshtml
+~/Views/Shared/https://open-api.shop.ele.me/authorize?response_type=code&client_id=RNDfkG5r4t&redirect_uri=http://tuangou.bak365.net/Pages/eleme/elemecallback.aspx?Type=GetCodeCallBack&scope=all&state=1977c1a4-3ca6-ea11-bbd5-8f22819e5ba5@a@b.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)

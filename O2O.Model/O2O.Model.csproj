@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7821B7E-6FFF-428E-967C-1298B526E412}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>O2O.Model</RootNamespace>
+    <AssemblyName>O2O.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\O2O.Api\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Eleme\Ele_AccountEntity.cs" />
+    <Compile Include="Entities\Meituan\Mt_AccountEntity.cs" />
+    <Compile Include="Entities\Eleme\Ele_ShopEntity.cs" />
+    <Compile Include="Entities\OrderDtlEntity.cs" />
+    <Compile Include="Entities\OrderEntity.cs" />
+    <Compile Include="Entities\UserEntity.cs" />
+    <Compile Include="Maps\Eleme\Ele_AccountMap.cs" />
+    <Compile Include="Maps\Eleme\Ele_ShopMap.cs" />
+    <Compile Include="Maps\Meituan\Mt_AccountMap.cs" />
+    <Compile Include="Maps\OrderDtlMap.cs" />
+    <Compile Include="Maps\OrderMap.cs" />
+    <Compile Include="Maps\UserMap.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Migrations\202006160736268_init.cs" />
+    <Compile Include="Migrations\202006160736268_init.designer.cs">
+      <DependentUpon>202006160736268_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006170316201_06171116.cs" />
+    <Compile Include="Migrations\202006170316201_06171116.designer.cs">
+      <DependentUpon>202006170316201_06171116.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006170550530_06171350.cs" />
+    <Compile Include="Migrations\202006170550530_06171350.designer.cs">
+      <DependentUpon>202006170550530_06171350.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006170735541_06171535.cs" />
+    <Compile Include="Migrations\202006170735541_06171535.designer.cs">
+      <DependentUpon>202006170735541_06171535.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007080245487_07081045.cs" />
+    <Compile Include="Migrations\202007080245487_07081045.designer.cs">
+      <DependentUpon>202007080245487_07081045.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007080341029_07081140.cs" />
+    <Compile Include="Migrations\202007080341029_07081140.designer.cs">
+      <DependentUpon>202007080341029_07081140.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="O2OContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\O2O.Common\O2O.Common.csproj">
+      <Project>{0641ac07-c8f4-4cf7-8d78-f8b7f79a452c}</Project>
+      <Name>O2O.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\O2O.DTO\O2O.DTO.csproj">
+      <Project>{0e41e28d-e545-4b45-a486-98a1e6c9989e}</Project>
+      <Name>O2O.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202006160736268_init.resx">
+      <DependentUpon>202006160736268_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006170316201_06171116.resx">
+      <DependentUpon>202006170316201_06171116.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006170550530_06171350.resx">
+      <DependentUpon>202006170550530_06171350.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006170735541_06171535.resx">
+      <DependentUpon>202006170735541_06171535.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007080245487_07081045.resx">
+      <DependentUpon>202007080245487_07081045.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007080341029_07081140.resx">
+      <DependentUpon>202007080341029_07081140.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

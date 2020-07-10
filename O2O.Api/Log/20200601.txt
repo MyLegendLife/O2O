@@ -1,0 +1,1224 @@
+2020-06-01 13:33:39,102 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:33:39 +08:00
+
+2020-06-01 13:33:39,111 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 13:33:39,111 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:33:39,112 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:33:39 +08:00
+
+2020-06-01 13:33:39,166 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 53 ms with result: 4
+
+2020-06-01 13:33:39,166 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:33:39,167 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:33:39 +08:00
+
+2020-06-01 13:33:39,323 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:33:39 +08:00
+
+2020-06-01 13:33:40,082 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 13:33:40,082 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:33:40,084 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 13:33:40,084 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:33:40 +08:00
+
+2020-06-01 13:33:40,091 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 6 ms with result: SqlDataReader
+
+2020-06-01 13:33:40,091 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:33:40,097 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:33:40 +08:00
+
+2020-06-01 13:33:40,108 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:33:40 +08:00
+
+2020-06-01 13:33:40,161 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 13:33:40,162 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:33:40,162 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 13:33:40,162 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:33:40 +08:00
+
+2020-06-01 13:33:40,164 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 13:33:40,164 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:33:40,168 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:33:40 +08:00
+
+2020-06-01 13:33:40,198 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:33:40 +08:00
+
+2020-06-01 13:33:40,324 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 13:33:40,325 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:33:40,325 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 13:33:40,325 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:33:40 +08:00
+
+2020-06-01 13:33:40,329 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 4 ms with result: SqlDataReader
+
+2020-06-01 13:33:40,329 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:33:40,330 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:33:40 +08:00
+
+2020-06-01 13:45:46,077 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:45:46 +08:00
+
+2020-06-01 13:45:46,087 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 13:45:46,087 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:45:46,087 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:45:46 +08:00
+
+2020-06-01 13:45:46,088 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: 4
+
+2020-06-01 13:45:46,088 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:45:46,089 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:45:46 +08:00
+
+2020-06-01 13:45:46,336 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:45:46 +08:00
+
+2020-06-01 13:45:47,055 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 13:45:47,055 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:45:47,056 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 13:45:47,056 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:45:47 +08:00
+
+2020-06-01 13:45:47,063 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 6 ms with result: SqlDataReader
+
+2020-06-01 13:45:47,063 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:45:47,068 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:45:47 +08:00
+
+2020-06-01 13:45:47,078 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:45:47 +08:00
+
+2020-06-01 13:45:47,127 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 13:45:47,127 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:45:47,127 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 13:45:47,127 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:45:47 +08:00
+
+2020-06-01 13:45:47,128 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 13:45:47,128 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:45:47,132 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:45:47 +08:00
+
+2020-06-01 13:45:47,163 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:45:47 +08:00
+
+2020-06-01 13:45:47,249 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 13:45:47,249 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:45:47,249 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 13:45:47,249 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:45:47 +08:00
+
+2020-06-01 13:45:47,250 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 13:45:47,250 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:45:47,250 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:45:47 +08:00
+
+2020-06-01 13:57:03,930 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:57:03 +08:00
+
+2020-06-01 13:57:03,939 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 13:57:03,939 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:57:03,939 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:57:03 +08:00
+
+2020-06-01 13:57:03,940 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: 4
+
+2020-06-01 13:57:03,940 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:57:03,940 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:57:03 +08:00
+
+2020-06-01 13:57:04,051 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:57:04 +08:00
+
+2020-06-01 13:57:04,774 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 13:57:04,774 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:57:04,775 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 13:57:04,775 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:57:04 +08:00
+
+2020-06-01 13:57:04,776 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 13:57:04,776 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:57:04,781 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:57:04 +08:00
+
+2020-06-01 13:57:04,790 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:57:04 +08:00
+
+2020-06-01 13:57:04,840 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 13:57:04,840 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:57:04,840 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 13:57:04,840 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:57:04 +08:00
+
+2020-06-01 13:57:04,841 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 13:57:04,841 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:57:04,845 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:57:04 +08:00
+
+2020-06-01 13:57:04,874 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 13:57:04 +08:00
+
+2020-06-01 13:57:04,955 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 13:57:04,955 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:57:04,955 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 13:57:04,955 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 13:57:04 +08:00
+
+2020-06-01 13:57:04,956 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 13:57:04,956 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 13:57:04,956 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 13:57:04 +08:00
+
+2020-06-01 14:05:00,294 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:05:00 +08:00
+
+2020-06-01 14:05:00,303 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 14:05:00,303 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:05:00,303 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:05:00 +08:00
+
+2020-06-01 14:05:00,305 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: 4
+
+2020-06-01 14:05:00,305 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:05:00,305 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:05:00 +08:00
+
+2020-06-01 14:05:00,434 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:05:00 +08:00
+
+2020-06-01 14:05:01,172 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 14:05:01,172 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:05:01,173 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 14:05:01,173 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:05:01 +08:00
+
+2020-06-01 14:05:01,174 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 14:05:01,174 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:05:01,180 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:05:01 +08:00
+
+2020-06-01 14:05:01,189 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:05:01 +08:00
+
+2020-06-01 14:05:01,239 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 14:05:01,239 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:05:01,239 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 14:05:01,239 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:05:01 +08:00
+
+2020-06-01 14:05:01,240 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 14:05:01,240 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:05:01,244 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:05:01 +08:00
+
+2020-06-01 14:05:01,285 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:05:01 +08:00
+
+2020-06-01 14:05:01,364 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 14:05:01,364 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:05:01,364 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 14:05:01,364 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:05:01 +08:00
+
+2020-06-01 14:05:01,365 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 14:05:01,365 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:05:01,365 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:05:01 +08:00
+
+2020-06-01 14:17:48,419 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:17:48 +08:00
+
+2020-06-01 14:17:48,428 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 14:17:48,428 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:17:48,428 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:17:48 +08:00
+
+2020-06-01 14:17:48,436 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 6 ms with result: 4
+
+2020-06-01 14:17:48,437 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:17:48,437 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:17:48 +08:00
+
+2020-06-01 14:17:48,547 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:17:48 +08:00
+
+2020-06-01 14:17:49,263 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 14:17:49,263 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:17:49,264 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 14:17:49,264 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:17:49 +08:00
+
+2020-06-01 14:17:49,266 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 14:17:49,266 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:17:49,271 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:17:49 +08:00
+
+2020-06-01 14:17:49,281 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:17:49 +08:00
+
+2020-06-01 14:17:49,332 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 14:17:49,332 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:17:49,332 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 14:17:49,332 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:17:49 +08:00
+
+2020-06-01 14:17:49,333 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 14:17:49,333 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:17:49,337 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:17:49 +08:00
+
+2020-06-01 14:17:49,365 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:17:49 +08:00
+
+2020-06-01 14:17:49,446 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 14:17:49,446 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:17:49,446 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 14:17:49,446 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:17:49 +08:00
+
+2020-06-01 14:17:49,447 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 14:17:49,447 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:17:49,447 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:17:49 +08:00
+
+2020-06-01 14:18:27,123 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:18:27 +08:00
+
+2020-06-01 14:18:27,123 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 14:18:27,123 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:18:27,124 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 14:18:27,124 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:18:27 +08:00
+
+2020-06-01 14:18:27,124 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 14:18:27,124 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:18:27,124 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:18:27 +08:00
+
+2020-06-01 14:18:36,439 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:18:36 +08:00
+
+2020-06-01 14:18:36,439 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 14:18:36,439 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:18:36,439 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 14:18:36,439 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:18:36 +08:00
+
+2020-06-01 14:18:36,439 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 14:18:36,440 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:18:36,440 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:18:36 +08:00
+
+2020-06-01 14:23:17,085 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:23:17 +08:00
+
+2020-06-01 14:23:17,095 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 14:23:17,095 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:17,095 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:23:17 +08:00
+
+2020-06-01 14:23:17,096 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: 4
+
+2020-06-01 14:23:17,096 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:17,096 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:23:17 +08:00
+
+2020-06-01 14:23:17,208 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:23:17 +08:00
+
+2020-06-01 14:23:17,912 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 14:23:17,912 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:17,913 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 14:23:17,913 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:23:17 +08:00
+
+2020-06-01 14:23:17,914 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 14:23:17,914 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:17,920 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:23:17 +08:00
+
+2020-06-01 14:23:17,928 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:23:17 +08:00
+
+2020-06-01 14:23:17,979 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 14:23:17,979 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:17,979 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 14:23:17,979 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:23:17 +08:00
+
+2020-06-01 14:23:17,979 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 14:23:17,980 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:17,983 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:23:17 +08:00
+
+2020-06-01 14:23:18,013 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:23:18 +08:00
+
+2020-06-01 14:23:18,105 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 14:23:18,106 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:18,106 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 14:23:18,106 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:23:18 +08:00
+
+2020-06-01 14:23:18,107 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 14:23:18,107 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:18,107 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:23:18 +08:00
+
+2020-06-01 14:23:18,109 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 14:23:18 +08:00
+
+2020-06-01 14:23:18,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 14:23:18,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:18,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 14:23:18,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 14:23:18 +08:00
+
+2020-06-01 14:23:18,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 14:23:18,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 14:23:18,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 14:23:18 +08:00
+
+2020-06-01 15:10:05,355 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:10:05 +08:00
+
+2020-06-01 15:10:05,365 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 15:10:05,366 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:05,366 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:10:05 +08:00
+
+2020-06-01 15:10:05,376 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 9 ms with result: 4
+
+2020-06-01 15:10:05,376 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:05,376 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:10:05 +08:00
+
+2020-06-01 15:10:05,520 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:10:05 +08:00
+
+2020-06-01 15:10:06,275 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 15:10:06,275 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:06,276 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 15:10:06,276 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:10:06 +08:00
+
+2020-06-01 15:10:06,280 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 3 ms with result: SqlDataReader
+
+2020-06-01 15:10:06,280 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:06,284 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:10:06 +08:00
+
+2020-06-01 15:10:06,295 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:10:06 +08:00
+
+2020-06-01 15:10:06,346 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 15:10:06,346 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:06,346 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-01 15:10:06,346 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:10:06 +08:00
+
+2020-06-01 15:10:06,347 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 15:10:06,347 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:06,351 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:10:06 +08:00
+
+2020-06-01 15:10:06,382 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:10:06 +08:00
+
+2020-06-01 15:10:06,498 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[user_no] AS [user_no], 
+    [Extent1].[order_id] AS [order_id], 
+    [Extent1].[wm_order_id_view] AS [wm_order_id_view], 
+    [Extent1].[app_poi_code] AS [app_poi_code], 
+    [Extent1].[wm_poi_name] AS [wm_poi_name], 
+    [Extent1].[wm_poi_address] AS [wm_poi_address], 
+    [Extent1].[wm_poi_phone] AS [wm_poi_phone], 
+    [Extent1].[recipient_address] AS [recipient_address], 
+    [Extent1].[recipient_phone] AS [recipient_phone], 
+    [Extent1].[backup_recipient_phone] AS [backup_recipient_phone], 
+    [Extent1].[recipient_name] AS [recipient_name], 
+    [Extent1].[shipping_fee] AS [shipping_fee], 
+    [Extent1].[total] AS [total], 
+    [Extent1].[original_price] AS [original_price], 
+    [Extent1].[caution] AS [caution], 
+    [Extent1].[shipper_phone] AS [shipper_phone], 
+    [Extent1].[status] AS [status], 
+    [Extent1].[city_id] AS [city_id], 
+    [Extent1].[has_invoiced] AS [has_invoiced], 
+    [Extent1].[invoice_title] AS [invoice_title], 
+    [Extent1].[taxpayer_id] AS [taxpayer_id], 
+    [Extent1].[ctime] AS [ctime], 
+    [Extent1].[utime] AS [utime], 
+    [Extent1].[delivery_time] AS [delivery_time], 
+    [Extent1].[is_third_shipping] AS [is_third_shipping], 
+    [Extent1].[pay_type] AS [pay_type], 
+    [Extent1].[pick_type] AS [pick_type], 
+    [Extent1].[latitude] AS [latitude], 
+    [Extent1].[longitude] AS [longitude], 
+    [Extent1].[day_seq] AS [day_seq], 
+    [Extent1].[is_favorites] AS [is_favorites], 
+    [Extent1].[is_poi_first_order] AS [is_poi_first_order], 
+    [Extent1].[dinners_number] AS [dinners_number], 
+    [Extent1].[logistics_code] AS [logistics_code], 
+    [Extent1].[avg_send_time] AS [avg_send_time], 
+    [Extent1].[channel] AS [channel], 
+    [Extent1].[invMakeType] AS [invMakeType], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Order] AS [Extent1]
+    WHERE ([Extent1].[user_no] = @p__linq__0) AND ([Extent1].[app_poi_code] = @p__linq__1)
+2020-06-01 15:10:06,498 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:06,498 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: '0001' (Type = AnsiString, Size = 8000)
+
+2020-06-01 15:10:06,498 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__1: '1232' (Type = AnsiString, Size = 8000)
+
+2020-06-01 15:10:06,498 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:10:06 +08:00
+
+2020-06-01 15:10:06,505 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 6 ms with result: SqlDataReader
+
+2020-06-01 15:10:06,505 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:06,505 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:10:06 +08:00
+
+2020-06-01 15:10:34,221 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:10:34 +08:00
+
+2020-06-01 15:10:34,222 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[user_no] AS [user_no], 
+    [Extent1].[order_id] AS [order_id], 
+    [Extent1].[wm_order_id_view] AS [wm_order_id_view], 
+    [Extent1].[app_poi_code] AS [app_poi_code], 
+    [Extent1].[wm_poi_name] AS [wm_poi_name], 
+    [Extent1].[wm_poi_address] AS [wm_poi_address], 
+    [Extent1].[wm_poi_phone] AS [wm_poi_phone], 
+    [Extent1].[recipient_address] AS [recipient_address], 
+    [Extent1].[recipient_phone] AS [recipient_phone], 
+    [Extent1].[backup_recipient_phone] AS [backup_recipient_phone], 
+    [Extent1].[recipient_name] AS [recipient_name], 
+    [Extent1].[shipping_fee] AS [shipping_fee], 
+    [Extent1].[total] AS [total], 
+    [Extent1].[original_price] AS [original_price], 
+    [Extent1].[caution] AS [caution], 
+    [Extent1].[shipper_phone] AS [shipper_phone], 
+    [Extent1].[status] AS [status], 
+    [Extent1].[city_id] AS [city_id], 
+    [Extent1].[has_invoiced] AS [has_invoiced], 
+    [Extent1].[invoice_title] AS [invoice_title], 
+    [Extent1].[taxpayer_id] AS [taxpayer_id], 
+    [Extent1].[ctime] AS [ctime], 
+    [Extent1].[utime] AS [utime], 
+    [Extent1].[delivery_time] AS [delivery_time], 
+    [Extent1].[is_third_shipping] AS [is_third_shipping], 
+    [Extent1].[pay_type] AS [pay_type], 
+    [Extent1].[pick_type] AS [pick_type], 
+    [Extent1].[latitude] AS [latitude], 
+    [Extent1].[longitude] AS [longitude], 
+    [Extent1].[day_seq] AS [day_seq], 
+    [Extent1].[is_favorites] AS [is_favorites], 
+    [Extent1].[is_poi_first_order] AS [is_poi_first_order], 
+    [Extent1].[dinners_number] AS [dinners_number], 
+    [Extent1].[logistics_code] AS [logistics_code], 
+    [Extent1].[avg_send_time] AS [avg_send_time], 
+    [Extent1].[channel] AS [channel], 
+    [Extent1].[invMakeType] AS [invMakeType], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Order] AS [Extent1]
+    WHERE ([Extent1].[user_no] = @p__linq__0) AND ([Extent1].[app_poi_code] = @p__linq__1)
+2020-06-01 15:10:34,222 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:34,222 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: '1' (Type = AnsiString, Size = 8000)
+
+2020-06-01 15:10:34,222 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__1: '4' (Type = AnsiString, Size = 8000)
+
+2020-06-01 15:10:34,222 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:10:34 +08:00
+
+2020-06-01 15:10:34,224 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 2 ms with result: SqlDataReader
+
+2020-06-01 15:10:34,224 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:10:34,234 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:10:34 +08:00
+
+2020-06-01 15:11:44,462 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:11:44 +08:00
+
+2020-06-01 15:11:44,516 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[app_food_code] AS [app_food_code], 
+    [Extent1].[food_name] AS [food_name], 
+    [Extent1].[sku_id] AS [sku_id], 
+    [Extent1].[quantity] AS [quantity], 
+    [Extent1].[price] AS [price], 
+    [Extent1].[box_num] AS [box_num], 
+    [Extent1].[box_price] AS [box_price], 
+    [Extent1].[unit] AS [unit], 
+    [Extent1].[food_discount] AS [food_discount], 
+    [Extent1].[food_property] AS [food_property], 
+    [Extent1].[spec] AS [spec], 
+    [Extent1].[cart_id] AS [cart_id], 
+    [Extent1].[orderId] AS [orderId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_OrderDtl] AS [Extent1]
+    WHERE ((LOWER( CAST( [Extent1].[orderId] AS nvarchar(max)))) = @p__linq__0) OR ((LOWER( CAST( [Extent1].[orderId] AS nvarchar(max))) IS NULL) AND (@p__linq__0 IS NULL))
+2020-06-01 15:11:44,516 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:11:44,516 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'a05a2cd9-d0a3-ea11-93d4-7470fd70295b' (Type = String, Size = 4000)
+
+2020-06-01 15:11:44,516 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:11:44 +08:00
+
+2020-06-01 15:11:44,521 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 4 ms with result: SqlDataReader
+
+2020-06-01 15:11:44,521 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:11:44,521 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:11:44 +08:00
+
+2020-06-01 15:12:07,287 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:12:07 +08:00
+
+2020-06-01 15:12:07,287 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[app_food_code] AS [app_food_code], 
+    [Extent1].[food_name] AS [food_name], 
+    [Extent1].[sku_id] AS [sku_id], 
+    [Extent1].[quantity] AS [quantity], 
+    [Extent1].[price] AS [price], 
+    [Extent1].[box_num] AS [box_num], 
+    [Extent1].[box_price] AS [box_price], 
+    [Extent1].[unit] AS [unit], 
+    [Extent1].[food_discount] AS [food_discount], 
+    [Extent1].[food_property] AS [food_property], 
+    [Extent1].[spec] AS [spec], 
+    [Extent1].[cart_id] AS [cart_id], 
+    [Extent1].[orderId] AS [orderId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_OrderDtl] AS [Extent1]
+    WHERE ((LOWER( CAST( [Extent1].[orderId] AS nvarchar(max)))) = @p__linq__0) OR ((LOWER( CAST( [Extent1].[orderId] AS nvarchar(max))) IS NULL) AND (@p__linq__0 IS NULL))
+2020-06-01 15:12:07,287 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:12:07,287 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: '9e5a2cd9-d0a3-ea11-93d4-7470fd70295b' (Type = String, Size = 4000)
+
+2020-06-01 15:12:07,288 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:12:07 +08:00
+
+2020-06-01 15:12:07,288 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 15:12:07,288 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:12:07,289 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:12:07 +08:00
+
+2020-06-01 15:25:39,507 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:25:39 +08:00
+
+2020-06-01 15:25:39,516 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 15:25:39,516 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:25:39,516 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:25:39 +08:00
+
+2020-06-01 15:25:39,524 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 6 ms with result: 4
+
+2020-06-01 15:25:39,524 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:25:39,524 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:25:39 +08:00
+
+2020-06-01 15:25:39,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:25:39 +08:00
+
+2020-06-01 15:25:40,414 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 15:25:40,414 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:25:40,415 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.O2OContext' (Type = String, Size = 4000)
+
+2020-06-01 15:25:40,415 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:25:40 +08:00
+
+2020-06-01 15:25:40,417 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 15:25:40,417 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:25:40,422 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:25:40 +08:00
+
+2020-06-01 15:25:40,431 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:25:40 +08:00
+
+2020-06-01 15:25:40,482 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 15:25:40,482 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:25:40,482 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.O2OContext' (Type = String, Size = 4000)
+
+2020-06-01 15:25:40,482 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:25:40 +08:00
+
+2020-06-01 15:25:40,484 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 15:25:40,484 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:25:40,486 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:25:40 +08:00
+
+2020-06-01 15:25:40,565 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:25:40 +08:00
+
+2020-06-01 15:25:40,625 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 15:25:40,625 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:25:40,625 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'null' (Type = AnsiString, Size = 8000)
+
+2020-06-01 15:25:40,625 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:25:40 +08:00
+
+2020-06-01 15:25:40,626 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 15:25:40,626 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:25:40,626 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:25:40 +08:00
+
+2020-06-01 15:28:10,611 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:28:10 +08:00
+
+2020-06-01 15:28:10,612 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 15:28:10,612 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:28:10,612 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = AnsiString, Size = 8000)
+
+2020-06-01 15:28:10,612 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:28:10 +08:00
+
+2020-06-01 15:28:10,614 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 2 ms with result: SqlDataReader
+
+2020-06-01 15:28:10,614 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:28:10,622 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:28:10 +08:00
+
+2020-06-01 15:28:10,653 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:28:10 +08:00
+
+2020-06-01 15:28:10,706 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[WaimaiAppId] AS [WaimaiAppId], 
+    [Extent1].[WaimaiAppSecret] AS [WaimaiAppSecret], 
+    [Extent1].[TuangouAppKey] AS [TuangouAppKey], 
+    [Extent1].[TuangouAppSecret] AS [TuangouAppSecret], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-01 15:28:10,706 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:28:10,706 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- EntityKeyValue1: '93f3f657-d9a3-ea11-93d4-7470fd70295b' (Type = Guid, IsNullable = false)
+
+2020-06-01 15:28:10,706 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:28:10 +08:00
+
+2020-06-01 15:28:10,709 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 2 ms with result: SqlDataReader
+
+2020-06-01 15:28:10,709 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:28:10,712 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:28:10 +08:00
+
+2020-06-01 15:50:02,182 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:50:02 +08:00
+
+2020-06-01 15:50:02,192 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 15:50:02,192 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:02,192 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:50:02 +08:00
+
+2020-06-01 15:50:02,201 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 6 ms with result: 4
+
+2020-06-01 15:50:02,201 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:02,201 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:50:02 +08:00
+
+2020-06-01 15:50:02,279 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:50:02 +08:00
+
+2020-06-01 15:50:03,007 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 15:50:03,007 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:03,008 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.O2OContext' (Type = String, Size = 4000)
+
+2020-06-01 15:50:03,008 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,015 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 7 ms with result: SqlDataReader
+
+2020-06-01 15:50:03,016 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:03,021 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,030 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,083 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 15:50:03,083 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:03,083 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.O2OContext' (Type = String, Size = 4000)
+
+2020-06-01 15:50:03,083 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,084 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 0 ms with result: SqlDataReader
+
+2020-06-01 15:50:03,084 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:03,087 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,149 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,218 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 15:50:03,218 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:03,218 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = AnsiString, Size = 8000)
+
+2020-06-01 15:50:03,219 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,220 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 15:50:03,220 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:03,225 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,256 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,292 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[WaimaiAppId] AS [WaimaiAppId], 
+    [Extent1].[WaimaiAppSecret] AS [WaimaiAppSecret], 
+    [Extent1].[TuangouAppKey] AS [TuangouAppKey], 
+    [Extent1].[TuangouAppSecret] AS [TuangouAppSecret], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-01 15:50:03,292 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:03,292 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- EntityKeyValue1: '93f3f657-d9a3-ea11-93d4-7470fd70295b' (Type = Guid, IsNullable = false)
+
+2020-06-01 15:50:03,292 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 15:50:03,293 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 15:50:03,293 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 15:50:03,296 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 15:50:03 +08:00
+
+2020-06-01 16:20:33,721 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 16:20:33 +08:00
+
+2020-06-01 16:20:33,730 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-01 16:20:33,730 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:33,730 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 16:20:33 +08:00
+
+2020-06-01 16:20:33,754 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 23 ms with result: 4
+
+2020-06-01 16:20:33,755 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:33,755 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 16:20:33 +08:00
+
+2020-06-01 16:20:33,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 16:20:33 +08:00
+
+2020-06-01 16:20:34,683 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-01 16:20:34,683 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:34,685 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.O2OContext' (Type = String, Size = 4000)
+
+2020-06-01 16:20:34,685 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,688 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 3 ms with result: SqlDataReader
+
+2020-06-01 16:20:34,688 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:34,695 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,705 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,759 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-01 16:20:34,759 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:34,759 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.O2OContext' (Type = String, Size = 4000)
+
+2020-06-01 16:20:34,759 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,761 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 1 ms with result: SqlDataReader
+
+2020-06-01 16:20:34,761 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:34,763 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,837 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,911 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[UserNo] AS [UserNo], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[ConnString] AS [ConnString], 
+    [Extent1].[Ket] AS [Ket], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_User] AS [Extent1]
+    WHERE [Extent1].[UserNo] = @p__linq__0
+2020-06-01 16:20:34,911 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:34,911 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = AnsiString, Size = 8000)
+
+2020-06-01 16:20:34,911 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,914 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 2 ms with result: SqlDataReader
+
+2020-06-01 16:20:34,914 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:34,920 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,952 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,992 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[WaimaiAppId] AS [WaimaiAppId], 
+    [Extent1].[WaimaiAppSecret] AS [WaimaiAppSecret], 
+    [Extent1].[TuangouAppKey] AS [TuangouAppKey], 
+    [Extent1].[TuangouAppSecret] AS [TuangouAppSecret], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Account] AS [Extent1]
+    WHERE [Extent1].[UserId] = @EntityKeyValue1
+2020-06-01 16:20:34,992 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:34,992 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- EntityKeyValue1: '93f3f657-d9a3-ea11-93d4-7470fd70295b' (Type = Guid, IsNullable = false)
+
+2020-06-01 16:20:34,992 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-01 16:20:34 +08:00
+
+2020-06-01 16:20:34,994 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 2 ms with result: SqlDataReader
+
+2020-06-01 16:20:34,994 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-01 16:20:34,997 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-01 16:20:34 +08:00
+

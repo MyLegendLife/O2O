@@ -1,0 +1,2689 @@
+2020-06-03 10:01:59,910 [8] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,
+2020-06-03 10:02:06,573 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:02:06 +08:00
+
+2020-06-03 10:02:06,574 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 10:02:06,575 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:02:06,575 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:02:06 +08:00
+
+2020-06-03 10:02:06,756 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 178 ms with result: 5
+
+2020-06-03 10:02:06,756 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:02:06,757 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:02:06 +08:00
+
+2020-06-03 10:02:06,909 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:02:06 +08:00
+
+2020-06-03 10:02:07,736 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 10:02:07,736 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:02:07,738 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:02:07,738 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:02:07 +08:00
+
+2020-06-03 10:02:07,825 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 87 ms with result: SqlDataReader
+
+2020-06-03 10:02:07,825 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:02:07,834 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:02:07 +08:00
+
+2020-06-03 10:02:07,853 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:02:07 +08:00
+
+2020-06-03 10:02:07,907 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 10:02:07,907 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:02:07,907 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:02:07,907 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:02:07 +08:00
+
+2020-06-03 10:02:07,961 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 53 ms with result: SqlDataReader
+
+2020-06-03 10:02:07,961 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:02:07,965 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:02:07 +08:00
+
+2020-06-03 10:10:10,163 [10] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,田经乐(先生)
+2020-06-03 10:10:11,591 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:10:11 +08:00
+
+2020-06-03 10:10:11,594 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 10:10:11,595 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:10:11,596 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:10:11 +08:00
+
+2020-06-03 10:10:11,654 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 56 ms with result: 5
+
+2020-06-03 10:10:11,654 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:10:11,654 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:10:11 +08:00
+
+2020-06-03 10:10:11,787 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:10:11 +08:00
+
+2020-06-03 10:10:12,534 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 10:10:12,534 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:10:12,535 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:10:12,535 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:10:12 +08:00
+
+2020-06-03 10:10:12,586 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-03 10:10:12,586 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:10:12,591 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:10:12 +08:00
+
+2020-06-03 10:10:12,603 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:10:12 +08:00
+
+2020-06-03 10:10:12,662 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 10:10:12,662 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:10:12,662 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:10:12,662 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:10:12 +08:00
+
+2020-06-03 10:10:12,714 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-03 10:10:12,714 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:10:12,718 [10] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:10:12 +08:00
+
+2020-06-03 10:37:31,558 [7] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,田经乐(先生)
+2020-06-03 10:44:07,844 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,田经乐(先生)
+2020-06-03 10:46:24,190 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:46:24 +08:00
+
+2020-06-03 10:46:24,193 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 10:46:24,193 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:46:24,194 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:46:24 +08:00
+
+2020-06-03 10:46:24,251 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 56 ms with result: 5
+
+2020-06-03 10:46:24,252 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:46:24,252 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:46:24 +08:00
+
+2020-06-03 10:46:24,426 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:46:24 +08:00
+
+2020-06-03 10:46:25,145 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 10:46:25,145 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:46:25,146 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:46:25,146 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:46:25 +08:00
+
+2020-06-03 10:46:25,197 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 51 ms with result: SqlDataReader
+
+2020-06-03 10:46:25,197 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:46:25,209 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:46:25 +08:00
+
+2020-06-03 10:46:25,232 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:46:25 +08:00
+
+2020-06-03 10:46:25,286 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 10:46:25,286 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:46:25,286 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:46:25,287 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:46:25 +08:00
+
+2020-06-03 10:46:25,338 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-03 10:46:25,338 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:46:25,348 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:46:25 +08:00
+
+2020-06-03 10:51:46,534 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,田经乐(先生)
+2020-06-03 10:51:53,140 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:51:53 +08:00
+
+2020-06-03 10:51:53,141 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 10:51:53,141 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:53,141 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:51:53 +08:00
+
+2020-06-03 10:51:53,212 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 67 ms with result: 5
+
+2020-06-03 10:51:53,212 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:53,213 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:51:53 +08:00
+
+2020-06-03 10:51:53,348 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:51:53 +08:00
+
+2020-06-03 10:51:54,063 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 10:51:54,063 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,064 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:51:54,064 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,114 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-03 10:51:54,114 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,120 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,129 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,193 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 10:51:54,193 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,193 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:51:54,193 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,245 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 51 ms with result: SqlDataReader
+
+2020-06-03 10:51:54,245 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,251 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,403 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,457 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Started transaction at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_Order]([user_no], [order_id], [wm_order_id_view], [app_poi_code], [wm_poi_name], [wm_poi_address], [wm_poi_phone], [recipient_address], [recipient_phone], [backup_recipient_phone], [recipient_name], [shipping_fee], [total], [original_price], [caution], [shipper_phone], [status], [city_id], [has_invoiced], [invoice_title], [taxpayer_id], [ctime], [utime], [delivery_time], [is_third_shipping], [pay_type], [pick_type], [latitude], [longitude], [day_seq], [is_favorites], [is_poi_first_order], [dinners_number], [logistics_code], [avg_send_time], [channel], [invMakeType], [is_saled], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, NULL, @15, @16, @17, NULL, NULL, @18, @19, @20, @21, @22, @23, @24, @25, @26, @27, @28, @29, @30, @31, NULL, @32, @33, @34)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_Order] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: 'SCDY0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '35748452399089990' (Type = Int64)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '35748452399089990' (Type = Int64)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '爱达乐（奥克斯广场店）' (Type = AnsiString, Size = 100)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '成都市高新区锦城大道666号附55号' (Type = AnsiString, Size = 200)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '02885865183' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '为保护用户隐私，相关信息不予展示' (Type = AnsiString, Size = 200)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '17882955252_6499' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '["13086624857_7652"]' (Type = AnsiString, Size = 100)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '田经乐(先生)' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '3' (Type = Single)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '0.02' (Type = Double)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '3.02' (Type = Double)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '收餐人隐私号 17882955252_6499，手机号 186****6705 ' (Type = AnsiString, Size = 500)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '2' (Type = Int32)
+
+2020-06-03 10:51:54,585 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @16: '510100' (Type = Int64)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @17: '0' (Type = Int32)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @18: '1591148708' (Type = Int64)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @19: '1591148708' (Type = Int64)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @20: '1591490400' (Type = Int64)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @21: '0' (Type = Int32)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @22: '2' (Type = Int32)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @23: '0' (Type = Int32)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @24: '30.576403' (Type = Double)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @25: '104.062131' (Type = Double)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @26: '1' (Type = Int32)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @27: 'False' (Type = Boolean)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @28: 'True' (Type = Boolean)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @29: '0' (Type = Int32)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @30: '3001' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @31: '0' (Type = Int32)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @32: '0' (Type = Int32)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @33: '0' (Type = Int32)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @34: '2020-06-03 10:51:41' (Type = DateTime2)
+
+2020-06-03 10:51:54,586 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,663 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 76 ms with result: SqlDataReader
+
+2020-06-03 10:51:54,664 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,672 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101002' (Type = AnsiString, Size = 10)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '（测试）' (Type = AnsiString, Size = 100)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101002' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '120克' (Type = AnsiString, Size = 10)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '真空包装' (Type = AnsiString, Size = 50)
+
+2020-06-03 10:51:54,673 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,674 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,674 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: 'a9dd212e-45a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 10:51:54,674 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 10:51:47' (Type = DateTime2)
+
+2020-06-03 10:51:54,674 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 76 ms with result: SqlDataReader
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101001' (Type = AnsiString, Size = 10)
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '测试' (Type = AnsiString, Size = 100)
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101001' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '1克' (Type = AnsiString, Size = 10)
+
+2020-06-03 10:51:54,751 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 10:51:54,752 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '' (Type = AnsiString, Size = 50)
+
+2020-06-03 10:51:54,752 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,752 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:51:54,752 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: 'a9dd212e-45a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 10:51:54,752 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 10:51:47' (Type = DateTime2)
+
+2020-06-03 10:51:54,752 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,802 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-03 10:51:54,802 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:51:54,876 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Committed transaction at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:51:54,877 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:51:54 +08:00
+
+2020-06-03 10:54:57,621 [7] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,田经乐(先生)
+2020-06-03 10:54:58,965 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:54:58 +08:00
+
+2020-06-03 10:54:58,966 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 10:54:58,966 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:54:58,966 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:54:58 +08:00
+
+2020-06-03 10:54:59,025 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 57 ms with result: 5
+
+2020-06-03 10:54:59,025 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:54:59,025 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:54:59 +08:00
+
+2020-06-03 10:54:59,158 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:54:59 +08:00
+
+2020-06-03 10:54:59,978 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 10:54:59,978 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:54:59,979 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:54:59,979 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:54:59 +08:00
+
+2020-06-03 10:55:00,032 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 10:55:00,032 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:55:00,037 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,047 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,101 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 10:55:00,101 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:55:00,101 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 10:55:00,101 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,153 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 10:55:00,153 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:55:00,161 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,330 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,387 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Started transaction at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_Order]([user_no], [order_id], [wm_order_id_view], [app_poi_code], [wm_poi_name], [wm_poi_address], [wm_poi_phone], [recipient_address], [recipient_phone], [backup_recipient_phone], [recipient_name], [shipping_fee], [total], [original_price], [caution], [shipper_phone], [status], [city_id], [has_invoiced], [invoice_title], [taxpayer_id], [ctime], [utime], [delivery_time], [is_third_shipping], [pay_type], [pick_type], [latitude], [longitude], [day_seq], [is_favorites], [is_poi_first_order], [dinners_number], [logistics_code], [avg_send_time], [channel], [invMakeType], [is_saled], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, NULL, @15, @16, @17, NULL, NULL, @18, @19, @20, @21, @22, @23, @24, @25, @26, @27, @28, @29, @30, @31, NULL, @32, @33, @34)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_Order] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: 'SCDY0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '35748452399089990' (Type = Int64)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '35748452399089990' (Type = Int64)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '爱达乐（奥克斯广场店）' (Type = AnsiString, Size = 100)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '成都市高新区锦城大道666号附55号' (Type = AnsiString, Size = 200)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '02885865183' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '为保护用户隐私，相关信息不予展示' (Type = AnsiString, Size = 200)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '17882955252_6499' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '["13086624857_7652"]' (Type = AnsiString, Size = 100)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '田经乐(先生)' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '3' (Type = Single)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '0.02' (Type = Double)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '3.02' (Type = Double)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '收餐人隐私号 17882955252_6499，手机号 186****6705 ' (Type = AnsiString, Size = 500)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '2' (Type = Int32)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @16: '510100' (Type = Int64)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @17: '0' (Type = Int32)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @18: '1591148708' (Type = Int64)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @19: '1591148708' (Type = Int64)
+
+2020-06-03 10:55:00,533 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @20: '1591490400' (Type = Int64)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @21: '0' (Type = Int32)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @22: '2' (Type = Int32)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @23: '0' (Type = Int32)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @24: '30.576403' (Type = Double)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @25: '104.062131' (Type = Double)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @26: '1' (Type = Int32)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @27: 'False' (Type = Boolean)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @28: 'True' (Type = Boolean)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @29: '0' (Type = Int32)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @30: '3001' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @31: '0' (Type = Int32)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @32: '0' (Type = Int32)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @33: '0' (Type = Int32)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @34: '2020-06-03 10:54:57' (Type = DateTime2)
+
+2020-06-03 10:55:00,534 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,584 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-03 10:55:00,584 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:55:00,587 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101002' (Type = AnsiString, Size = 10)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '（测试）' (Type = AnsiString, Size = 100)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101002' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '120克' (Type = AnsiString, Size = 10)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '真空包装' (Type = AnsiString, Size = 50)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '9bb0f49c-45a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 10:55:00,588 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 10:54:57' (Type = DateTime2)
+
+2020-06-03 10:55:00,589 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,647 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 59 ms with result: SqlDataReader
+
+2020-06-03 10:55:00,647 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101001' (Type = AnsiString, Size = 10)
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '测试' (Type = AnsiString, Size = 100)
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101001' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '1克' (Type = AnsiString, Size = 10)
+
+2020-06-03 10:55:00,648 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 10:55:00,650 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '' (Type = AnsiString, Size = 50)
+
+2020-06-03 10:55:00,650 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,650 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 10:55:00,650 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '9bb0f49c-45a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 10:55:00,650 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 10:54:57' (Type = DateTime2)
+
+2020-06-03 10:55:00,650 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,712 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 62 ms with result: SqlDataReader
+
+2020-06-03 10:55:00,713 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 10:55:00,798 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Committed transaction at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 10:55:00,799 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 10:55:00 +08:00
+
+2020-06-03 11:00:37,867 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,田经乐(先生)
+2020-06-03 11:00:39,367 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:00:39 +08:00
+
+2020-06-03 11:00:39,368 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 11:00:39,368 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:39,368 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:00:39 +08:00
+
+2020-06-03 11:00:39,426 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 57 ms with result: 5
+
+2020-06-03 11:00:39,427 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:39,427 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:00:39 +08:00
+
+2020-06-03 11:00:39,537 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:00:39 +08:00
+
+2020-06-03 11:00:40,258 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 11:00:40,258 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:40,259 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:00:40,259 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:00:40 +08:00
+
+2020-06-03 11:00:40,315 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 55 ms with result: SqlDataReader
+
+2020-06-03 11:00:40,315 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:40,330 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:00:40 +08:00
+
+2020-06-03 11:00:40,349 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:00:40 +08:00
+
+2020-06-03 11:00:40,401 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 11:00:40,401 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:40,401 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:00:40,401 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:00:40 +08:00
+
+2020-06-03 11:00:40,455 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 53 ms with result: SqlDataReader
+
+2020-06-03 11:00:40,455 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:40,464 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:00:40 +08:00
+
+2020-06-03 11:00:40,604 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:00:40 +08:00
+
+2020-06-03 11:00:40,658 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Started transaction at 2020-06-03 11:00:40 +08:00
+
+2020-06-03 11:00:40,904 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier, [order_id] bigint)
+INSERT [dbo].[Mt_Order]([order_id], [user_no], [wm_order_id_view], [app_poi_code], [wm_poi_name], [wm_poi_address], [wm_poi_phone], [recipient_address], [recipient_phone], [backup_recipient_phone], [recipient_name], [shipping_fee], [total], [original_price], [caution], [shipper_phone], [status], [city_id], [has_invoiced], [invoice_title], [taxpayer_id], [ctime], [utime], [delivery_time], [is_third_shipping], [pay_type], [pick_type], [latitude], [longitude], [day_seq], [is_favorites], [is_poi_first_order], [dinners_number], [logistics_code], [avg_send_time], [channel], [invMakeType], [is_saled], [CreateDateTime])
+OUTPUT inserted.[Id], inserted.[order_id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, NULL, @15, @16, @17, NULL, NULL, @18, @19, @20, @21, @22, @23, @24, @25, @26, @27, @28, @29, @30, @31, NULL, @32, @33, @34)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_Order] AS t ON g.[Id] = t.[Id] AND g.[order_id] = t.[order_id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:00:40,904 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:40,904 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:00:40,904 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: 'SCDY0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:40,904 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:00:40,904 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:40,904 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '爱达乐（奥克斯广场店）' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '成都市高新区锦城大道666号附55号' (Type = AnsiString, Size = 200)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '02885865183' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '为保护用户隐私，相关信息不予展示' (Type = AnsiString, Size = 200)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '17882955252_6499' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '["13086624857_7652"]' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '田经乐(先生)' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '3' (Type = Single)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '0.02' (Type = Double)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '3.02' (Type = Double)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '收餐人隐私号 17882955252_6499，手机号 186****6705 ' (Type = AnsiString, Size = 500)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '2' (Type = Int32)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @16: '510100' (Type = Int64)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @17: '0' (Type = Int32)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @18: '1591148708' (Type = Int64)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @19: '1591148708' (Type = Int64)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @20: '1591490400' (Type = Int64)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @21: '0' (Type = Int32)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @22: '2' (Type = Int32)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @23: '0' (Type = Int32)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @24: '30.576403' (Type = Double)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @25: '104.062131' (Type = Double)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @26: '1' (Type = Int32)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @27: 'False' (Type = Boolean)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @28: 'True' (Type = Boolean)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @29: '0' (Type = Int32)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @30: '3001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @31: '0' (Type = Int32)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @32: '0' (Type = Int32)
+
+2020-06-03 11:00:40,905 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @33: '0' (Type = Int32)
+
+2020-06-03 11:00:40,906 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @34: '2020-06-03 11:00:37' (Type = DateTime2)
+
+2020-06-03 11:00:40,906 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:00:40 +08:00
+
+2020-06-03 11:00:40,965 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 59 ms with result: SqlDataReader
+
+2020-06-03 11:00:40,966 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:40,969 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime], [order_Id], [order_order_id])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:00:40,969 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:40,969 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101002' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:00:40,969 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '（测试）' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:00:40,969 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101002' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:40,969 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 11:00:40,969 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 11:00:40,969 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 11:00:40,969 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '120克' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '真空包装' (Type = AnsiString, Size = 50)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '00000000-0000-0000-0000-000000000000' (Type = Guid)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 11:00:37' (Type = DateTime2)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '0b62d467-46a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:00:40,970 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:00:40 +08:00
+
+2020-06-03 11:00:41,038 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 67 ms with result: SqlDataReader
+
+2020-06-03 11:00:41,038 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime], [order_Id], [order_order_id])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101001' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '测试' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 11:00:41,039 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '1克' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:00:41,040 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 11:00:41,040 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '' (Type = AnsiString, Size = 50)
+
+2020-06-03 11:00:41,040 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:41,040 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:00:41,040 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '00000000-0000-0000-0000-000000000000' (Type = Guid)
+
+2020-06-03 11:00:41,040 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 11:00:37' (Type = DateTime2)
+
+2020-06-03 11:00:41,040 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '0b62d467-46a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 11:00:41,040 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:00:41,040 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:00:41 +08:00
+
+2020-06-03 11:00:41,105 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 64 ms with result: SqlDataReader
+
+2020-06-03 11:00:41,105 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:00:41,176 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Committed transaction at 2020-06-03 11:00:41 +08:00
+
+2020-06-03 11:00:41,177 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:00:41 +08:00
+
+2020-06-03 11:01:47,575 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,田经乐(先生)
+2020-06-03 11:01:47,582 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:01:47 +08:00
+
+2020-06-03 11:01:47,636 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Started transaction at 2020-06-03 11:01:47 +08:00
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier, [order_id] bigint)
+INSERT [dbo].[Mt_Order]([order_id], [user_no], [wm_order_id_view], [app_poi_code], [wm_poi_name], [wm_poi_address], [wm_poi_phone], [recipient_address], [recipient_phone], [backup_recipient_phone], [recipient_name], [shipping_fee], [total], [original_price], [caution], [shipper_phone], [status], [city_id], [has_invoiced], [invoice_title], [taxpayer_id], [ctime], [utime], [delivery_time], [is_third_shipping], [pay_type], [pick_type], [latitude], [longitude], [day_seq], [is_favorites], [is_poi_first_order], [dinners_number], [logistics_code], [avg_send_time], [channel], [invMakeType], [is_saled], [CreateDateTime])
+OUTPUT inserted.[Id], inserted.[order_id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, NULL, @15, @16, @17, NULL, NULL, @18, @19, @20, @21, @22, @23, @24, @25, @26, @27, @28, @29, @30, @31, NULL, @32, @33, @34)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_Order] AS t ON g.[Id] = t.[Id] AND g.[order_id] = t.[order_id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: 'SCDY0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '爱达乐（奥克斯广场店）' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '成都市高新区锦城大道666号附55号' (Type = AnsiString, Size = 200)
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '02885865183' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '为保护用户隐私，相关信息不予展示' (Type = AnsiString, Size = 200)
+
+2020-06-03 11:01:47,639 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '17882955252_6499' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '["13086624857_7652"]' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '田经乐(先生)' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '3' (Type = Single)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '0.02' (Type = Double)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '3.02' (Type = Double)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '收餐人隐私号 17882955252_6499，手机号 186****6705 ' (Type = AnsiString, Size = 500)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '2' (Type = Int32)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @16: '510100' (Type = Int64)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @17: '0' (Type = Int32)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @18: '1591148708' (Type = Int64)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @19: '1591148708' (Type = Int64)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @20: '1591490400' (Type = Int64)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @21: '0' (Type = Int32)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @22: '2' (Type = Int32)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @23: '0' (Type = Int32)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @24: '30.576403' (Type = Double)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @25: '104.062131' (Type = Double)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @26: '1' (Type = Int32)
+
+2020-06-03 11:01:47,640 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @27: 'False' (Type = Boolean)
+
+2020-06-03 11:01:47,641 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @28: 'True' (Type = Boolean)
+
+2020-06-03 11:01:47,641 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @29: '0' (Type = Int32)
+
+2020-06-03 11:01:47,641 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @30: '3001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,641 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @31: '0' (Type = Int32)
+
+2020-06-03 11:01:47,641 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @32: '0' (Type = Int32)
+
+2020-06-03 11:01:47,641 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @33: '0' (Type = Int32)
+
+2020-06-03 11:01:47,641 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @34: '2020-06-03 11:01:47' (Type = DateTime2)
+
+2020-06-03 11:01:47,641 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:01:47 +08:00
+
+2020-06-03 11:01:47,702 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 60 ms with result: SqlDataReader
+
+2020-06-03 11:01:47,702 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:01:47,702 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime], [order_Id], [order_order_id])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:01:47,702 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:01:47,702 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101002' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:01:47,702 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '（测试）' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:01:47,702 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101002' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '120克' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '真空包装' (Type = AnsiString, Size = 50)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '00000000-0000-0000-0000-000000000000' (Type = Guid)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 11:01:47' (Type = DateTime2)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: 'd1c79b8f-46a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:01:47,703 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:01:47 +08:00
+
+2020-06-03 11:01:47,755 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 11:01:47,755 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime], [order_Id], [order_order_id])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101001' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '测试' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '1克' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '' (Type = AnsiString, Size = 50)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '00000000-0000-0000-0000-000000000000' (Type = Guid)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 11:01:47' (Type = DateTime2)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: 'd1c79b8f-46a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:01:47,756 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:01:47 +08:00
+
+2020-06-03 11:01:47,809 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 11:01:47,809 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:01:47,869 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Committed transaction at 2020-06-03 11:01:47 +08:00
+
+2020-06-03 11:01:47,869 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:01:47 +08:00
+
+2020-06-03 11:14:07,159 [7] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,田经乐(先生)
+2020-06-03 11:14:08,568 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:14:08 +08:00
+
+2020-06-03 11:14:08,569 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 11:14:08,569 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:08,569 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:14:08 +08:00
+
+2020-06-03 11:14:08,624 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 54 ms with result: 5
+
+2020-06-03 11:14:08,624 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:08,625 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:14:08 +08:00
+
+2020-06-03 11:14:08,744 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:14:08 +08:00
+
+2020-06-03 11:14:09,531 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 11:14:09,531 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:09,532 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:14:09,532 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:14:09 +08:00
+
+2020-06-03 11:14:09,589 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 56 ms with result: SqlDataReader
+
+2020-06-03 11:14:09,589 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:09,594 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:14:09 +08:00
+
+2020-06-03 11:14:09,603 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:14:09 +08:00
+
+2020-06-03 11:14:09,654 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 11:14:09,654 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:09,654 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:14:09,654 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:14:09 +08:00
+
+2020-06-03 11:14:09,706 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 51 ms with result: SqlDataReader
+
+2020-06-03 11:14:09,706 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:09,711 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:14:09 +08:00
+
+2020-06-03 11:14:09,852 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:14:09 +08:00
+
+2020-06-03 11:14:09,905 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Started transaction at 2020-06-03 11:14:09 +08:00
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier, [order_id] bigint)
+INSERT [dbo].[Mt_Order]([order_id], [user_no], [wm_order_id_view], [app_poi_code], [wm_poi_name], [wm_poi_address], [wm_poi_phone], [recipient_address], [recipient_phone], [backup_recipient_phone], [recipient_name], [shipping_fee], [total], [original_price], [caution], [shipper_phone], [status], [city_id], [has_invoiced], [invoice_title], [taxpayer_id], [ctime], [utime], [delivery_time], [is_third_shipping], [pay_type], [pick_type], [latitude], [longitude], [day_seq], [is_favorites], [is_poi_first_order], [dinners_number], [logistics_code], [avg_send_time], [channel], [invMakeType], [is_saled], [CreateDateTime])
+OUTPUT inserted.[Id], inserted.[order_id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, NULL, @15, @16, @17, NULL, NULL, @18, @19, @20, @21, @22, @23, @24, @25, @26, @27, @28, @29, @30, @31, NULL, @32, @33, @34)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_Order] AS t ON g.[Id] = t.[Id] AND g.[order_id] = t.[order_id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: 'SCDY0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '爱达乐（奥克斯广场店）' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '成都市高新区锦城大道666号附55号' (Type = AnsiString, Size = 200)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '02885865183' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '为保护用户隐私，相关信息不予展示' (Type = AnsiString, Size = 200)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '17882955252_6499' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '["13086624857_7652"]' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '田经乐(先生)' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '3' (Type = Single)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '0.02' (Type = Double)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '3.02' (Type = Double)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '收餐人隐私号 17882955252_6499，手机号 186****6705 ' (Type = AnsiString, Size = 500)
+
+2020-06-03 11:14:10,141 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '2' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @16: '510100' (Type = Int64)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @17: '0' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @18: '1591148708' (Type = Int64)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @19: '1591148708' (Type = Int64)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @20: '1591490400' (Type = Int64)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @21: '0' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @22: '2' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @23: '0' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @24: '30.576403' (Type = Double)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @25: '104.062131' (Type = Double)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @26: '1' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @27: 'False' (Type = Boolean)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @28: 'True' (Type = Boolean)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @29: '0' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @30: '3001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @31: '0' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @32: '0' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @33: '0' (Type = Int32)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @34: '2020-06-03 11:14:07' (Type = DateTime2)
+
+2020-06-03 11:14:10,142 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:14:10 +08:00
+
+2020-06-03 11:14:10,200 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 57 ms with result: SqlDataReader
+
+2020-06-03 11:14:10,200 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime], [order_Id], [order_order_id])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101002' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '（测试）' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101002' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '120克' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '真空包装' (Type = AnsiString, Size = 50)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,202 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '00000000-0000-0000-0000-000000000000' (Type = Guid)
+
+2020-06-03 11:14:10,203 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 11:14:07' (Type = DateTime2)
+
+2020-06-03 11:14:10,203 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '86582d4a-48a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 11:14:10,203 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:14:10,203 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:14:10 +08:00
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 57 ms with result: SqlDataReader
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime], [order_Id], [order_order_id])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101001' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '测试' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 11:14:10,260 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '1克' (Type = AnsiString, Size = 10)
+
+2020-06-03 11:14:10,261 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 11:14:10,261 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '' (Type = AnsiString, Size = 50)
+
+2020-06-03 11:14:10,261 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,261 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:10,261 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '00000000-0000-0000-0000-000000000000' (Type = Guid)
+
+2020-06-03 11:14:10,261 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 11:14:07' (Type = DateTime2)
+
+2020-06-03 11:14:10,261 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '86582d4a-48a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 11:14:10,261 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:14:10,261 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:14:10 +08:00
+
+2020-06-03 11:14:10,312 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 51 ms with result: SqlDataReader
+
+2020-06-03 11:14:10,312 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:10,375 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Committed transaction at 2020-06-03 11:14:10 +08:00
+
+2020-06-03 11:14:10,376 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:14:10 +08:00
+
+2020-06-03 11:14:19,052 [7] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单COrderPayed:00000000-0000-0000-0000-000000000000,田经乐(先生)
+2020-06-03 11:14:19,059 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:14:19 +08:00
+
+2020-06-03 11:14:19,108 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Started transaction at 2020-06-03 11:14:19 +08:00
+
+2020-06-03 11:14:19,109 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier, [order_id] bigint)
+INSERT [dbo].[Mt_Order]([order_id], [user_no], [wm_order_id_view], [app_poi_code], [wm_poi_name], [wm_poi_address], [wm_poi_phone], [recipient_address], [recipient_phone], [backup_recipient_phone], [recipient_name], [shipping_fee], [total], [original_price], [caution], [shipper_phone], [status], [city_id], [has_invoiced], [invoice_title], [taxpayer_id], [ctime], [utime], [delivery_time], [is_third_shipping], [pay_type], [pick_type], [latitude], [longitude], [day_seq], [is_favorites], [is_poi_first_order], [dinners_number], [logistics_code], [avg_send_time], [channel], [invMakeType], [is_saled], [CreateDateTime])
+OUTPUT inserted.[Id], inserted.[order_id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, NULL, @15, @16, @17, NULL, NULL, @18, @19, @20, @21, @22, @23, @24, @25, @26, @27, @28, @29, @30, @31, NULL, @32, @33, @34)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_Order] AS t ON g.[Id] = t.[Id] AND g.[order_id] = t.[order_id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 11:14:19,109 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:19,109 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:14:19,109 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: 'SCDY0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:19,109 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '35748452399089990' (Type = Int64)
+
+2020-06-03 11:14:19,109 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:19,109 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '爱达乐（奥克斯广场店）' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '成都市高新区锦城大道666号附55号' (Type = AnsiString, Size = 200)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '02885865183' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '为保护用户隐私，相关信息不予展示' (Type = AnsiString, Size = 200)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '17882955252_6499' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '["13086624857_7652"]' (Type = AnsiString, Size = 100)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '田经乐(先生)' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '3' (Type = Single)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '0.02' (Type = Double)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '3.02' (Type = Double)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '收餐人隐私号 17882955252_6499，手机号 186****6705 ' (Type = AnsiString, Size = 500)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '2' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @16: '510100' (Type = Int64)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @17: '0' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @18: '1591148708' (Type = Int64)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @19: '1591148708' (Type = Int64)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @20: '1591490400' (Type = Int64)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @21: '0' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @22: '2' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @23: '0' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @24: '30.576403' (Type = Double)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @25: '104.062131' (Type = Double)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @26: '1' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @27: 'False' (Type = Boolean)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @28: 'True' (Type = Boolean)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @29: '0' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @30: '3001' (Type = AnsiString, Size = 20)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @31: '0' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @32: '0' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @33: '0' (Type = Int32)
+
+2020-06-03 11:14:19,110 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @34: '2020-06-03 11:14:18' (Type = DateTime2)
+
+2020-06-03 11:14:19,111 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:14:19 +08:00
+
+2020-06-03 11:14:19,173 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Failed in 61 ms with error: 不能在具有唯一索引 'IX_order_id' 的对象 'dbo.Mt_Order' 中插入重复键的行。
+语句已终止。
+
+2020-06-03 11:14:19,173 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:14:19,232 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:14:19 +08:00
+
+2020-06-03 11:36:12,217 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:36:12 +08:00
+
+2020-06-03 11:36:12,225 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 11:36:12,226 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:36:12,226 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:36:12 +08:00
+
+2020-06-03 11:36:12,286 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 59 ms with result: 5
+
+2020-06-03 11:36:12,286 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:36:12,287 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:36:12 +08:00
+
+2020-06-03 11:36:12,407 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:36:12 +08:00
+
+2020-06-03 11:36:13,178 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 11:36:13,178 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:36:13,179 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:36:13,179 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:36:13 +08:00
+
+2020-06-03 11:36:13,230 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-03 11:36:13,230 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:36:13,236 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:36:13 +08:00
+
+2020-06-03 11:36:13,245 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:36:13 +08:00
+
+2020-06-03 11:36:13,301 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 11:36:13,301 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:36:13,301 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:36:13,301 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:36:13 +08:00
+
+2020-06-03 11:36:13,353 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 11:36:13,354 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:36:13,357 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:36:13 +08:00
+
+2020-06-03 11:36:13,405 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:36:13 +08:00
+
+2020-06-03 11:36:13,646 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[order_id] AS [order_id], 
+    [Extent1].[user_no] AS [user_no], 
+    [Extent1].[wm_order_id_view] AS [wm_order_id_view], 
+    [Extent1].[app_poi_code] AS [app_poi_code], 
+    [Extent1].[wm_poi_name] AS [wm_poi_name], 
+    [Extent1].[wm_poi_address] AS [wm_poi_address], 
+    [Extent1].[wm_poi_phone] AS [wm_poi_phone], 
+    [Extent1].[recipient_address] AS [recipient_address], 
+    [Extent1].[recipient_phone] AS [recipient_phone], 
+    [Extent1].[backup_recipient_phone] AS [backup_recipient_phone], 
+    [Extent1].[recipient_name] AS [recipient_name], 
+    [Extent1].[shipping_fee] AS [shipping_fee], 
+    [Extent1].[total] AS [total], 
+    [Extent1].[original_price] AS [original_price], 
+    [Extent1].[caution] AS [caution], 
+    [Extent1].[shipper_phone] AS [shipper_phone], 
+    [Extent1].[status] AS [status], 
+    [Extent1].[city_id] AS [city_id], 
+    [Extent1].[has_invoiced] AS [has_invoiced], 
+    [Extent1].[invoice_title] AS [invoice_title], 
+    [Extent1].[taxpayer_id] AS [taxpayer_id], 
+    [Extent1].[ctime] AS [ctime], 
+    [Extent1].[utime] AS [utime], 
+    [Extent1].[delivery_time] AS [delivery_time], 
+    [Extent1].[is_third_shipping] AS [is_third_shipping], 
+    [Extent1].[pay_type] AS [pay_type], 
+    [Extent1].[pick_type] AS [pick_type], 
+    [Extent1].[latitude] AS [latitude], 
+    [Extent1].[longitude] AS [longitude], 
+    [Extent1].[day_seq] AS [day_seq], 
+    [Extent1].[is_favorites] AS [is_favorites], 
+    [Extent1].[is_poi_first_order] AS [is_poi_first_order], 
+    [Extent1].[dinners_number] AS [dinners_number], 
+    [Extent1].[logistics_code] AS [logistics_code], 
+    [Extent1].[avg_send_time] AS [avg_send_time], 
+    [Extent1].[channel] AS [channel], 
+    [Extent1].[invMakeType] AS [invMakeType], 
+    [Extent1].[is_saled] AS [is_saled], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Order] AS [Extent1]
+    WHERE ([Extent1].[user_no] = @p__linq__0) AND ([Extent1].[app_poi_code] = @p__linq__1) AND ( CAST( [Extent1].[order_id] AS nvarchar(max)) LIKE @p__linq__2 ESCAPE N'~') AND (CASE WHEN ([Extent1].[recipient_name] IS NULL) THEN N'' ELSE [Extent1].[recipient_name] END LIKE @p__linq__3 ESCAPE N'~') AND ([Extent1].[recipient_phone] LIKE @p__linq__4 ESCAPE '~') AND ( CAST( [Extent1].[pay_type] AS nvarchar(max)) = @p__linq__5) AND ( CAST( [Extent1].[status] AS nvarchar(max)) = @p__linq__6) AND ([Extent1].[ctime] >= @p__linq__7) AND ([Extent1].[ctime] <= @p__linq__8)
+2020-06-03 11:36:13,646 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:36:13,646 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = AnsiString, Size = 8000)
+
+2020-06-03 11:36:13,646 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__1: '0001' (Type = AnsiString, Size = 8000)
+
+2020-06-03 11:36:13,646 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__2: '%2%' (Type = String, Size = 4000)
+
+2020-06-03 11:36:13,646 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__3: '%你是%' (Type = String, Size = 4000)
+
+2020-06-03 11:36:13,646 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__4: '%1232123%' (Type = AnsiString, Size = 8000)
+
+2020-06-03 11:36:13,647 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__5: '0' (Type = String, Size = 4000)
+
+2020-06-03 11:36:13,647 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__6: '0' (Type = String, Size = 4000)
+
+2020-06-03 11:36:13,647 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__7: '1591027200' (Type = Int64, IsNullable = false)
+
+2020-06-03 11:36:13,647 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__8: '1591113599' (Type = Int64, IsNullable = false)
+
+2020-06-03 11:36:13,647 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:36:13 +08:00
+
+2020-06-03 11:36:13,706 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 58 ms with result: SqlDataReader
+
+2020-06-03 11:36:13,706 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:36:13,706 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:36:13 +08:00
+
+2020-06-03 11:38:06,945 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:38:06 +08:00
+
+2020-06-03 11:38:06,955 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 11:38:06,955 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:38:06,955 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:38:06 +08:00
+
+2020-06-03 11:38:07,014 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 58 ms with result: 5
+
+2020-06-03 11:38:07,015 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:38:07,015 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:38:07 +08:00
+
+2020-06-03 11:38:07,132 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:38:07 +08:00
+
+2020-06-03 11:38:07,882 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 11:38:07,882 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:38:07,883 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:38:07,883 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:38:07 +08:00
+
+2020-06-03 11:38:07,937 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 53 ms with result: SqlDataReader
+
+2020-06-03 11:38:07,938 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:38:07,949 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:38:07 +08:00
+
+2020-06-03 11:38:07,960 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:38:07 +08:00
+
+2020-06-03 11:38:08,013 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 11:38:08,013 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:38:08,013 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:38:08,013 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:38:08 +08:00
+
+2020-06-03 11:38:08,069 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 54 ms with result: SqlDataReader
+
+2020-06-03 11:38:08,069 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:38:08,072 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:38:08 +08:00
+
+2020-06-03 11:38:08,101 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:38:08 +08:00
+
+2020-06-03 11:38:08,308 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[order_id] AS [order_id], 
+    [Extent1].[user_no] AS [user_no], 
+    [Extent1].[wm_order_id_view] AS [wm_order_id_view], 
+    [Extent1].[app_poi_code] AS [app_poi_code], 
+    [Extent1].[wm_poi_name] AS [wm_poi_name], 
+    [Extent1].[wm_poi_address] AS [wm_poi_address], 
+    [Extent1].[wm_poi_phone] AS [wm_poi_phone], 
+    [Extent1].[recipient_address] AS [recipient_address], 
+    [Extent1].[recipient_phone] AS [recipient_phone], 
+    [Extent1].[backup_recipient_phone] AS [backup_recipient_phone], 
+    [Extent1].[recipient_name] AS [recipient_name], 
+    [Extent1].[shipping_fee] AS [shipping_fee], 
+    [Extent1].[total] AS [total], 
+    [Extent1].[original_price] AS [original_price], 
+    [Extent1].[caution] AS [caution], 
+    [Extent1].[shipper_phone] AS [shipper_phone], 
+    [Extent1].[status] AS [status], 
+    [Extent1].[city_id] AS [city_id], 
+    [Extent1].[has_invoiced] AS [has_invoiced], 
+    [Extent1].[invoice_title] AS [invoice_title], 
+    [Extent1].[taxpayer_id] AS [taxpayer_id], 
+    [Extent1].[ctime] AS [ctime], 
+    [Extent1].[utime] AS [utime], 
+    [Extent1].[delivery_time] AS [delivery_time], 
+    [Extent1].[is_third_shipping] AS [is_third_shipping], 
+    [Extent1].[pay_type] AS [pay_type], 
+    [Extent1].[pick_type] AS [pick_type], 
+    [Extent1].[latitude] AS [latitude], 
+    [Extent1].[longitude] AS [longitude], 
+    [Extent1].[day_seq] AS [day_seq], 
+    [Extent1].[is_favorites] AS [is_favorites], 
+    [Extent1].[is_poi_first_order] AS [is_poi_first_order], 
+    [Extent1].[dinners_number] AS [dinners_number], 
+    [Extent1].[logistics_code] AS [logistics_code], 
+    [Extent1].[avg_send_time] AS [avg_send_time], 
+    [Extent1].[channel] AS [channel], 
+    [Extent1].[invMakeType] AS [invMakeType], 
+    [Extent1].[is_saled] AS [is_saled], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Order] AS [Extent1]
+    WHERE ([Extent1].[user_no] = @p__linq__0) AND ([Extent1].[app_poi_code] = @p__linq__1)
+2020-06-03 11:38:08,308 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:38:08,308 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = AnsiString, Size = 8000)
+
+2020-06-03 11:38:08,308 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__1: '0001' (Type = AnsiString, Size = 8000)
+
+2020-06-03 11:38:08,308 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:38:08 +08:00
+
+2020-06-03 11:38:08,361 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 11:38:08,361 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:38:08,374 [5] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:38:08 +08:00
+
+2020-06-03 11:48:18,415 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:48:18 +08:00
+
+2020-06-03 11:48:18,427 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 11:48:18,427 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:48:18,428 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:48:18 +08:00
+
+2020-06-03 11:48:18,482 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 53 ms with result: 5
+
+2020-06-03 11:48:18,482 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:48:18,482 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:48:18 +08:00
+
+2020-06-03 11:48:18,614 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:48:18 +08:00
+
+2020-06-03 11:48:19,401 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 11:48:19,401 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:48:19,402 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:48:19,402 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:48:19 +08:00
+
+2020-06-03 11:48:19,454 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 11:48:19,454 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:48:19,464 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:48:19 +08:00
+
+2020-06-03 11:48:19,477 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:48:19 +08:00
+
+2020-06-03 11:48:19,539 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 11:48:19,539 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:48:19,539 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 11:48:19,539 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:48:19 +08:00
+
+2020-06-03 11:48:19,590 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-03 11:48:19,590 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:48:19,594 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:48:19 +08:00
+
+2020-06-03 11:48:19,622 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 11:48:19 +08:00
+
+2020-06-03 11:48:19,833 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[order_id] AS [order_id], 
+    [Extent1].[user_no] AS [user_no], 
+    [Extent1].[wm_order_id_view] AS [wm_order_id_view], 
+    [Extent1].[app_poi_code] AS [app_poi_code], 
+    [Extent1].[wm_poi_name] AS [wm_poi_name], 
+    [Extent1].[wm_poi_address] AS [wm_poi_address], 
+    [Extent1].[wm_poi_phone] AS [wm_poi_phone], 
+    [Extent1].[recipient_address] AS [recipient_address], 
+    [Extent1].[recipient_phone] AS [recipient_phone], 
+    [Extent1].[backup_recipient_phone] AS [backup_recipient_phone], 
+    [Extent1].[recipient_name] AS [recipient_name], 
+    [Extent1].[shipping_fee] AS [shipping_fee], 
+    [Extent1].[total] AS [total], 
+    [Extent1].[original_price] AS [original_price], 
+    [Extent1].[caution] AS [caution], 
+    [Extent1].[shipper_phone] AS [shipper_phone], 
+    [Extent1].[status] AS [status], 
+    [Extent1].[city_id] AS [city_id], 
+    [Extent1].[has_invoiced] AS [has_invoiced], 
+    [Extent1].[invoice_title] AS [invoice_title], 
+    [Extent1].[taxpayer_id] AS [taxpayer_id], 
+    [Extent1].[ctime] AS [ctime], 
+    [Extent1].[utime] AS [utime], 
+    [Extent1].[delivery_time] AS [delivery_time], 
+    [Extent1].[is_third_shipping] AS [is_third_shipping], 
+    [Extent1].[pay_type] AS [pay_type], 
+    [Extent1].[pick_type] AS [pick_type], 
+    [Extent1].[latitude] AS [latitude], 
+    [Extent1].[longitude] AS [longitude], 
+    [Extent1].[day_seq] AS [day_seq], 
+    [Extent1].[is_favorites] AS [is_favorites], 
+    [Extent1].[is_poi_first_order] AS [is_poi_first_order], 
+    [Extent1].[dinners_number] AS [dinners_number], 
+    [Extent1].[logistics_code] AS [logistics_code], 
+    [Extent1].[avg_send_time] AS [avg_send_time], 
+    [Extent1].[channel] AS [channel], 
+    [Extent1].[invMakeType] AS [invMakeType], 
+    [Extent1].[is_saled] AS [is_saled], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Order] AS [Extent1]
+    WHERE ([Extent1].[user_no] = @p__linq__0) AND ([Extent1].[app_poi_code] = @p__linq__1)
+2020-06-03 11:48:19,833 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:48:19,833 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'SCDY0001' (Type = AnsiString, Size = 8000)
+
+2020-06-03 11:48:19,834 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__1: '0001' (Type = AnsiString, Size = 8000)
+
+2020-06-03 11:48:19,834 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 11:48:19 +08:00
+
+2020-06-03 11:48:19,884 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-03 11:48:19,884 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 11:48:19,891 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 11:48:19 +08:00
+
+2020-06-03 12:17:28,170 [8] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团订单OrderPayed:
+35748452399089990       田经乐(先生)
+2020-06-03 12:17:29,635 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 12:17:29 +08:00
+
+2020-06-03 12:17:29,636 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 12:17:29,636 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:29,637 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 12:17:29 +08:00
+
+2020-06-03 12:17:29,694 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 55 ms with result: 5
+
+2020-06-03 12:17:29,694 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:29,694 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 12:17:29 +08:00
+
+2020-06-03 12:17:29,817 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 12:17:29 +08:00
+
+2020-06-03 12:17:30,719 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 12:17:30,719 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:30,720 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 12:17:30,720 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 12:17:30 +08:00
+
+2020-06-03 12:17:30,771 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 51 ms with result: SqlDataReader
+
+2020-06-03 12:17:30,771 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:30,777 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 12:17:30 +08:00
+
+2020-06-03 12:17:30,787 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 12:17:30 +08:00
+
+2020-06-03 12:17:30,846 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 12:17:30,846 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:30,846 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 12:17:30,846 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 12:17:30 +08:00
+
+2020-06-03 12:17:30,898 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 51 ms with result: SqlDataReader
+
+2020-06-03 12:17:30,898 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:30,902 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 12:17:30 +08:00
+
+2020-06-03 12:17:31,063 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 12:17:31 +08:00
+
+2020-06-03 12:17:31,117 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Started transaction at 2020-06-03 12:17:31 +08:00
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_Order]([user_no], [order_id], [wm_order_id_view], [app_poi_code], [wm_poi_name], [wm_poi_address], [wm_poi_phone], [recipient_address], [recipient_phone], [backup_recipient_phone], [recipient_name], [shipping_fee], [total], [original_price], [caution], [shipper_phone], [status], [city_id], [has_invoiced], [invoice_title], [taxpayer_id], [ctime], [utime], [delivery_time], [is_third_shipping], [pay_type], [pick_type], [latitude], [longitude], [day_seq], [is_favorites], [is_poi_first_order], [dinners_number], [logistics_code], [avg_send_time], [channel], [invMakeType], [is_saled], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, NULL, @15, @16, @17, NULL, NULL, @18, @19, @20, @21, @22, @23, @24, @25, @26, @27, @28, @29, @30, @31, NULL, @32, @33, @34)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_Order] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: 'SCDY0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '35748452399089990' (Type = Int64)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '35748452399089990' (Type = Int64)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '0001' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '爱达乐（奥克斯广场店）' (Type = AnsiString, Size = 100)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '成都市高新区锦城大道666号附55号' (Type = AnsiString, Size = 200)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '02885865183' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '为保护用户隐私，相关信息不予展示' (Type = AnsiString, Size = 200)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '17882955252_6499' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '["13086624857_7652"]' (Type = AnsiString, Size = 100)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '田经乐(先生)' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '3' (Type = Single)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: '0.02' (Type = Double)
+
+2020-06-03 12:17:31,257 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '3.02' (Type = Double)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @14: '收餐人隐私号 17882955252_6499，手机号 186****6705 ' (Type = AnsiString, Size = 500)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @15: '2' (Type = Int32)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @16: '510100' (Type = Int64)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @17: '0' (Type = Int32)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @18: '1591148708' (Type = Int64)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @19: '1591148708' (Type = Int64)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @20: '1591490400' (Type = Int64)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @21: '0' (Type = Int32)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @22: '2' (Type = Int32)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @23: '0' (Type = Int32)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @24: '30.576403' (Type = Double)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @25: '104.062131' (Type = Double)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @26: '1' (Type = Int32)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @27: 'False' (Type = Boolean)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @28: 'True' (Type = Boolean)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @29: '0' (Type = Int32)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @30: '3001' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @31: '0' (Type = Int32)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @32: '0' (Type = Int32)
+
+2020-06-03 12:17:31,258 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @33: '0' (Type = Int32)
+
+2020-06-03 12:17:31,259 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @34: '2020-06-03 12:17:24' (Type = DateTime2)
+
+2020-06-03 12:17:31,259 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 12:17:31 +08:00
+
+2020-06-03 12:17:31,315 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 56 ms with result: SqlDataReader
+
+2020-06-03 12:17:31,315 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101002' (Type = AnsiString, Size = 10)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '（测试）' (Type = AnsiString, Size = 100)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101002' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '120克' (Type = AnsiString, Size = 10)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '真空包装' (Type = AnsiString, Size = 50)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: 'fb8fd423-51a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 12:17:28' (Type = DateTime2)
+
+2020-06-03 12:17:31,318 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 12:17:31 +08:00
+
+2020-06-03 12:17:31,372 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 53 ms with result: SqlDataReader
+
+2020-06-03 12:17:31,372 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:DECLARE @generated_keys table([Id] uniqueidentifier)
+INSERT [dbo].[Mt_OrderDtl]([app_food_code], [food_name], [sku_id], [quantity], [price], [box_num], [box_price], [unit], [food_discount], [food_property], [spec], [cart_id], [orderId], [CreateDateTime])
+OUTPUT inserted.[Id] INTO @generated_keys
+VALUES (@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13)
+SELECT t.[Id]
+FROM @generated_keys AS g JOIN [dbo].[Mt_OrderDtl] AS t ON g.[Id] = t.[Id]
+WHERE @@ROWCOUNT > 0
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @0: '0101001' (Type = AnsiString, Size = 10)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @1: '测试' (Type = AnsiString, Size = 100)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @2: '0101001' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @3: '1' (Type = Single)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @4: '0.01' (Type = Single)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @5: '1' (Type = Single)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @6: '0' (Type = Single)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @7: '1克' (Type = AnsiString, Size = 10)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @8: '1' (Type = Single)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @9: '' (Type = AnsiString, Size = 50)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @10: '' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @11: '0' (Type = AnsiString, Size = 20)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @12: 'fb8fd423-51a5-ea11-ac53-fba1ab636f99' (Type = Guid)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- @13: '2020-06-03 12:17:28' (Type = DateTime2)
+
+2020-06-03 12:17:31,373 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 12:17:31 +08:00
+
+2020-06-03 12:17:31,424 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 50 ms with result: SqlDataReader
+
+2020-06-03 12:17:31,424 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 12:17:31,496 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Committed transaction at 2020-06-03 12:17:31 +08:00
+
+2020-06-03 12:17:31,496 [8] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 12:17:31 +08:00
+
+2020-06-03 13:41:34,807 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:41:34 +08:00
+
+2020-06-03 13:41:34,821 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 13:41:34,821 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:34,822 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:41:34 +08:00
+
+2020-06-03 13:41:34,881 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 57 ms with result: 5
+
+2020-06-03 13:41:34,881 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:34,881 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:41:34 +08:00
+
+2020-06-03 13:41:35,005 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:41:35 +08:00
+
+2020-06-03 13:41:35,766 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 13:41:35,766 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:35,767 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 13:41:35,767 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:41:35 +08:00
+
+2020-06-03 13:41:35,819 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 13:41:35,820 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:35,825 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:41:35 +08:00
+
+2020-06-03 13:41:35,834 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:41:35 +08:00
+
+2020-06-03 13:41:35,890 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 13:41:35,890 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:35,890 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 13:41:35,890 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:41:35 +08:00
+
+2020-06-03 13:41:35,944 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 13:41:35,944 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:35,948 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:41:35 +08:00
+
+2020-06-03 13:41:35,988 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:41:35 +08:00
+
+2020-06-03 13:41:36,088 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[user_no] AS [user_no], 
+    [Extent1].[order_id] AS [order_id], 
+    [Extent1].[wm_order_id_view] AS [wm_order_id_view], 
+    [Extent1].[app_poi_code] AS [app_poi_code], 
+    [Extent1].[wm_poi_name] AS [wm_poi_name], 
+    [Extent1].[wm_poi_address] AS [wm_poi_address], 
+    [Extent1].[wm_poi_phone] AS [wm_poi_phone], 
+    [Extent1].[recipient_address] AS [recipient_address], 
+    [Extent1].[recipient_phone] AS [recipient_phone], 
+    [Extent1].[backup_recipient_phone] AS [backup_recipient_phone], 
+    [Extent1].[recipient_name] AS [recipient_name], 
+    [Extent1].[shipping_fee] AS [shipping_fee], 
+    [Extent1].[total] AS [total], 
+    [Extent1].[original_price] AS [original_price], 
+    [Extent1].[caution] AS [caution], 
+    [Extent1].[shipper_phone] AS [shipper_phone], 
+    [Extent1].[status] AS [status], 
+    [Extent1].[city_id] AS [city_id], 
+    [Extent1].[has_invoiced] AS [has_invoiced], 
+    [Extent1].[invoice_title] AS [invoice_title], 
+    [Extent1].[taxpayer_id] AS [taxpayer_id], 
+    [Extent1].[ctime] AS [ctime], 
+    [Extent1].[utime] AS [utime], 
+    [Extent1].[delivery_time] AS [delivery_time], 
+    [Extent1].[is_third_shipping] AS [is_third_shipping], 
+    [Extent1].[pay_type] AS [pay_type], 
+    [Extent1].[pick_type] AS [pick_type], 
+    [Extent1].[latitude] AS [latitude], 
+    [Extent1].[longitude] AS [longitude], 
+    [Extent1].[day_seq] AS [day_seq], 
+    [Extent1].[is_favorites] AS [is_favorites], 
+    [Extent1].[is_poi_first_order] AS [is_poi_first_order], 
+    [Extent1].[dinners_number] AS [dinners_number], 
+    [Extent1].[logistics_code] AS [logistics_code], 
+    [Extent1].[avg_send_time] AS [avg_send_time], 
+    [Extent1].[channel] AS [channel], 
+    [Extent1].[invMakeType] AS [invMakeType], 
+    [Extent1].[is_saled] AS [is_saled], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Order] AS [Extent1]
+    WHERE [Extent1].[order_id] = @p__linq__0
+2020-06-03 13:41:36,088 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:36,088 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: '35748452399089990' (Type = Int64, IsNullable = false)
+
+2020-06-03 13:41:36,088 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:41:36 +08:00
+
+2020-06-03 13:41:36,145 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 56 ms with result: SqlDataReader
+
+2020-06-03 13:41:36,145 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:36,152 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:41:36 +08:00
+
+2020-06-03 13:41:36,193 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:41:36 +08:00
+
+2020-06-03 13:41:36,236 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[app_food_code] AS [app_food_code], 
+    [Extent1].[food_name] AS [food_name], 
+    [Extent1].[sku_id] AS [sku_id], 
+    [Extent1].[quantity] AS [quantity], 
+    [Extent1].[price] AS [price], 
+    [Extent1].[box_num] AS [box_num], 
+    [Extent1].[box_price] AS [box_price], 
+    [Extent1].[unit] AS [unit], 
+    [Extent1].[food_discount] AS [food_discount], 
+    [Extent1].[food_property] AS [food_property], 
+    [Extent1].[spec] AS [spec], 
+    [Extent1].[cart_id] AS [cart_id], 
+    [Extent1].[orderId] AS [orderId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_OrderDtl] AS [Extent1]
+    WHERE [Extent1].[orderId] = @EntityKeyValue1
+2020-06-03 13:41:36,236 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:36,236 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- EntityKeyValue1: 'fb8fd423-51a5-ea11-ac53-fba1ab636f99' (Type = Guid, IsNullable = false)
+
+2020-06-03 13:41:36,236 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:41:36 +08:00
+
+2020-06-03 13:41:36,292 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 56 ms with result: SqlDataReader
+
+2020-06-03 13:41:36,292 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:41:36,301 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:41:36 +08:00
+
+2020-06-03 13:42:44,001 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:42:44 +08:00
+
+2020-06-03 13:42:44,002 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[user_no] AS [user_no], 
+    [Extent1].[order_id] AS [order_id], 
+    [Extent1].[wm_order_id_view] AS [wm_order_id_view], 
+    [Extent1].[app_poi_code] AS [app_poi_code], 
+    [Extent1].[wm_poi_name] AS [wm_poi_name], 
+    [Extent1].[wm_poi_address] AS [wm_poi_address], 
+    [Extent1].[wm_poi_phone] AS [wm_poi_phone], 
+    [Extent1].[recipient_address] AS [recipient_address], 
+    [Extent1].[recipient_phone] AS [recipient_phone], 
+    [Extent1].[backup_recipient_phone] AS [backup_recipient_phone], 
+    [Extent1].[recipient_name] AS [recipient_name], 
+    [Extent1].[shipping_fee] AS [shipping_fee], 
+    [Extent1].[total] AS [total], 
+    [Extent1].[original_price] AS [original_price], 
+    [Extent1].[caution] AS [caution], 
+    [Extent1].[shipper_phone] AS [shipper_phone], 
+    [Extent1].[status] AS [status], 
+    [Extent1].[city_id] AS [city_id], 
+    [Extent1].[has_invoiced] AS [has_invoiced], 
+    [Extent1].[invoice_title] AS [invoice_title], 
+    [Extent1].[taxpayer_id] AS [taxpayer_id], 
+    [Extent1].[ctime] AS [ctime], 
+    [Extent1].[utime] AS [utime], 
+    [Extent1].[delivery_time] AS [delivery_time], 
+    [Extent1].[is_third_shipping] AS [is_third_shipping], 
+    [Extent1].[pay_type] AS [pay_type], 
+    [Extent1].[pick_type] AS [pick_type], 
+    [Extent1].[latitude] AS [latitude], 
+    [Extent1].[longitude] AS [longitude], 
+    [Extent1].[day_seq] AS [day_seq], 
+    [Extent1].[is_favorites] AS [is_favorites], 
+    [Extent1].[is_poi_first_order] AS [is_poi_first_order], 
+    [Extent1].[dinners_number] AS [dinners_number], 
+    [Extent1].[logistics_code] AS [logistics_code], 
+    [Extent1].[avg_send_time] AS [avg_send_time], 
+    [Extent1].[channel] AS [channel], 
+    [Extent1].[invMakeType] AS [invMakeType], 
+    [Extent1].[is_saled] AS [is_saled], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Order] AS [Extent1]
+    WHERE [Extent1].[order_id] = @p__linq__0
+2020-06-03 13:42:44,002 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:42:44,002 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: '35748452399089990' (Type = Int64, IsNullable = false)
+
+2020-06-03 13:42:44,002 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:42:44 +08:00
+
+2020-06-03 13:42:44,055 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 13:42:44,055 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:42:44,055 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:42:44 +08:00
+
+2020-06-03 13:42:44,055 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:42:44 +08:00
+
+2020-06-03 13:42:44,056 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[app_food_code] AS [app_food_code], 
+    [Extent1].[food_name] AS [food_name], 
+    [Extent1].[sku_id] AS [sku_id], 
+    [Extent1].[quantity] AS [quantity], 
+    [Extent1].[price] AS [price], 
+    [Extent1].[box_num] AS [box_num], 
+    [Extent1].[box_price] AS [box_price], 
+    [Extent1].[unit] AS [unit], 
+    [Extent1].[food_discount] AS [food_discount], 
+    [Extent1].[food_property] AS [food_property], 
+    [Extent1].[spec] AS [spec], 
+    [Extent1].[cart_id] AS [cart_id], 
+    [Extent1].[orderId] AS [orderId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_OrderDtl] AS [Extent1]
+    WHERE [Extent1].[orderId] = @EntityKeyValue1
+2020-06-03 13:42:44,056 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:42:44,056 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- EntityKeyValue1: 'fb8fd423-51a5-ea11-ac53-fba1ab636f99' (Type = Guid, IsNullable = false)
+
+2020-06-03 13:42:44,056 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:42:44 +08:00
+
+2020-06-03 13:42:44,106 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 49 ms with result: SqlDataReader
+
+2020-06-03 13:42:44,106 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:42:44,106 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:42:44 +08:00
+
+2020-06-03 13:47:16,873 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:47:16 +08:00
+
+2020-06-03 13:47:16,882 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 13:47:16,882 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:16,882 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:47:16 +08:00
+
+2020-06-03 13:47:16,939 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 55 ms with result: 5
+
+2020-06-03 13:47:16,939 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:16,939 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:47:16 +08:00
+
+2020-06-03 13:47:17,055 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:47:17 +08:00
+
+2020-06-03 13:47:17,832 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 13:47:17,832 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:17,833 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 13:47:17,833 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:47:17 +08:00
+
+2020-06-03 13:47:17,886 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 13:47:17,886 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:17,900 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:47:17 +08:00
+
+2020-06-03 13:47:17,920 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:47:17 +08:00
+
+2020-06-03 13:47:17,978 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 13:47:17,978 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:17,978 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 13:47:17,978 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:47:17 +08:00
+
+2020-06-03 13:47:18,030 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 51 ms with result: SqlDataReader
+
+2020-06-03 13:47:18,030 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:18,033 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:47:18 +08:00
+
+2020-06-03 13:47:18,060 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:47:18 +08:00
+
+2020-06-03 13:47:18,176 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[user_no] AS [user_no], 
+    [Extent1].[order_id] AS [order_id], 
+    [Extent1].[wm_order_id_view] AS [wm_order_id_view], 
+    [Extent1].[app_poi_code] AS [app_poi_code], 
+    [Extent1].[wm_poi_name] AS [wm_poi_name], 
+    [Extent1].[wm_poi_address] AS [wm_poi_address], 
+    [Extent1].[wm_poi_phone] AS [wm_poi_phone], 
+    [Extent1].[recipient_address] AS [recipient_address], 
+    [Extent1].[recipient_phone] AS [recipient_phone], 
+    [Extent1].[backup_recipient_phone] AS [backup_recipient_phone], 
+    [Extent1].[recipient_name] AS [recipient_name], 
+    [Extent1].[shipping_fee] AS [shipping_fee], 
+    [Extent1].[total] AS [total], 
+    [Extent1].[original_price] AS [original_price], 
+    [Extent1].[caution] AS [caution], 
+    [Extent1].[shipper_phone] AS [shipper_phone], 
+    [Extent1].[status] AS [status], 
+    [Extent1].[city_id] AS [city_id], 
+    [Extent1].[has_invoiced] AS [has_invoiced], 
+    [Extent1].[invoice_title] AS [invoice_title], 
+    [Extent1].[taxpayer_id] AS [taxpayer_id], 
+    [Extent1].[ctime] AS [ctime], 
+    [Extent1].[utime] AS [utime], 
+    [Extent1].[delivery_time] AS [delivery_time], 
+    [Extent1].[is_third_shipping] AS [is_third_shipping], 
+    [Extent1].[pay_type] AS [pay_type], 
+    [Extent1].[pick_type] AS [pick_type], 
+    [Extent1].[latitude] AS [latitude], 
+    [Extent1].[longitude] AS [longitude], 
+    [Extent1].[day_seq] AS [day_seq], 
+    [Extent1].[is_favorites] AS [is_favorites], 
+    [Extent1].[is_poi_first_order] AS [is_poi_first_order], 
+    [Extent1].[dinners_number] AS [dinners_number], 
+    [Extent1].[logistics_code] AS [logistics_code], 
+    [Extent1].[avg_send_time] AS [avg_send_time], 
+    [Extent1].[channel] AS [channel], 
+    [Extent1].[invMakeType] AS [invMakeType], 
+    [Extent1].[is_saled] AS [is_saled], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Order] AS [Extent1]
+    WHERE [Extent1].[order_id] = @p__linq__0
+2020-06-03 13:47:18,176 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:18,176 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: '35748452399089990' (Type = Int64, IsNullable = false)
+
+2020-06-03 13:47:18,176 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:47:18 +08:00
+
+2020-06-03 13:47:18,228 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 51 ms with result: SqlDataReader
+
+2020-06-03 13:47:18,228 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:18,233 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:47:18 +08:00
+
+2020-06-03 13:47:18,263 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:47:18 +08:00
+
+2020-06-03 13:47:18,303 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[app_food_code] AS [app_food_code], 
+    [Extent1].[food_name] AS [food_name], 
+    [Extent1].[sku_id] AS [sku_id], 
+    [Extent1].[quantity] AS [quantity], 
+    [Extent1].[price] AS [price], 
+    [Extent1].[box_num] AS [box_num], 
+    [Extent1].[box_price] AS [box_price], 
+    [Extent1].[unit] AS [unit], 
+    [Extent1].[food_discount] AS [food_discount], 
+    [Extent1].[food_property] AS [food_property], 
+    [Extent1].[spec] AS [spec], 
+    [Extent1].[cart_id] AS [cart_id], 
+    [Extent1].[orderId] AS [orderId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_OrderDtl] AS [Extent1]
+    WHERE [Extent1].[orderId] = @EntityKeyValue1
+2020-06-03 13:47:18,303 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:18,303 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- EntityKeyValue1: 'fb8fd423-51a5-ea11-ac53-fba1ab636f99' (Type = Guid, IsNullable = false)
+
+2020-06-03 13:47:18,303 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:47:18 +08:00
+
+2020-06-03 13:47:18,355 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 52 ms with result: SqlDataReader
+
+2020-06-03 13:47:18,356 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:47:18,359 [6] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:47:18 +08:00
+
+2020-06-03 13:52:14,639 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:52:14 +08:00
+
+2020-06-03 13:52:14,649 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Mt_Account','dbo.Mt_Shop','dbo.Mt_User','dbo.Mt_Order','dbo.Mt_OrderDtl')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2020-06-03 13:52:14,649 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:14,650 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:52:14 +08:00
+
+2020-06-03 13:52:14,710 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 59 ms with result: 5
+
+2020-06-03 13:52:14,710 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:14,710 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:52:14 +08:00
+
+2020-06-03 13:52:14,825 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:52:14 +08:00
+
+2020-06-03 13:52:15,602 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2020-06-03 13:52:15,602 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:15,603 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 13:52:15,603 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:52:15 +08:00
+
+2020-06-03 13:52:15,663 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 59 ms with result: SqlDataReader
+
+2020-06-03 13:52:15,663 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:15,674 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:52:15 +08:00
+
+2020-06-03 13:52:15,692 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:52:15 +08:00
+
+2020-06-03 13:52:15,762 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2020-06-03 13:52:15,762 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:15,762 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: 'O2O.Service.Migrations.Configuration' (Type = String, Size = 4000)
+
+2020-06-03 13:52:15,762 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:52:15 +08:00
+
+2020-06-03 13:52:15,824 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 61 ms with result: SqlDataReader
+
+2020-06-03 13:52:15,824 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:15,828 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:52:15 +08:00
+
+2020-06-03 13:52:15,854 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:52:15 +08:00
+
+2020-06-03 13:52:15,964 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[user_no] AS [user_no], 
+    [Extent1].[order_id] AS [order_id], 
+    [Extent1].[wm_order_id_view] AS [wm_order_id_view], 
+    [Extent1].[app_poi_code] AS [app_poi_code], 
+    [Extent1].[wm_poi_name] AS [wm_poi_name], 
+    [Extent1].[wm_poi_address] AS [wm_poi_address], 
+    [Extent1].[wm_poi_phone] AS [wm_poi_phone], 
+    [Extent1].[recipient_address] AS [recipient_address], 
+    [Extent1].[recipient_phone] AS [recipient_phone], 
+    [Extent1].[backup_recipient_phone] AS [backup_recipient_phone], 
+    [Extent1].[recipient_name] AS [recipient_name], 
+    [Extent1].[shipping_fee] AS [shipping_fee], 
+    [Extent1].[total] AS [total], 
+    [Extent1].[original_price] AS [original_price], 
+    [Extent1].[caution] AS [caution], 
+    [Extent1].[shipper_phone] AS [shipper_phone], 
+    [Extent1].[status] AS [status], 
+    [Extent1].[city_id] AS [city_id], 
+    [Extent1].[has_invoiced] AS [has_invoiced], 
+    [Extent1].[invoice_title] AS [invoice_title], 
+    [Extent1].[taxpayer_id] AS [taxpayer_id], 
+    [Extent1].[ctime] AS [ctime], 
+    [Extent1].[utime] AS [utime], 
+    [Extent1].[delivery_time] AS [delivery_time], 
+    [Extent1].[is_third_shipping] AS [is_third_shipping], 
+    [Extent1].[pay_type] AS [pay_type], 
+    [Extent1].[pick_type] AS [pick_type], 
+    [Extent1].[latitude] AS [latitude], 
+    [Extent1].[longitude] AS [longitude], 
+    [Extent1].[day_seq] AS [day_seq], 
+    [Extent1].[is_favorites] AS [is_favorites], 
+    [Extent1].[is_poi_first_order] AS [is_poi_first_order], 
+    [Extent1].[dinners_number] AS [dinners_number], 
+    [Extent1].[logistics_code] AS [logistics_code], 
+    [Extent1].[avg_send_time] AS [avg_send_time], 
+    [Extent1].[channel] AS [channel], 
+    [Extent1].[invMakeType] AS [invMakeType], 
+    [Extent1].[is_saled] AS [is_saled], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_Order] AS [Extent1]
+    WHERE [Extent1].[order_id] = @p__linq__0
+2020-06-03 13:52:15,965 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:15,965 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- p__linq__0: '35748452399089990' (Type = Int64, IsNullable = false)
+
+2020-06-03 13:52:15,965 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:52:15 +08:00
+
+2020-06-03 13:52:16,031 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 66 ms with result: SqlDataReader
+
+2020-06-03 13:52:16,031 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:16,036 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:52:16 +08:00
+
+2020-06-03 13:52:16,066 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Opened connection at 2020-06-03 13:52:16 +08:00
+
+2020-06-03 13:52:16,104 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[app_food_code] AS [app_food_code], 
+    [Extent1].[food_name] AS [food_name], 
+    [Extent1].[sku_id] AS [sku_id], 
+    [Extent1].[quantity] AS [quantity], 
+    [Extent1].[price] AS [price], 
+    [Extent1].[box_num] AS [box_num], 
+    [Extent1].[box_price] AS [box_price], 
+    [Extent1].[unit] AS [unit], 
+    [Extent1].[food_discount] AS [food_discount], 
+    [Extent1].[food_property] AS [food_property], 
+    [Extent1].[spec] AS [spec], 
+    [Extent1].[cart_id] AS [cart_id], 
+    [Extent1].[orderId] AS [orderId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime]
+    FROM [dbo].[Mt_OrderDtl] AS [Extent1]
+    WHERE [Extent1].[orderId] = @EntityKeyValue1
+2020-06-03 13:52:16,104 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:16,104 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- EntityKeyValue1: 'fb8fd423-51a5-ea11-ac53-fba1ab636f99' (Type = Guid, IsNullable = false)
+
+2020-06-03 13:52:16,104 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Executing at 2020-06-03 13:52:16 +08:00
+
+2020-06-03 13:52:16,165 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:-- Completed in 61 ms with result: SqlDataReader
+
+2020-06-03 13:52:16,166 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:
+
+2020-06-03 13:52:16,169 [7] DEBUG O2O.Service.O2OContext - EF执行SQL:Closed connection at 2020-06-03 13:52:16 +08:00
+
+2020-06-03 14:42:56,259 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - <log4net.Error>Exception during StringFormat: 索引(从零开始)必须大于或等于零，且小于参数列表的大小。 <format>美团OrderCanceled:{0}
+{1}</format><args>{1;1;的}</args></log4net.Error>
+2020-06-03 15:42:35,679 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - OrderCanceled:
+2020-06-03 16:47:32,609 [7] DEBUG O2O.Api.Controllers.Meituan.CallBackController - Jsonnull
+2020-06-03 16:47:40,911 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团OrderPayed:SCDY0001
+System.Web.Http.Results.JsonResult`1[O2O.Service.OrderEntity]
+2020-06-03 16:51:33,728 [7] DEBUG O2O.Api.Controllers.Meituan.CallBackController - Jsonnull
+2020-06-03 16:51:33,743 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 美团OrderPayed:SCDY0001
+System.Web.Http.Results.JsonResult`1[O2O.Service.OrderEntity]
+2020-06-03 18:23:47,969 [5] DEBUG O2O.Api.Controllers.Meituan.CallBackController - OrderPayeddelivery_time=1591490400&total=0.02&wm_poi_name=%E7%88%B1%E8%BE%BE%E4%B9%90%EF%BC%88%E5%A5%A5%E5%85%8B%E6%96%AF%E5%B9%BF%E5%9C%BA%E5%BA%97%EF%BC%89&utime=1591148708&detail=%5B%7B%22app_food_code%22%3A%220101002%22%2C%22box_num%22%3A1.0%2C%22box_price%22%3A0.0%2C%22cart_id%22%3A0%2C%22food_discount%22%3A1.0%2C%22food_name%22%3A%22%EF%BC%88%E6%B5%8B%E8%AF%95%EF%BC%89%22%2C%22food_property%22%3A%22%E7%9C%9F%E7%A9%BA%E5%8C%85%E8%A3%85%22%2C%22price%22%3A0.01%2C%22quantity%22%3A1%2C%22sku_id%22%3A%220101002%22%2C%22spec%22%3A%22%22%2C%22unit%22%3A%22120%E5%85%8B%22%2C%22weight%22%3A120%7D%2C%7B%22app_food_code%22%3A%220101001%22%2C%22box_num%22%3A1.0%2C%22box_price%22%3A0.0%2C%22cart_id%22%3A0%2C%22food_discount%22%3A1.0%2C%22food_name%22%3A%22%E6%B5%8B%E8%AF%95%22%2C%22food_property%22%3A%22%22%2C%22price%22%3A0.01%2C%22quantity%22%3A1%2C%22sku_id%22%3A%220101001%22%2C%22spec%22%3A%22%22%2C%22unit%22%3A%221%E5%85%8B%22%2C%22weight%22%3A1%7D%5D&total_weight=0&original_price=3.02&recipient_name=%E7%94%B0%E7%BB%8F%E4%B9%90%28%E5%85%88%E7%94%9F%29&is_poi_first_order=true&wm_poi_phone=02885865183&dinners_number=0&pay_type=2&backup_recipient_phone=%5B%2213086624857_7652%22%5D&wm_poi_id=3574845&longitude=104.062131&avg_send_time=341692.0&logistics_code=3001&day_seq=1&status=2&app_poi_code=0001&shipper_phone=&is_third_shipping=0&ctime=1591148708&shipping_fee=3.0&has_invoiced=0&extras=%5B%7B%22act_detail_id%22%3A172499071%2C%22mt_charge%22%3A1.0%2C%22poi_charge%22%3A2.0%2C%22reduce_fee%22%3A3.0%2C%22remark%22%3A%22%E5%87%8F%E9%85%8D%E9%80%81%E8%B4%B93.0%E5%85%83%22%2C%22type%22%3A25%7D%2C%7B%7D%5D&openUid=-1&recipient_phone=17882955252_6499&wm_poi_address=%E6%88%90%E9%83%BD%E5%B8%82%E9%AB%98%E6%96%B0%E5%8C%BA%E9%94%A6%E5%9F%8E%E5%A4%A7%E9%81%93666%E5%8F%B7%E9%99%8455%E5%8F%B7&wm_order_id_view=35748452399089990&app_id=824&incmp_code=0&latitude=30.576403&recipient_address=为保护用户隐私，相关信息不予展示&taxpayer_id=&poi_receive_detail=%7B%22actOrderChargeByMt%22%3A%5B%7B%22comment%22%3A%22%E6%B4%BB%E5%8A%A8%E6%AC%BE%22%2C%22feeTypeDesc%22%3A%22%E6%B4%BB%E5%8A%A8%E6%AC%BE%22%2C%22feeTypeId%22%3A10019%2C%22moneyCent%22%3A100%7D%5D%2C%22actOrderChargeByPoi%22%3A%5B%7B%22comment%22%3A%22%E5%87%8F%E9%85%8D%E9%80%81%E8%B4%B93.0%E5%85%83%22%2C%22feeTypeDesc%22%3A%22%E6%B4%BB%E5%8A%A8%E6%AC%BE%22%2C%22feeTypeId%22%3A10019%2C%22moneyCent%22%3A200%7D%5D%2C%22foodShareFeeChargeByPoi%22%3A500%2C%22logisticsFee%22%3A300%2C%22onlinePayment%22%3A2%2C%22reconciliationExtras%22%3A%22%7B%5C%22performanceServiceFee%5C%22%3A0.0%7D%22%2C%22wmPoiReceiveCent%22%3A-698%7D&caution=%E6%94%B6%E9%A4%90%E4%BA%BA%E9%9A%90%E7%A7%81%E5%8F%B7+17882955252_6499%EF%BC%8C%E6%89%8B%E6%9C%BA%E5%8F%B7+186****6705+&order_id=35748452399089990&timestamp=1591148712&city_id=510100&invMakeType=0&estimate_arrival_time=1591490400&poi_receive_detail_yuan=%7B%22actOrderChargeByMt%22%3A%5B%7B%22comment%22%3A%22%E6%B4%BB%E5%8A%A8%E6%AC%BE%22%2C%22feeTypeDesc%22%3A%22%E6%B4%BB%E5%8A%A8%E6%AC%BE%22%2C%22feeTypeId%22%3A10019%2C%22money%22%3A%221.00%22%7D%5D%2C%22actOrderChargeByPoi%22%3A%5B%7B%22comment%22%3A%22%E5%87%8F%E9%85%8D%E9%80%81%E8%B4%B93.0%E5%85%83%22%2C%22feeTypeDesc%22%3A%22%E6%B4%BB%E5%8A%A8%E6%AC%BE%22%2C%22feeTypeId%22%3A10019%2C%22money%22%3A%222.00%22%7D%5D%2C%22foodShareFeeChargeByPoi%22%3A%225.00%22%2C%22logisticsFee%22%3A%223.00%22%2C%22onlinePayment%22%3A%220.02%22%2C%22poiReceive%22%3A%22-6.98%22%2C%22reconciliationExtras%22%3A%22%7B%5C%22performanceServiceFee%5C%22%3A%5C%220.00%5C%22%7D%22%7D&invoice_title=&is_favorites=false&package_bag_money=0&package_bag_money_yuan=0.00&incmp_modules=&channel=&pick_type=0&sig=e3fa5b2d72986c2cb4423d0136c12e58}
+2020-06-03 18:35:26,456 [7] DEBUG O2O.Api.Controllers.Meituan.CallBackController - OrderPayed
+2020-06-03 18:35:33,546 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - OrderPayed
+2020-06-03 18:36:20,965 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - OrderPayed
+2020-06-03 19:33:22,957 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - OrderPayeddelivery_time=1591490400&total=0.01&wm_poi_name=爱达乐（奥克斯广场店）&utime=1591180327&detail=[{"app_food_code":"0101001","box_num":1.0,"box_price":0.0,"cart_id":0,"food_discount":1.0,"food_name":"测试","food_property":"","price":0.01,"quantity":1,"sku_id":"0101001","spec":"","unit":"1克","weight":1}]&total_weight=0&original_price=3.01&recipient_name=田经乐(先生)&is_poi_first_order=true&wm_poi_phone=02885865183&dinners_number=0&pay_type=2&backup_recipient_phone=["18582487374_7408"]&wm_poi_id=3574845&longitude=104.062131&avg_send_time=310073&logistics_code=3001&day_seq=13&status=2&app_poi_code=0001&shipper_phone=&is_third_shipping=0&ctime=1591180327&shipping_fee=3.0&has_invoiced=0&extras=[{"act_detail_id":172499071,"mt_charge":1.0,"poi_charge":2.0,"reduce_fee":3.0,"remark":"减配送费3.0元","type":25},{}]&openUid=-1&recipient_phone=17882903076_6878&wm_poi_address=成都市高新区锦城大道666号附55号&wm_order_id_view=35748453808454955&app_id=824&incmp_code=0&latitude=30.576403&recipient_address=奥克斯广场 (一栋101)@#四川省成都市武侯区锦城大道锦城大道666-180号天虹百货(奥克斯广场)&taxpayer_id=&poi_receive_detail={"actOrderChargeByMt":[{"comment":"活动款","feeTypeDesc":"活动款","feeTypeId":10019,"moneyCent":100}],"actOrderChargeByPoi":[{"comment":"减配送费3.0元","feeTypeDesc":"活动款","feeTypeId":10019,"moneyCent":200}],"foodShareFeeChargeByPoi":500,"logisticsFee":300,"onlinePayment":1,"reconciliationExtras":"{\"performanceServiceFee\":0.0}","wmPoiReceiveCent":-699}&caution=收餐人隐私号 17882903076_6878，手机号 186****6705 &order_id=35748453808454955&timestamp=1591180331&city_id=510100&invMakeType=0&estimate_arrival_time=1591490400&poi_receive_detail_yuan={"actOrderChargeByMt":[{"comment":"活动款","feeTypeDesc":"活动款","feeTypeId":10019,"money":"1.00"}],"actOrderChargeByPoi":[{"comment":"减配送费3.0元","feeTypeDesc":"活动款","feeTypeId":10019,"money":"2.00"}],"foodShareFeeChargeByPoi":"5.00","logisticsFee":"3.00","onlinePayment":"0.01","poiReceive":"-6.99","reconciliationExtras":"{\"performanceServiceFee\":\"0.00\"}"}&invoice_title=&is_favorites=false&package_bag_money=0&package_bag_money_yuan=0.00&incmp_modules=&channel=&pick_type=0&sig=da350e74ce4890747611a0743caf6002
+2020-06-03 19:36:02,298 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - OrderPayeddelivery_time=1591490400&total=0.01&wm_poi_name=爱达乐（奥克斯广场店）&utime=1591180327&detail=[{"app_food_code":"0101001","box_num":1.0,"box_price":0.0,"cart_id":0,"food_discount":1.0,"food_name":"测试","food_property":"","price":0.01,"quantity":1,"sku_id":"0101001","spec":"","unit":"1克","weight":1}]&total_weight=0&original_price=3.01&recipient_name=田经乐(先生)&is_poi_first_order=true&wm_poi_phone=02885865183&dinners_number=0&pay_type=2&backup_recipient_phone=["18582487374_7408"]&wm_poi_id=3574845&longitude=104.062131&avg_send_time=310073&logistics_code=3001&day_seq=13&status=2&app_poi_code=0001&shipper_phone=&is_third_shipping=0&ctime=1591180327&shipping_fee=3.0&has_invoiced=0&extras=[{"act_detail_id":172499071,"mt_charge":1.0,"poi_charge":2.0,"reduce_fee":3.0,"remark":"减配送费3.0元","type":25},{}]&openUid=-1&recipient_phone=17882903076_6878&wm_poi_address=成都市高新区锦城大道666号附55号&wm_order_id_view=35748453808454955&app_id=824&incmp_code=0&latitude=30.576403&recipient_address=奥克斯广场 (一栋101)@#四川省成都市武侯区锦城大道锦城大道666-180号天虹百货(奥克斯广场)&taxpayer_id=&poi_receive_detail={"actOrderChargeByMt":[{"comment":"活动款","feeTypeDesc":"活动款","feeTypeId":10019,"moneyCent":100}],"actOrderChargeByPoi":[{"comment":"减配送费3.0元","feeTypeDesc":"活动款","feeTypeId":10019,"moneyCent":200}],"foodShareFeeChargeByPoi":500,"logisticsFee":300,"onlinePayment":1,"reconciliationExtras":"{\"performanceServiceFee\":0.0}","wmPoiReceiveCent":-699}&caution=收餐人隐私号 17882903076_6878，手机号 186****6705 &order_id=35748453808454955&timestamp=1591180331&city_id=510100&invMakeType=0&estimate_arrival_time=1591490400&poi_receive_detail_yuan={"actOrderChargeByMt":[{"comment":"活动款","feeTypeDesc":"活动款","feeTypeId":10019,"money":"1.00"}],"actOrderChargeByPoi":[{"comment":"减配送费3.0元","feeTypeDesc":"活动款","feeTypeId":10019,"money":"2.00"}],"foodShareFeeChargeByPoi":"5.00","logisticsFee":"3.00","onlinePayment":"0.01","poiReceive":"-6.99","reconciliationExtras":"{\"performanceServiceFee\":\"0.00\"}"}&invoice_title=&is_favorites=false&package_bag_money=0&package_bag_money_yuan=0.00&incmp_modules=&channel=&pick_type=0&sig=da350e74ce4890747611a0743caf6002
+2020-06-03 19:54:48,047 [6] DEBUG O2O.Api.Controllers.Meituan.CallBackController - 错误OrderPayed索引超出了数组界限。

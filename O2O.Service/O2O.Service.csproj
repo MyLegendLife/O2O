@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F7821B7E-6FFF-428E-967C-1298B526E412}</ProjectGuid>
+    <ProjectGuid>{639063CC-DA1D-47D6-A3D6-BC07CE653B02}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>O2O.Service</RootNamespace>
@@ -40,8 +40,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -54,32 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Eleme\EleConfigEntity.cs" />
-    <Compile Include="Entities\Eleme\EleOrderEntity.cs" />
-    <Compile Include="Entities\Eleme\EleShopEntity.cs" />
-    <Compile Include="Entities\Meituan\MtOrderDtlEntity.cs" />
-    <Compile Include="Entities\Meituan\MtOrderEntity.cs" />
-    <Compile Include="Entities\Meituan\MtShopEntity.cs" />
-    <Compile Include="Maps\Eleme\EleOrderMap.cs" />
-    <Compile Include="Maps\Eleme\EleShopMap.cs" />
-    <Compile Include="Maps\Eleme\EleConfigMap.cs" />
-    <Compile Include="Maps\Meituan\MtOrderDtlMap.cs" />
-    <Compile Include="Maps\Meituan\MtOrderMap.cs" />
-    <Compile Include="Maps\Meituan\MtShopMap.cs" />
-    <Compile Include="Maps\Meituan\MtConfigMap.cs" />
-    <Compile Include="Maps\UserMap.cs" />
-    <Compile Include="Entities\BaseEntity.cs" />
-    <Compile Include="Entities\Meituan\MtConfigEntity.cs" />
-    <Compile Include="Entities\UserEntity.cs" />
-    <Compile Include="Migrations\202005210842479_init.cs" />
-    <Compile Include="Migrations\202005210842479_init.designer.cs">
-      <DependentUpon>202005210842479_init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="O2OContext.cs" />
+    <Compile Include="EleAccountService.cs" />
+    <Compile Include="MtAccountService.cs" />
+    <Compile Include="BaseService.cs" />
+    <Compile Include="Eleme\EleFoodApiService.cs" />
+    <Compile Include="Eleme\EleShopApiService.cs" />
+    <Compile Include="Eleme\EleOrderApiService.cs" />
+    <Compile Include="EleShopService.cs" />
+    <Compile Include="Bak365Service.cs" />
+    <Compile Include="Eleme\EleUserApiService.cs" />
+    <Compile Include="Eleme\EleBaseApiService.cs" />
+    <Compile Include="Meituan\MtBaseApiService.cs" />
+    <Compile Include="Meituan\MtFoodApiService.cs" />
+    <Compile Include="Meituan\MtOrderApiService.cs" />
+    <Compile Include="OrderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\BaseService.cs" />
-    <Compile Include="Service\UserService.cs" />
+    <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\O2O.Common\O2O.Common.csproj">
@@ -94,20 +84,16 @@
       <Project>{13cd7485-a21e-4fc6-90a9-a52d3d4d24aa}</Project>
       <Name>O2O.IService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\O2O.Model\O2O.Model.csproj">
+      <Project>{f7821b7e-6fff-428e-967c-1298b526e412}</Project>
+      <Name>O2O.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Service\Eleme\" />
-    <Folder Include="Service\Meituan\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202005210842479_init.resx">
-      <DependentUpon>202005210842479_init.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

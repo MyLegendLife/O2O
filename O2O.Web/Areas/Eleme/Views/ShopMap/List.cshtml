@@ -1,0 +1,191 @@
+﻿@model List<ShopMap>
+@{
+    ViewBag.Title = "门店管理";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="breadcrumb">
+    <i class="Hui-iconfont"></i>
+    首页
+    <span class="c-gray en">&gt;</span>
+    饿了么
+    <span class="c-gray en">&gt;</span>
+    门店管理
+</nav>
+    <div class="cl pd-5 bg-1 bk-gray">
+        <span class="l">
+            <a class="btn btn-success radius" onclick="match(this)" href="javascript:;">
+                <i class="Hui-iconfont">&#xe6bd;</i>
+                自动匹配
+            </a>
+            <a class="btn btn-primary radius" onclick="batch_map()" href="javascript:;">
+                <i class="Hui-iconfont">&#xe604;</i>
+                批量映射
+            </a>
+        </span>
+        <span class="r">共有数据：<strong id="listCount">@Model.Count</strong> 条</span>
+</div>
+<div class="page-container">
+    <table class="table table-border table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>账户编号</th>
+                <th>账户名称</th>
+                <th>门店编号</th>
+                <th>门店名称</th>
+                <th>编号</th>
+                <th>365门店编号</th>
+                <th>365门店名称</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="shopList">
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td style="display:none;" name="token">
+                    @item.AccessToken
+                </td>
+                <td style="display:none;" name="accountId">
+                    @item.AccountId
+                </td>
+                <td>
+                    @item.AccountNo
+                </td>
+                <td>
+                    @item.AccountName
+                </td>
+                <td name="ShopId">
+                    @item.ShopId
+                </td>
+                <td>
+                    @item.ShopNameEle
+                </td>
+                <td>
+                    <input class="" type="text" name="" data-row-id="@item.ShopId" onkeydown="get_shop(event)" />
+                </td>
+                <td name="no">
+                    @item.ShopNo
+                </td>
+                <td name="name">
+                    @item.ShopName
+                </td>
+                <td>
+                    <input class="btn radius btn-secondary-outline radius" type="button" value="映射" onclick="map('@item.AccessToken','@item.AccountId','@item.ShopId',this)">
+                    <input class="btn btn-danger-outline radius" type="button" value="撤销" onclick="cancel('@item.AccessToken','@item.ShopId',this)">
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+
+        function match(ele) {
+            $.ajax({
+                url: '@Url.Action("List", "../Eleme/ShopMap")',
+                data: {'type':'match'},
+                type: 'post',
+                dataType: 'html',
+                success: function (res) {
+                    //if (res.state == 'ok') {
+                        $(ele).parents('body').eq(0).html(res);
+                        layer.msg('匹配成功', { icon: 1, time: 1000 });
+                    //}
+                }
+            });
+        }
+
+        function batch_map() {
+            layer.load(0, { shade: [0.4, '#fff'] });
+
+            var data = [];
+            $('#shopList').find('tr').each(function () {
+                var token = $(this).find('td[name="token"]').html().trim();
+                var accountId = $(this).find('td[name="accountId"]').html().trim();
+                var shopId = $(this).find('td[name="shopId"]').html().trim();
+                var prodNo = $(this).find('td[name="no"]').html().trim();
+
+                if (no != '') {
+                    data.push({ 'AccessToken': token, 'AccountId': accountId, 'ShopId': shopId, 'ProdNo': prodNo });
+                }
+            });
+
+            $.post('../../Eleme/FoodMap/Map', JSON.stringify(data), function (res) {
+                layer.closeAll();
+                if (res.state == 'ok') {
+                    layer.msg('操作成功', { icon: 1, time: 1000 });
+                }
+                else if (res.state == 'no') {
+                    layer.msg(res.msg, {
+                        icon: 2,
+                        time: false,
+                        btn: ['关闭']
+                    });
+                }
+            });
+        }
+
+        function get_shop(e) {
+            var evt = window.event || e;
+            if (evt.keyCode == 13) {
+                var input = $(evt.target);
+
+                $.ajax({
+                    url: '../../Eleme/ShopMap/GetShop',
+                    type: 'post',
+                    data: { "shopNo": input.val()},
+                    dataType: 'json',
+                    success: function (res) {
+                        if (res.state == 'ok') {
+                            input.parents('tr').eq(0).find('td[name="no"]').html(res.data.ShopNo);
+                            input.parents('tr').eq(0).find('td[name="name"]').html(res.data.ShopName);
+                        }
+                        else if (res.state == 'no') {
+                            layer.msg(res.msg, { icon: 2, time: 1000 });
+                        }
+                    },
+                    error: function () {
+                        layer.msg('服务器异常', { icon: 2, time: 1000 });
+                    }
+                });
+            }
+        }
+
+        function map(token, accountId,shopId,ele) {
+            var data = [];
+            var shopNo = $(ele).parents('tr').eq(0).find('td[name="no"]').html().trim();
+            if (shopNo == '') {
+                layer.msg('门店不能为空', { icon: 2, time: 2000 });
+                return false;
+            }
+
+            data.push({ 'AccessToken': token ,'AccountId': accountId,'ShopId': shopId, 'ShopNo': shopNo });
+            $.post('../../Eleme/ShopMap/Map', JSON.stringify(data), function (res) {
+                if (res.state == 'ok') {
+                    layer.msg('映射成功', { icon: 1, time: 1000 });
+                }
+                else {
+                    layer.msg(res.msg, { icon: 2, time: 2000 });
+                }
+            });
+        }
+
+        function cancel(token, shopId,ele) {
+            $.post('../../Eleme/ShopMap/Cancel', { 'token': token, 'shopId': shopId }, function (res) {
+                if (res.state == 'ok') {
+                    layer.msg('撤销成功', { icon: 1, time: 1000 });
+                    $(ele).parents('tr').eq(0).find('td[name="no"]').html('')
+                    $(ele).parents('tr').eq(0).find('td[name="name"]').html('')
+                }
+                else {
+                    layer.msg(res.msg, { icon: 2, time: 2000 });
+                }
+            })
+        }
+
+    </script>
+}
