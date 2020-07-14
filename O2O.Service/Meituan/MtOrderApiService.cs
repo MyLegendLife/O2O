@@ -7,7 +7,7 @@ namespace O2O.Service.Meituan
     {
         
 
-        public MtOrderApiService(string userId, string shopNo) : base(userId, shopNo)
+        public MtOrderApiService(string userId, string shopNo = "") : base(userId, shopNo)
         {
 
         }
@@ -22,6 +22,26 @@ namespace O2O.Service.Meituan
             };
 
             string url = GetUrl("https://waimaiopen.meituan.com/api/v1/order/confirm", model);
+
+            return Tools.ResultMt(HttpCommon.Get(url));
+        }
+
+        /// <summary>
+        /// ªÒ»°≈‰ÀÕ∂©µ•◊¥Ã¨
+        /// </summary>
+        /// <param name="orderID"></param>
+        /// <returns></returns>
+        public Result GetLogisticsStatus(string orderID)
+        {
+            var model = new
+            {
+                timestamp = ToolsCommon.GetTimestamp(),
+                app_id = _waimaiAppId,
+                order_id = orderID,
+                is_mt_logistics = 1
+            };
+
+            string url = GetUrl("https://waimaiopen.meituan.com/api/v1/order/logistics/status", model);
 
             return Tools.ResultMt(HttpCommon.Get(url));
         }

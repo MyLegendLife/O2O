@@ -38,11 +38,10 @@ namespace O2O.Service.Eleme
         }
 
         /// <summary>
-        /// Token过期时，刷新获取新的Token
+        /// 刷新饿了么访问令牌
         /// </summary>
-        /// <param name="refreshCode"></param>
         /// <returns></returns>
-        public JObject RefreshToken(string refreshCode)
+        public string RefreshToken(string token)
         {
             //1.拼接key && Secret
             string merger = EleConfig.APP_KEY + ":" + EleConfig.APP_SECRET;
@@ -52,10 +51,10 @@ namespace O2O.Service.Eleme
             Dictionary<string, string> headers = new Dictionary<string, string>();
             headers.Add("Authorization", "Basic " + strBase64);
 
-            string content = "grant_type=refresh_token&refresh_token=" + refreshCode;
-            string ret = HttpCommon.Post(EleConfig.TOKEN_URL, "application/json;charset=utf-8", headers, content);
-            JObject json = JObject.Parse(ret);
-            return json;
+            string content = "grant_type=refresh_token&refresh_token=" + token;
+            string res = HttpCommon.Post(EleConfig.TOKEN_URL, "application/json;charset=utf-8", headers, content);
+
+            return res;
         }
 
         /// <summary>

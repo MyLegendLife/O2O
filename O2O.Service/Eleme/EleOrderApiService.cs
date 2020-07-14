@@ -56,6 +56,20 @@ namespace O2O.Service.Eleme
         }
 
         /// <summary>
+        /// 获取订单配状态
+        /// </summary>
+        /// <param name="_orderIds"></param>
+        /// <returns></returns>
+        public EleResult BatchGetDeliveryStates(string token, string[] orderIds)
+        {
+            var model = new { orderIds = orderIds };
+            SignParams sign = GetSign(token, model, "eleme.order.batchGetDeliveryStates");
+            string content = MakeNopEntity(sign, model);
+            string res = HttpCommon.Post(EleConfig.API_URL, "application/json;charset=utf-8", null, content);
+            return JsonConvert.DeserializeObject<EleResult>(res);
+        }
+
+        /// <summary>
         /// 取消订单
         /// </summary>
         /// <param name="_orderId"></param>

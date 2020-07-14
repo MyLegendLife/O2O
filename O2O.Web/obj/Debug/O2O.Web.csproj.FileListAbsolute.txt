@@ -83,11 +83,7 @@ D:\Projects\GitHubProjects\O2O\O2O.Web\bin\ModuBase.dll
 D:\Projects\GitHubProjects\O2O\O2O.Web\bin\O2O.Model.dll
 D:\Projects\GitHubProjects\O2O\O2O.Web\bin\ModuMiddle.dll
 D:\Projects\GitHubProjects\O2O\O2O.Web\bin\ModuBind.dll
-D:\Projects\GitHubProjects\O2O\O2O.Web\bin\ModuCache.dll
-D:\Projects\GitHubProjects\O2O\O2O.Web\bin\ModuSynch.dll
 D:\Projects\GitHubProjects\O2O\O2O.Web\bin\Ice.dll
-D:\Projects\GitHubProjects\O2O\O2O.Web\bin\ModuMQ.dll
-D:\Projects\GitHubProjects\O2O\O2O.Web\bin\ModuNotice.dll
 D:\Projects\GitHubProjects\O2O\O2O.Web\bin\O2O.Common.pdb
 D:\Projects\GitHubProjects\O2O\O2O.Web\bin\O2O.DTO.pdb
 D:\Projects\GitHubProjects\O2O\O2O.Web\bin\O2O.IService.pdb

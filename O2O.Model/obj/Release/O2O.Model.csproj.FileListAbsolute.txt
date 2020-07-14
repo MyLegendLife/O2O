@@ -51,3 +51,7 @@ D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\O2O.Common.dll.config
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\EPPlus.xml
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._07081045.resources
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._07081140.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._202007131551.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._202007141146.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._20207141403.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._2007141443.resources

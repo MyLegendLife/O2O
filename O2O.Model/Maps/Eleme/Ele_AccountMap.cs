@@ -17,7 +17,7 @@ namespace O2O.Model.Maps.Eleme
             Property(a => a.RefreshToken).HasMaxLength(40).IsRequired().IsUnicode(false);
             Property(a => a.Scope).HasMaxLength(10).IsUnicode(false);
 
-            HasRequired(a => a.User).WithMany(a => a.Ele_Accounts).HasForeignKey(a => a.UserId);
+            HasRequired(a => a.User).WithMany(a => a.Ele_Accounts).HasForeignKey(a => a.UserId).WillCascadeOnDelete(false);
         }
     }
 }

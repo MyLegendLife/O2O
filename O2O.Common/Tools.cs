@@ -22,6 +22,7 @@ namespace O2O.Common
             {
                 result.State = "OK";
                 result.Msg = "";
+                result.Data = json["data"];
             }
 
             return result;

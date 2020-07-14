@@ -20,7 +20,7 @@ namespace O2O.Model.Maps.Eleme
             Property(a => a.TuangouAppSecret).HasMaxLength(50).IsRequired().IsUnicode(false);
 
             //
-            HasRequired(a => a.User).WithMany(a => a.Mt_Accounts).HasForeignKey(a => a.UserId);
+            HasRequired(a => a.User).WithMany(a => a.Mt_Accounts).HasForeignKey(a => a.UserId).WillCascadeOnDelete(false);
         }
     }
 }

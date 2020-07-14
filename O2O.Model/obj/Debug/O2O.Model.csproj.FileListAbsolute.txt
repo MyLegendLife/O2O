@@ -25,12 +25,8 @@ D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\System.Web.Razor.dll
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\Microsoft.Web.Infrastructure.dll
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\ModuMiddle.dll
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\ModuBind.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\ModuCache.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\ModuSynch.dll
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\System.Web.WebPages.Deployment.dll
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\Ice.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\ModuMQ.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\ModuNotice.dll
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\O2O.Common.pdb
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\O2O.DTO.pdb
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\EntityFramework.xml
@@ -55,3 +51,7 @@ D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\O2O.Common.dll.config
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Debug\EPPlus.xml
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Debug\O2O.Model.Migrations._07081045.resources
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Debug\O2O.Model.Migrations._07081140.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Debug\O2O.Model.Migrations._202007131551.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Debug\O2O.Model.Migrations._202007141146.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Debug\O2O.Model.Migrations._20207141403.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Debug\O2O.Model.Migrations._2007141443.resources

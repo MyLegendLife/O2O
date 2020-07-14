@@ -16,6 +16,7 @@ namespace O2O.Model.Maps.Meituan
             Property(a => a.ConnString).HasMaxLength(500).IsRequired().IsUnicode(false);
             Property(a => a.Ket).HasMaxLength(20).IsRequired().IsUnicode(false);
             Property(a => a.Description).HasMaxLength(100).IsUnicode(false);
+            Property(a => a.SetBuyPara).HasMaxLength(100).IsUnicode(false);
         }
     }
 }

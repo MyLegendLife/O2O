@@ -136,7 +136,3 @@ D:\Projects\GitHubProjects\O2O\O2O.Api\bin\EPPlus.dll
 D:\Projects\GitHubProjects\O2O\O2O.Api\bin\O2O.Common.dll.config
 D:\Projects\GitHubProjects\O2O\O2O.Api\bin\O2O.IService.dll.config
 D:\Projects\GitHubProjects\O2O\O2O.Api\bin\EPPlus.xml
-D:\Projects\GitHubProjects\O2O\O2O.Api\bin\ModuCache.dll
-D:\Projects\GitHubProjects\O2O\O2O.Api\bin\ModuSynch.dll
-D:\Projects\GitHubProjects\O2O\O2O.Api\bin\ModuMQ.dll
-D:\Projects\GitHubProjects\O2O\O2O.Api\bin\ModuNotice.dll

@@ -97,6 +97,22 @@
     <Compile Include="Migrations\202007080341029_07081140.designer.cs">
       <DependentUpon>202007080341029_07081140.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007130751581_202007131551.cs" />
+    <Compile Include="Migrations\202007130751581_202007131551.designer.cs">
+      <DependentUpon>202007130751581_202007131551.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007140346460_202007141146.cs" />
+    <Compile Include="Migrations\202007140346460_202007141146.designer.cs">
+      <DependentUpon>202007140346460_202007141146.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007140632199_20207141403.cs" />
+    <Compile Include="Migrations\202007140632199_20207141403.designer.cs">
+      <DependentUpon>202007140632199_20207141403.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007140643376_2007141443.cs" />
+    <Compile Include="Migrations\202007140643376_2007141443.designer.cs">
+      <DependentUpon>202007140643376_2007141443.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="O2OContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,6 +149,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007080341029_07081140.resx">
       <DependentUpon>202007080341029_07081140.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007130751581_202007131551.resx">
+      <DependentUpon>202007130751581_202007131551.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007140346460_202007141146.resx">
+      <DependentUpon>202007140346460_202007141146.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007140632199_20207141403.resx">
+      <DependentUpon>202007140632199_20207141403.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007140643376_2007141443.resx">
+      <DependentUpon>202007140643376_2007141443.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

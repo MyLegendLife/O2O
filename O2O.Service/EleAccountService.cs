@@ -40,6 +40,30 @@ namespace O2O.Service.NewFolder1
             }
         }
 
+        public void Update(Ele_AccountDTO dto)
+        {
+            using (var context = new O2OContext())
+            {
+                var service = new BaseService<Ele_AccountEntity>(context);
+
+                var entity = ToolsCommon.EntityToEntity(dto, new Ele_AccountEntity()) as Ele_AccountEntity;
+
+                service.Update(entity);
+            }
+        }
+
+        public Ele_AccountDTO Get(Guid id)
+        {
+            using (var context = new O2OContext())
+            {
+                var service = new BaseService<Ele_AccountEntity>(context);
+
+                Ele_AccountEntity entity = service.GetById(id);
+
+                return ToolsCommon.EntityToEntity(entity,new Ele_AccountDTO()) as Ele_AccountDTO;
+            }
+        }
+
         public Ele_AccountDTO Get(string userNo)
         {
             throw new NotImplementedException();

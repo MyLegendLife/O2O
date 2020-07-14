@@ -10,10 +10,6 @@ D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.Razor.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.WebPages.Deployment.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.WebPages.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.WebPages.Razor.dll
-D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\ModuCache.dll
-D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\ModuSynch.dll
-D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\ModuMQ.dll
-D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\ModuNotice.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Net.Http.Formatting.xml
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.Helpers.xml
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.Mvc.xml

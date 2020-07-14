@@ -47,9 +47,7 @@
                         @item.ExpiresDate
                     </td>
                     <td>
-                        <a title="删除" href="javascript:;" onclick="del(this,'@item.Id')" class="ml-5" style="text-decoration:none">
-                            <i class="Hui-iconfont">&#xe6e2;</i>
-                        </a>
+                            <input class="btn btn-primary radius" type="button" value="更新" onclick="refresh('@item.Id')">
                     </td>
                 </tr>
             }
@@ -64,20 +62,19 @@
             layer_show(title, url, w, h);
         }
 
-        function del(obj, id) {
-            layer.confirm('确定删除吗？', function (index) {
+        function refresh(id) {
+            layer.confirm('确定更新吗？', function (index) {
                 $.ajax({
-                    url: '../../Eleme/Account/Delete',
+                    url: 'Refresh',
                     type: 'post',
                     data: { 'id': id },
                     dataType: 'json',
                     success: function (data) {
                         if (data.state == 'ok') {
-                            $(obj).parents("tr").remove();
-                            layer.msg('已删除!', { icon: 1, time: 1000 });
+                            layer.msg('已更新!', { icon: 1, time: 1000 });
                         }
                         else {
-                            layer.msg('删除失败!', { icon: 2, time: 1000 });
+                            layer.msg('更新失败!', { icon: 2, time: 1000 });
                         }
                     },
                     error: function () {

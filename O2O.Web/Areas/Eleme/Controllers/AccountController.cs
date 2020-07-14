@@ -1,8 +1,10 @@
-﻿using O2O.Common;
+﻿using Newtonsoft.Json.Linq;
+using O2O.Common;
 using O2O.Common.Eleme;
 using O2O.DTO.Eleme;
 using O2O.IService;
 using O2O.Service;
+using O2O.Service.Eleme;
 using O2O.Web.App_Start;
 using O2O.Web.Models;
 using System;
@@ -34,20 +36,37 @@ namespace O2O.Web.Areas.Eleme.Controllers
         }
 
         [HttpPost]
-        public ActionResult Delete(Guid id)
+        public ActionResult Refresh(Guid id)
         {
-            bool b = _service.Delete(id);
+            var dto = _service.Get(id);
 
-            return Json(new AjaxResult() { state = b ? "ok" : "no" });
+            EleUserApiService service = new EleUserApiService();
+
+            var res = service.RefreshToken(dto.RefreshToken);
+
+            if (res == "") return Json(Tools.ResultErr());
+
+            JObject jo = JObject.Parse(res);
+
+            if (jo["error"] != null) return Json(Tools.ResultErr(jo["error_description"].ToString()));
+
+            dto.AccessToken = jo["access_token"].ToString();
+            dto.RefreshToken = jo["refresh_token"].ToString();
+            dto.ExpiresDate = DateTime.Now.AddSeconds(double.Parse(jo["expires_in"].ToString()));
+
+            _service.Update(dto);
+
+            return Json(new AjaxResult() { state = "ok" });
         }
 
+        [HttpPost]
         public ActionResult Access(string accountNo, string accountName)
         {
             string url = GetAuthorizeUrl(accountNo, accountName);
 
-            System.Diagnostics.Process.Start(url);
+            //System.Diagnostics.Process.Start(url);
 
-            return Json("");
+            return Json(new AjaxResult() { state = "ok", msg=url});
         }
 
         public string GetAuthorizeUrl(string accountNo, string accountName)

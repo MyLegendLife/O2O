@@ -17,6 +17,8 @@ namespace O2O.Model
         public string Ket { get; set; }
         public string Description { get; set; }
         public DateTime CreateDate { get; set; }
+        //生成销售单的规则判断
+        public string SetBuyPara { get; set; }
 
         public virtual ICollection<Mt_AccountEntity> Mt_Accounts { get; set; } = new List<Mt_AccountEntity>();
         public virtual ICollection<Ele_AccountEntity> Ele_Accounts { get; set; } = new List<Ele_AccountEntity>();

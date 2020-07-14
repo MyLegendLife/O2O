@@ -23,5 +23,7 @@ namespace O2O.DTO
         public string Description { get; set; }
 
         public DateTime CreateDate { get; set; }
+
+        public string SetBuyPara { get; set; }
     }
 }

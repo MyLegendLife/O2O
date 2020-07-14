@@ -34,12 +34,14 @@
                     var accountNo = $('#AccountNo').val();
                     var accountName = $('#AccountName').val();
                     $.ajax({
-                        url: '../../Eleme/Account/Access',
+                        url: 'Access',
                         type: 'post',
                         data: { "accountNo": accountNo, "accountName": accountName },
                         dataType: 'json',
-                        success: function () {
-
+                        success: function (res) {
+                            if (res.state == 'ok') {
+                                window.open(res.msg);
+                            }
                         },
                         error: function () {
                             layer.msg('服务器异常', { icon: 2, time: 1000 });

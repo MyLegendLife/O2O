@@ -1,4 +1,5 @@
 using log4net;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using O2O.Api.Models.Eleme;
 using O2O.Api.Models.Meituan;
@@ -10,6 +11,7 @@ using O2O.Service.Meituan;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using System.Web.Helpers;
 using System.Web.Http;
 
 namespace O2O.Api.Controllers
@@ -20,6 +22,7 @@ namespace O2O.Api.Controllers
         private static ILog _log = LogManager.GetLogger("Order");
         public IEleShopService _shopEleService { get; set; }
         public IOrderService _orderService { get; set; }
+        public IUserService _userService { get; set; }
 
         [Route("GetOrder")]
         [HttpPost]
@@ -58,10 +61,39 @@ namespace O2O.Api.Controllers
 
         [Route("SetBuy")]
         [HttpPost]
-        public IHttpActionResult SetBuy(string orderId)
+        public IHttpActionResult SetBuy(string userId, string shopNo, int takeType, string orderId)
         {
             try
             {
+                var user = _userService.Get(userId);
+                if (!string.IsNullOrWhiteSpace(user.SetBuyPara))
+                {
+                    if (takeType == 0)
+                    {
+                        MtOrderApiService service = new MtOrderApiService(userId);
+                        var res = service.GetLogisticsStatus(orderId);
+                        JObject obj = res.Data as JObject;
+                        string logisticsStatus = obj["logistics_status"].ToString();
+                        if (!user.SetBuyPara.Split(';')[0].Contains(logisticsStatus))
+                        {
+                            return Json(Tools.ResultErr("此订单暂时无法生成销售单"));
+                        }
+                    }
+                    else if (takeType == 1)
+                    {
+                        EleOrderApiService service = new EleOrderApiService();
+                        var shop = _shopEleService.Get(userId, shopNo);
+                        string[] orderIds = { orderId };
+                        var res = service.BatchGetDeliveryStates(shop.AccessToken, orderIds);
+                        JObject obj = JObject.Parse(res.result.ToString());
+                        string logisticsStatus = obj[orderId]["state"].ToString();
+                        if (!user.SetBuyPara.Split(';')[1].Contains(logisticsStatus))
+                        {
+                            return Json(Tools.ResultErr("此订单暂时无法生成销售单"));
+                        }
+                    }
+                }
+
                 _orderService.SetBuy(orderId);
             }
             catch (Exception e)

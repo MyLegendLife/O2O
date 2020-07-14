@@ -55,7 +55,7 @@
                 <td>
                     @item.AccountName
                 </td>
-                <td name="ShopId">
+                <td name="shopId">
                     @item.ShopId
                 </td>
                 <td>
@@ -86,7 +86,7 @@
 
         function match(ele) {
             $.ajax({
-                url: '@Url.Action("List", "../Eleme/ShopMap")',
+                url: 'List',
                 data: {'type':'match'},
                 type: 'post',
                 dataType: 'html',
@@ -107,14 +107,14 @@
                 var token = $(this).find('td[name="token"]').html().trim();
                 var accountId = $(this).find('td[name="accountId"]').html().trim();
                 var shopId = $(this).find('td[name="shopId"]').html().trim();
-                var prodNo = $(this).find('td[name="no"]').html().trim();
+                var shopNo = $(this).find('td[name="no"]').html().trim();
 
-                if (no != '') {
-                    data.push({ 'AccessToken': token, 'AccountId': accountId, 'ShopId': shopId, 'ProdNo': prodNo });
+                if (shopNo != '') {
+                    data.push({ 'AccessToken': token, 'AccountId': accountId, 'ShopId': shopId, 'ShopNo': shopNo });
                 }
             });
 
-            $.post('../../Eleme/FoodMap/Map', JSON.stringify(data), function (res) {
+            $.post('Map', JSON.stringify(data), function (res) {
                 layer.closeAll();
                 if (res.state == 'ok') {
                     layer.msg('操作成功', { icon: 1, time: 1000 });
@@ -135,7 +135,7 @@
                 var input = $(evt.target);
 
                 $.ajax({
-                    url: '../../Eleme/ShopMap/GetShop',
+                    url: 'GetShop',
                     type: 'post',
                     data: { "shopNo": input.val()},
                     dataType: 'json',
@@ -164,7 +164,7 @@
             }
 
             data.push({ 'AccessToken': token ,'AccountId': accountId,'ShopId': shopId, 'ShopNo': shopNo });
-            $.post('../../Eleme/ShopMap/Map', JSON.stringify(data), function (res) {
+            $.post('Map', JSON.stringify(data), function (res) {
                 if (res.state == 'ok') {
                     layer.msg('映射成功', { icon: 1, time: 1000 });
                 }
@@ -175,7 +175,7 @@
         }
 
         function cancel(token, shopId,ele) {
-            $.post('../../Eleme/ShopMap/Cancel', { 'token': token, 'shopId': shopId }, function (res) {
+            $.post('Cancel', { 'token': token, 'shopId': shopId }, function (res) {
                 if (res.state == 'ok') {
                     layer.msg('撤销成功', { icon: 1, time: 1000 });
                     $(ele).parents('tr').eq(0).find('td[name="no"]').html('')

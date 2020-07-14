@@ -13,7 +13,7 @@ namespace O2O.Common.Eleme
         //public static long STORE_ID = 163095896;                                         //对应沙箱环境店铺ID 
         //public static string STORE_URL = "https://www.ele.me/shop/163095896";            //对应沙箱环境店铺URL
         //public static string STORE_PASS = "";                                            //对应沙箱环境店铺密码
-        //public static string REDIRECT_URL = "https://tuangou.bak365.net/New/api/CallBackEle/CallBack"; //对应沙箱环境回调地址URL
+        //public static string REDIRECT_URL = "https://tuangou.bak365.net/New/api/EleCallBack/Authorize"; //对应沙箱环境回调地址URL
         //public static string TOKEN_URL = "https://open-api-sandbox.shop.ele.me/token";
         //public static string API_URL = "https://open-api-sandbox.shop.ele.me/api/v1/";
         //public static string AUTHORIZE_URL = "https://open-api-sandbox.shop.ele.me/authorize";
@@ -24,7 +24,7 @@ namespace O2O.Common.Eleme
         public static long STORE_ID = -1;
         public static string STORE_URL = "";
         public static string STORE_PASS = "";
-        public static string REDIRECT_URL = "https://tuangou.bak365.net/New/api/CallBackEle/CallBack";
+        public static string REDIRECT_URL = "https://tuangou.bak365.net/New/api/EleCallBack/Authorize";
         public static string TOKEN_URL = "https://open-api.shop.ele.me/token";
         public static string API_URL = "https://open-api.shop.ele.me/api/v1/";
         public static string AUTHORIZE_URL = "https://open-api.shop.ele.me/authorize";

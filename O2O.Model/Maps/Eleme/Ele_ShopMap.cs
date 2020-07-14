@@ -12,7 +12,7 @@ namespace O2O.Model.Maps.Eleme
 
             Property(a => a.ShopNo).HasMaxLength(10).IsRequired().IsUnicode(false);
 
-            HasRequired(a => a.Account).WithMany(a => a.Shops).HasForeignKey(a => a.AccountId);
+            HasRequired(a => a.Account).WithMany(a => a.Shops).HasForeignKey(a => a.AccountId).WillCascadeOnDelete(false);
         }
     }
 }
