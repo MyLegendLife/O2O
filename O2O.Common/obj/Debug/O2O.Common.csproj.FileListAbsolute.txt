@@ -1,6 +1,7 @@
-D:\Projects\GitHubProjects\O2O\O2O.Common\obj\Debug\O2O.Common.csproj.CoreCompileInputs.cache
+D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\O2O.Common.dll.config
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\O2O.Common.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\O2O.Common.pdb
+D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\EPPlus.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\Microsoft.Web.Infrastructure.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\Newtonsoft.Json.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Net.Http.Formatting.dll
@@ -10,6 +11,7 @@ D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.Razor.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.WebPages.Deployment.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.WebPages.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\EPPlus.xml
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Net.Http.Formatting.xml
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.Helpers.xml
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\System.Web.Mvc.xml
@@ -24,11 +26,8 @@ D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\zh-Hans\System.Web.Razor.res
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Projects\GitHubProjects\O2O\O2O.Common\obj\Debug\O2O.Common.csproj.CoreCompileInputs.cache
 D:\Projects\GitHubProjects\O2O\O2O.Common\obj\Debug\O2O.Common.csproj.CopyComplete
 D:\Projects\GitHubProjects\O2O\O2O.Common\obj\Debug\O2O.Common.dll
 D:\Projects\GitHubProjects\O2O\O2O.Common\obj\Debug\O2O.Common.pdb
 D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\Newtonsoft.Json.xml
-D:\Projects\GitHubProjects\O2O\O2O.Common\obj\Debug\O2O.Common.csprojAssemblyReference.cache
-D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\O2O.Common.dll.config
-D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\EPPlus.dll
-D:\Projects\GitHubProjects\O2O\O2O.Common\bin\Debug\EPPlus.xml

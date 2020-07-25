@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -29,7 +30,9 @@ namespace O2O.Model
         public string RefundReason { get; set; }  //退款原因
 
         public int BuyState { get; set; } //365状态
+        public int OrderType { get; set; } //0 现购, 1 预订
 
+        [JsonIgnore]
         public virtual ICollection<OrderDtlEntity> OrderDtls { get; set; } = new List<OrderDtlEntity>();
     }
 }

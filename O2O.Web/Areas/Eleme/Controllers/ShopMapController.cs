@@ -5,16 +5,10 @@ using O2O.DTO.Eleme;
 using O2O.IService;
 using O2O.Service;
 using O2O.Service.Eleme;
-using O2O.Web.App_Start;
 using O2O.Web.Models;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Web;
-using System.Web.Helpers;
 using System.Web.Mvc;
-using System.Web.Script.Serialization;
 
 namespace O2O.Web.Areas.Eleme.Controllers
 {

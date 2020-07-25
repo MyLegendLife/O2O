@@ -1,0 +1,106 @@
+﻿@model List<FoodMap>
+@{
+    Layout = null;
+}
+<table class="table table-border table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>类别编号</th>
+                <th>类别名称</th>
+                <th>菜品编号</th>
+                <th>菜品名称</th>
+                <th>规格编号</th>
+                <th>规格名称</th>
+                <th>价格</th>
+                <th>库存</th>
+                <th>编号</th>
+                <th>商品编号</th>
+                <th>商品名称</th>
+                <th>单位</th>
+                <th>价格</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr item-id="@item.ItemId">
+                <td>
+                    @item.CateId
+                </td>
+                <td>
+                    @item.CateName
+                </td>
+                <td name="itemId">
+                    @item.ItemId
+                </td>
+                <td name="itemName">
+                    @item.ItemName
+                </td>
+                <td name="specId">
+                    @item.SpecId
+                </td>
+                <td>
+                    @item.SpecName
+                </td>
+                <td name ="itemPrice">
+                    @item.Price
+                </td>
+                <td>
+                    @item.Stock
+                </td>
+                <td name="input">
+                    <input class="" type="text" name="" onkeydown="load_prod(event)" />
+                  @*<a  onclick="add_prod(this)">+</a>*@
+                </td>
+                <td name="no">
+                    @*@{
+                        if (item.ProdNo != null)
+                        {
+                            item.ProdNo = item.ProdNo.Replace(",","<br/>");
+                        }
+                    }*@
+                    @item.ProdNo
+                </td>
+                <td name="name">
+                    @*@{
+                        if (item.ProdName != null)
+                        {
+                            item.ProdName = item.ProdName.Replace(",", "<br/>");
+                        }
+                    }*@
+                    @item.ProdName
+                </td>
+                <td name="unit">
+                    @*@{
+                        if (item.ProdUnit != null)
+                        {
+                            item.ProdUnit = item.ProdUnit.Replace(",", "<br/>");
+                        }
+                    }*@
+                    @item.ProdUnit
+                </td>
+                <td name="price">
+                    @*@{
+                        if (item.SalePrice != null)
+                        {
+                            item.SalePrice = item.SalePrice.Replace(",", "<br/>");
+                        }
+                    }*@
+                    @item.SalePrice
+                </td>
+                <td>
+                    <input class="btn radius btn-secondary-outline radius" type="button" value="映射" onclick="map(this)">
+                    @*<a href="javascript:;" onclick="map(this)" class="ml-5" style="text-decoration:none">
+            映射
+        </a>*@
+
+                    <input class="btn btn-danger-outline radius" type="button" value="撤销" onclick="cancel(this)">
+                    @*<a href="javascript:;" onclick="cancel(this)" class="ml-5" style="text-decoration:none">
+            撤销
+        </a>*@
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>

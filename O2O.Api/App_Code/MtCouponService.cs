@@ -60,6 +60,8 @@ namespace O2O.Api.App_Code
                 var data = new
                 {
                     CodeNo = codeNo,
+                    Name = content["dealTitle"],
+                    Type = content["dealType"],
                     Price = content["couponBuyPrice"],
                     EndTime = content["couponEndTime"],
                     Money = content["dealValue"],
@@ -182,7 +184,7 @@ namespace O2O.Api.App_Code
                     JObject json = JObject.Parse(res);
                     if (json["code"].ToString() == "200")
                     {
-                        msgErr += "成功" + "@";
+                        msgSuc += "成功" + "@";
                     }
                     else
                     {

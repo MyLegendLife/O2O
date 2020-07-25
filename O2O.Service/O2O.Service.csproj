@@ -40,12 +40,69 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Ice">
+      <HintPath>C:\Users\18372\Desktop\Modu11\Modu\Ice.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\18372\Desktop\Modu\ModuBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuBind, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\18372\Desktop\Modu\ModuBind.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuBusin">
+      <HintPath>C:\Users\18372\Desktop\Modu11\Modu\ModuBusin.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuCache">
+      <HintPath>C:\Users\18372\Desktop\Modu11\Modu\ModuCache.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\18372\Desktop\Modu\ModuData.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\18372\Desktop\Modu\ModuHandleBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleBuy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\18372\Desktop\Modu\ModuHandleBuy.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleDisc">
+      <HintPath>C:\Users\18372\Desktop\Modu11\Modu\ModuHandleDisc.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleOrder">
+      <HintPath>C:\Users\18372\Desktop\Modu11\Modu\ModuHandleOrder.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuInterBuy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\18372\Desktop\Modu\ModuInterBuy.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuMiddle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\18372\Desktop\Modu\ModuMiddle.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuRoute, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\18372\Desktop\Modu\ModuRoute.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Sider">
+      <HintPath>..\O2O.Api\bin\Sider.dll</HintPath>
+    </Reference>
+    <Reference Include="Sider.Redis">
+      <HintPath>C:\Users\18372\Desktop\Modu\Sider.Redis.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>C:\Users\18372\Desktop\Modu\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,6 +126,7 @@
     <Compile Include="Meituan\MtOrderApiService.cs" />
     <Compile Include="OrderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PreProdService.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>

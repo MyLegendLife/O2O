@@ -849,6 +849,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\PreProdController.cs" />
     <Compile Include="Filter\CustomAuthorizeAttribute.cs" />
     <Compile Include="App_Start\O2OExceptionFilter.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -913,12 +914,14 @@
     <Content Include="Areas\Eleme\Views\FoodMap\Index.cshtml" />
     <Content Include="Areas\Eleme\Views\FoodMap\List.cshtml" />
     <Content Include="Areas\Meituan\Views\ShopMap\Index.cshtml" />
+    <Content Include="Areas\Meituan\Views\ShopMap\List.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\PreProd\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

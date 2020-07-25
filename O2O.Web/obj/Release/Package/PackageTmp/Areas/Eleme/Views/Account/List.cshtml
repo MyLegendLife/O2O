@@ -1,0 +1,87 @@
+﻿@model List<Ele_AccountDTO>
+@{
+    ViewBag.Title = "账户管理";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="breadcrumb">
+    <i class="Hui-iconfont"></i>
+    首页
+    <span class="c-gray en">&gt;</span>
+    饿了么
+    <span class="c-gray en">&gt;</span>
+    账户管理
+</nav>
+<div class="cl pd-5 bg-1 bk-gray mt-20">
+    <span class="r" style="padding-right: 20px;">
+        <a class="btn btn-primary radius" data-title="添加账户" onclick="add('添加账户','../../Eleme/Account/Add','500','300')" href="javascript:;">
+            <i class="Hui-iconfont"></i> 添加账户
+        </a>
+    </span>
+</div>
+<div class="page-container">
+    <table class="table table-border table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>账户编号</th>
+                <th>账户名称</th>
+                <th>创建时间</th>
+                <th>到期时间</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.AccountNo
+                    </td>
+                    <td>
+                        @item.AccountName
+                    </td>
+                    <td>
+                        @item.CreateDateTime
+                    </td>
+                    <td>
+                        @item.ExpiresDate
+                    </td>
+                    <td>
+                            <input class="btn btn-primary radius" type="button" value="更新" onclick="refresh('@item.Id')">
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+        function add(title, url, w, h) {
+            layer_show(title, url, w, h);
+        }
+
+        function refresh(id) {
+            layer.confirm('确定更新吗？', function (index) {
+                $.ajax({
+                    url: 'Refresh',
+                    type: 'post',
+                    data: { 'id': id },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.state == 'ok') {
+                            layer.msg('已更新!', { icon: 1, time: 1000 });
+                        }
+                        else {
+                            layer.msg('更新失败!', { icon: 2, time: 1000 });
+                        }
+                    },
+                    error: function () {
+                        layer.msg('服务器异常!', { icon: 2, time: 1000 });
+                    }
+                });
+            });
+        }
+    </script>
+}

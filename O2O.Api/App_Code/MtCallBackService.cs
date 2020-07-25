@@ -7,16 +7,19 @@ using O2O.Model;
 using O2O.Service;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace O2O.Api.App_Code
 {
     public class MtCallBackService
     {
-        IOrderService _orderService { get; set; }
+        private  IOrderService _orderService { get; set; }
+        private IPreProdService _preProdService { get; set; }
 
         public MtCallBackService()
         {
             _orderService = new OrderService();
+            _preProdService = new PreProdService();
         }
 
         public void Handle(string type,string res,string userId)
@@ -114,10 +117,23 @@ namespace O2O.Api.App_Code
                     ItemSum = dtl.price * dtl.quantity
                 });
             }
-
             entity.OrderDtls = list;
 
-            _orderService.Add(entity);            
+            //发送通知
+            Bak365Service.SendBakNotice(entity.UserId, entity.OrderId, entity.ShopNo);
+            //判断商品中是否有预订商品
+            if (_preProdService.hasPreProd(userId,list.Select(a=> a.ProdNo).ToArray()))
+            {
+                entity.OrderType = 1;
+                string err = Bak365Service.CreateBakOrder(entity);
+                //如果生成预订单成功，则更改生成状态
+                if (string.IsNullOrWhiteSpace(err))
+                {
+                    entity.BuyState = 1;
+                }
+            }
+
+            _orderService.Add(entity);
         }
 
         public void OrderUpdate(string orderId, Dictionary<string, object> dic)

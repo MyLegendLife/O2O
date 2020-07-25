@@ -36,8 +36,11 @@
     <File Include="bin/EntityFramework.SqlServer.dll">
       <publishTime>04/16/2020 20:38:56</publishTime>
     </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>06/24/2020 08:22:28</publishTime>
+    </File>
     <File Include="bin/Ice.dll">
-      <publishTime>09/10/2019 10:30:00</publishTime>
+      <publishTime>07/24/2020 10:51:31</publishTime>
     </File>
     <File Include="bin/log4net.dll">
       <publishTime>03/08/2017 19:26:22</publishTime>
@@ -52,79 +55,163 @@
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/ModuBase.dll">
-      <publishTime>06/19/2020 12:29:17</publishTime>
+      <publishTime>07/23/2020 19:47:54</publishTime>
     </File>
     <File Include="bin/ModuBind.dll">
-      <publishTime>06/16/2020 16:48:52</publishTime>
+      <publishTime>07/23/2020 19:50:59</publishTime>
+    </File>
+    <File Include="bin/ModuBusin.dll">
+      <publishTime>07/23/2020 19:50:05</publishTime>
     </File>
     <File Include="bin/ModuCache.dll">
-      <publishTime>06/16/2020 16:48:51</publishTime>
+      <publishTime>07/23/2020 19:50:59</publishTime>
     </File>
     <File Include="bin/ModuData.dll">
-      <publishTime>06/16/2020 16:48:25</publishTime>
+      <publishTime>07/23/2020 19:50:46</publishTime>
+    </File>
+    <File Include="bin/ModuDevice.dll">
+      <publishTime>07/19/2020 11:33:29</publishTime>
+    </File>
+    <File Include="bin/ModuHandleAudit.dll">
+      <publishTime>07/19/2020 21:52:50</publishTime>
     </File>
     <File Include="bin/ModuHandleBase.dll">
-      <publishTime>06/19/2020 10:22:16</publishTime>
+      <publishTime>07/23/2020 23:40:23</publishTime>
+    </File>
+    <File Include="bin/ModuHandleBuy.dll">
+      <publishTime>07/23/2020 19:50:46</publishTime>
+    </File>
+    <File Include="bin/ModuHandleCake.dll">
+      <publishTime>07/19/2020 21:52:46</publishTime>
+    </File>
+    <File Include="bin/ModuHandleCard.dll">
+      <publishTime>07/23/2020 20:28:20</publishTime>
+    </File>
+    <File Include="bin/ModuHandleChie.dll">
+      <publishTime>07/19/2020 21:53:20</publishTime>
+    </File>
+    <File Include="bin/ModuHandleCorp.dll">
+      <publishTime>07/19/2020 21:52:45</publishTime>
+    </File>
+    <File Include="bin/ModuHandleDisc.dll">
+      <publishTime>07/23/2020 19:50:45</publishTime>
+    </File>
+    <File Include="bin/ModuHandleGive.dll">
+      <publishTime>07/19/2020 21:53:19</publishTime>
+    </File>
+    <File Include="bin/ModuHandleMake.dll">
+      <publishTime>07/19/2020 21:53:19</publishTime>
+    </File>
+    <File Include="bin/ModuHandleMessage.dll">
+      <publishTime>07/23/2020 17:05:55</publishTime>
+    </File>
+    <File Include="bin/ModuHandleMove.dll">
+      <publishTime>07/19/2020 21:53:18</publishTime>
+    </File>
+    <File Include="bin/ModuHandleNeed.dll">
+      <publishTime>07/19/2020 21:53:18</publishTime>
+    </File>
+    <File Include="bin/ModuHandleNote.dll">
+      <publishTime>07/23/2020 19:50:08</publishTime>
+    </File>
+    <File Include="bin/ModuHandleOrder.dll">
+      <publishTime>07/23/2020 19:49:59</publishTime>
+    </File>
+    <File Include="bin/ModuHandlePay.dll">
+      <publishTime>07/19/2020 21:53:18</publishTime>
+    </File>
+    <File Include="bin/ModuHandlePrint.dll">
+      <publishTime>07/19/2020 21:53:17</publishTime>
+    </File>
+    <File Include="bin/ModuHandlePurc.dll">
+      <publishTime>07/19/2020 21:53:17</publishTime>
+    </File>
+    <File Include="bin/ModuHandleRare.dll">
+      <publishTime>07/19/2020 21:52:48</publishTime>
+    </File>
+    <File Include="bin/ModuHandleTicket.dll">
+      <publishTime>07/23/2020 19:50:41</publishTime>
+    </File>
+    <File Include="bin/ModuHandleTrack.dll">
+      <publishTime>07/19/2020 21:52:50</publishTime>
+    </File>
+    <File Include="bin/ModuInterApp.dll">
+      <publishTime>07/19/2020 11:33:25</publishTime>
+    </File>
+    <File Include="bin/ModuInterBuy.dll">
+      <publishTime>07/23/2020 19:50:00</publishTime>
+    </File>
+    <File Include="bin/ModuInterPay.dll">
+      <publishTime>07/23/2020 19:50:00</publishTime>
     </File>
     <File Include="bin/ModuMiddle.dll">
-      <publishTime>06/16/2020 16:48:14</publishTime>
+      <publishTime>07/23/2020 19:50:40</publishTime>
     </File>
     <File Include="bin/ModuMQ.dll">
-      <publishTime>06/16/2020 16:47:06</publishTime>
+      <publishTime>07/19/2020 11:33:20</publishTime>
     </File>
     <File Include="bin/ModuNotice.dll">
-      <publishTime>06/16/2020 17:08:10</publishTime>
+      <publishTime>07/19/2020 21:52:56</publishTime>
+    </File>
+    <File Include="bin/ModuPrint.dll">
+      <publishTime>07/19/2020 11:33:55</publishTime>
     </File>
     <File Include="bin/ModuRoute.dll">
-      <publishTime>06/19/2020 18:21:34</publishTime>
+      <publishTime>07/24/2020 09:44:50</publishTime>
     </File>
     <File Include="bin/ModuSynch.dll">
-      <publishTime>06/16/2020 17:08:20</publishTime>
+      <publishTime>07/19/2020 21:53:03</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>04/22/2019 01:06:16</publishTime>
     </File>
     <File Include="bin/O2O.Api.dll">
-      <publishTime>06/19/2020 19:09:37</publishTime>
+      <publishTime>07/24/2020 11:12:04</publishTime>
     </File>
     <File Include="bin/O2O.Api.pdb">
-      <publishTime>06/19/2020 19:09:37</publishTime>
+      <publishTime>07/24/2020 11:12:04</publishTime>
     </File>
     <File Include="bin/O2O.Common.dll">
-      <publishTime>06/19/2020 19:09:35</publishTime>
+      <publishTime>07/21/2020 18:19:34</publishTime>
+    </File>
+    <File Include="bin/O2O.Common.dll.config">
+      <publishTime>07/06/2020 10:00:19</publishTime>
     </File>
     <File Include="bin/O2O.Common.pdb">
-      <publishTime>06/19/2020 19:09:35</publishTime>
+      <publishTime>07/21/2020 18:19:34</publishTime>
     </File>
     <File Include="bin/O2O.DTO.dll">
-      <publishTime>06/19/2020 13:40:09</publishTime>
+      <publishTime>07/20/2020 18:47:31</publishTime>
     </File>
     <File Include="bin/O2O.DTO.pdb">
-      <publishTime>06/19/2020 13:40:09</publishTime>
+      <publishTime>07/20/2020 18:47:31</publishTime>
     </File>
     <File Include="bin/O2O.IService.dll">
-      <publishTime>06/19/2020 19:09:36</publishTime>
+      <publishTime>07/21/2020 18:19:34</publishTime>
+    </File>
+    <File Include="bin/O2O.IService.dll.config">
+      <publishTime>07/06/2020 10:00:20</publishTime>
     </File>
     <File Include="bin/O2O.IService.pdb">
-      <publishTime>06/19/2020 19:09:36</publishTime>
+      <publishTime>07/21/2020 18:19:34</publishTime>
     </File>
     <File Include="bin/O2O.Model.dll">
-      <publishTime>06/19/2020 19:09:36</publishTime>
+      <publishTime>07/21/2020 18:19:34</publishTime>
     </File>
     <File Include="bin/O2O.Model.dll.config">
-      <publishTime>06/04/2020 15:07:13</publishTime>
+      <publishTime>07/06/2020 10:00:20</publishTime>
     </File>
     <File Include="bin/O2O.Model.pdb">
-      <publishTime>06/19/2020 19:09:36</publishTime>
+      <publishTime>07/21/2020 18:19:34</publishTime>
     </File>
     <File Include="bin/O2O.Service.dll">
-      <publishTime>06/19/2020 19:09:36</publishTime>
+      <publishTime>07/24/2020 11:12:03</publishTime>
     </File>
     <File Include="bin/O2O.Service.dll.config">
-      <publishTime>06/05/2020 13:08:03</publishTime>
+      <publishTime>07/06/2020 10:00:20</publishTime>
     </File>
     <File Include="bin/O2O.Service.pdb">
-      <publishTime>06/19/2020 19:09:36</publishTime>
+      <publishTime>07/24/2020 11:12:03</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/08/2018 05:38:48</publishTime>
@@ -273,6 +360,12 @@
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
       <publishTime>06/04/2020 15:07:13</publishTime>
     </File>
+    <File Include="bin/Sider.dll">
+      <publishTime>07/21/2020 16:51:14</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.dll">
+      <publishTime>04/08/2017 14:42:24</publishTime>
+    </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>11/28/2018 13:00:36</publishTime>
     </File>
@@ -385,7 +478,7 @@
       <publishTime>05/27/2020 11:15:25</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/19/2020 19:09:37</publishTime>
+      <publishTime>07/21/2020 18:19:36</publishTime>
     </File>
   </ItemGroup>
 </Project>

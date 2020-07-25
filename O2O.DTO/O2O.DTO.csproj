@@ -52,6 +52,7 @@
     <Compile Include="OrderDtlDTO.cs" />
     <Compile Include="OrderDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PreProdDTO.cs" />
     <Compile Include="UserDTO.cs" />
   </ItemGroup>
   <ItemGroup />

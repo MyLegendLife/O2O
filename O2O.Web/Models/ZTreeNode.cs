@@ -30,5 +30,7 @@ namespace O2O.Web.Models
         public string icon { get; set; }
 
         public string token { get; set; }
+
+        public bool @checked {get;set;}
     }
 }

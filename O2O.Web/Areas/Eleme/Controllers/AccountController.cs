@@ -1,19 +1,11 @@
 ﻿using Newtonsoft.Json.Linq;
 using O2O.Common;
 using O2O.Common.Eleme;
-using O2O.DTO.Eleme;
 using O2O.IService;
-using O2O.Service;
 using O2O.Service.Eleme;
-using O2O.Web.App_Start;
-using O2O.Web.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.UI.WebControls;
 
 namespace O2O.Web.Areas.Eleme.Controllers
 {

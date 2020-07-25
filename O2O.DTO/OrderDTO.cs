@@ -27,5 +27,6 @@ namespace O2O.DTO
         public string RefundReason { get; set; }  //退款原因
 
         public int BuyState { get; set; } //365状态
+        public int OrderType { get; set; } //0现购  1预订
     }
 }

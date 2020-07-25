@@ -59,6 +59,21 @@ namespace O2O.Api.Controllers
             return Json(Tools.ResultOk(list));
         }
 
+        [Route("GetOrderInfo")]
+        [HttpPost]
+        public IHttpActionResult GetOrderInfo(string orderId)
+        {
+            try
+            {
+                var entity = _orderService.GetByOrderId(orderId);
+                return Json(Tools.ResultOk(entity));
+            }
+            catch (Exception e)
+            {
+                return Json(Tools.ResultErr(e.Message));
+            }
+        }
+
         [Route("SetBuy")]
         [HttpPost]
         public IHttpActionResult SetBuy(string userId, string shopNo, int takeType, string orderId)

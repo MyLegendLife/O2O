@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "系统登录";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="header"></div>
+<div class="loginWraper">
+    <div id="loginform" class="loginBox">
+        <form class="form form-horizontal" id="formLogin" autocomplete="off">
+            <input type="hidden" id="TenantId" name="TenantId" value="" />
+            <div class="row cl">
+                <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+                <div class="formControls col-xs-8">
+                    <input name="LoginName" type="text" placeholder="登录账户" class="input-text size-L" datatype="*2-16" nullmsg="登录账户不能为空">
+                </div>
+            </div>
+
+
+            <div class="row cl">
+                <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+                <div class="formControls col-xs-8">
+                    <input name="Pwd" type="password" placeholder="密码" class="input-text size-L" datatype="*2-16" nullmsg="密码不能为空">
+                </div>
+            </div>
+            <div class="row cl">
+                <div class="formControls col-8 col-offset-3">
+                    <input name="VarCode" class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;" ">
+                    <img src="../Login/GetVerCode" id="imgVerifyCode"> <a id="kanbuq" href="javascript:void(0);">看不清，换一张</a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="formControls col-8 col-offset-3">
+                    <label for="online">
+                        <input type="checkbox" name="online" id="online" value="">
+                        使我保持登录状态
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="formControls col-8 col-offset-3">
+                    <input name="" id="btnLogin" type="button" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+                    <input name="" type="button" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="footer">烘焙365-接口管理平台 2020-06-01 v1</div>
+@section footScript
+{
+    <script type="text/javascript">
+        $(function () {
+            $("#kanbuq,#imgVerifyCode").click(function () {
+                $("#imgVerifyCode").attr("src", "../Login/GetVerCode?" + Math.random());
+            });
+            $("#imgVerifyCode").click();//为了避免页面刚打开的时候加载缓存中"/Login/GetVerCode" 因此要主动点击一下，刷新验证码
+            var validForm = $("#formLogin").Validform({ tiptype: 2});//客户端的验证
+            $('#btnLogin').click(function () {
+                var datForm = $('#formLogin').serializeArray();
+                if (validForm.check(false)) {
+                    $.ajax({
+                        url: '../Login/LoginIndex',
+                        data: datForm,
+                        type: 'post',
+                        dataType: 'json',
+                        success: function (data) {
+                            if (data.state == 'ok') {
+                                window.location.href = '../Main/Index';
+                            }
+                            else {
+                                layer.msg(data.msg, { icon: 2, time: 1000 });
+                                $("#imgVerifyCode").click();
+                            }
+                        },
+                        error: function (data) {
+                            layer.msg('服务器异常', { icon: 2, time: 1000 });
+                            $("#imgVerifyCode").click();
+                        }
+                    })
+                }
+                else {
+
+                }
+            })
+
+        })
+    </script>
+
+}
+

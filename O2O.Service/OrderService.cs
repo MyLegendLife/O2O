@@ -5,6 +5,7 @@ using O2O.IService;
 using O2O.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -18,8 +19,7 @@ namespace O2O.Service
             {
                 BaseService<OrderEntity> service = new BaseService<OrderEntity>(context);
 
-                service.Add(entity);
-                NoticeCommon.Notice(entity.UserId, entity.OrderId, entity.ShopNo);
+                service.Add(entity);                
             }
         }
 
@@ -108,7 +108,8 @@ namespace O2O.Service
             {
                 BaseService<OrderEntity> service = new BaseService<OrderEntity>(context);
 
-                return service.FirstOrDefault(a => a.OrderId == orderId);
+                var entity = service.Where(a => a.OrderId == orderId).Include(a => a.OrderDtls).FirstOrDefault();
+                return entity;
             }
         }
 

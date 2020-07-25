@@ -52,6 +52,7 @@
     <Compile Include="IOrderService.cs" />
     <Compile Include="IServiceSupport.cs" />
     <Compile Include="IEleShopService.cs" />
+    <Compile Include="IPreProdService.cs" />
     <Compile Include="IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

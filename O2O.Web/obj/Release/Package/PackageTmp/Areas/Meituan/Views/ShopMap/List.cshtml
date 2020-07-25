@@ -1,0 +1,75 @@
+﻿@model List<O2O.Service.ShopInfo>
+@{
+    ViewBag.Title = "门店映射";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="breadcrumb">
+    <i class="Hui-iconfont"></i>
+    首页
+    <span class="c-gray en">&gt;</span>
+    美团
+    <span class="c-gray en">&gt;</span>
+    门店管理
+</nav>
+<div class="page-container">
+    <table class="table table-border table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>区域编号</th>
+                <th>区域名称</th>
+                <th>门店编号</th>
+                <th>门店名称</th>
+                <th>是否映射</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="shopList">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.AreaNo
+                    </td>
+                    <td >
+                        @item.AreaName
+                    </td>
+                    <td>
+                        @item.ShopNo
+                    </td>
+                    <td>
+                        @item.ShopName
+                    </td>
+                    <td>
+                        @Html.Raw(item.IsMapped ? "已映射" : "")
+                    </td>
+                    <td>
+                        <input class="btn radius btn-secondary-outline radius" type="button" value="团购映射" onclick="map('@item.ShopNo','@item.ShopName',true)">
+                        <input class="btn btn-danger-outline radius" type="button" value="取消映射" onclick="map('@item.ShopNo','@item.ShopName',false)">
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section footScript{
+        <script type="text/javascript">
+            function map(shopNo,shopName,b) {
+                $.ajax({
+                    url: 'GetUrl',
+                    type: 'post',
+                    data: { "shopNo": shopNo, "shopName": shopName,"isMap":b},
+                    dataType: 'json',
+                    success: function (res) {
+                        if (res.state == 'ok') {
+                            window.open(res.msg);
+                        }
+                    },
+                    error: function () {
+                        layer.msg('服务器异常', { icon: 2, time: 1000 });
+                    }
+                });
+            }
+        </script>
+    }

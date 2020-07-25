@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "添加账户";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <form action="" method="post" class="form form-horizontal" >
+        <div class="pd-20">
+            <div class="cl pd-10">
+                <label class="form-label col-xs-4 col-sm-3" style="text-align: right;"><span class="c-red">*</span>账户编号：</label>
+                <div class="formControls col-xs-5 col-sm-9">
+                    <input type="text" class="input-text" value="" placeholder="" id="AccountNo" name="AccountNo" datatype="2-16" nullmsg="账户编号不能为空">
+                </div>
+                <div class="col-4"> </div>
+            </div>
+            <div class="cl pd-10">
+                <label class="form-label col-xs-4 col-sm-3" style="text-align: right;"><span class="c-red">*</span>账户名称：</label>
+                <div class="formControls col-xs-5 col-sm-9">
+                    <input type="text" class="input-text" value="" placeholder="" id="AccountName" name="AccountName" datatype="*2-16" nullmsg="账户名称不能为空">
+                </div>
+                <div class="col-4"> </div>
+            </div>
+            <div class="cl pd-10">
+                <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                    <input class="btn btn-primary radius" id="btn" onclick="access()" type="button" value="&nbsp;&nbsp;确定&nbsp;&nbsp;">
+                </div>
+            </div>
+        </div>
+        </form>
+
+        @section footScript
+    {
+            <script type="text/javascript">
+                function access(url) {
+                    var accountNo = $('#AccountNo').val();
+                    var accountName = $('#AccountName').val();
+                    $.ajax({
+                        url: 'Access',
+                        type: 'post',
+                        data: { "accountNo": accountNo, "accountName": accountName },
+                        dataType: 'json',
+                        success: function (res) {
+                            if (res.state == 'ok') {
+                                window.open(res.msg);
+                            }
+                        },
+                        error: function () {
+                            layer.msg('服务器异常', { icon: 2, time: 1000 });
+                        }
+                    });
+                }
+            </script>
+        }
+

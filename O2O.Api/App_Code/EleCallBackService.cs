@@ -13,6 +13,13 @@ namespace O2O.Api.App_Code
 {
     public class EleCallBackService
     {
+        private IPreProdService _preProdService { get; set; }
+
+        public EleCallBackService()
+        {
+            _preProdService = new PreProdService();
+        }
+
         public void HandlePushMessage(string res)
         {
             MessageModel model = JsonConvert.DeserializeObject<MessageModel>(res);
@@ -88,9 +95,22 @@ namespace O2O.Api.App_Code
                     });
                 }
             }
-
             entity.OrderDtls = list;
 
+            //发送通知
+            Bak365Service.SendBakNotice(entity.UserId, entity.OrderId, entity.ShopNo);
+            //判断商品中是否有预订商品
+            if (_preProdService.hasPreProd(shop.UserId, list.Select(a => a.ProdNo).ToArray()))
+            {
+                entity.OrderType = 1;
+                string err = Bak365Service.CreateBakOrder(entity);
+                //如果生成预订单成功，则更改生成状态
+                if (string.IsNullOrWhiteSpace(err))
+                {
+                    entity.BuyState = 1;
+                }
+            }
+            
             orderService.Add(entity);
         }
 

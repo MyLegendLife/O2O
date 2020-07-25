@@ -65,12 +65,14 @@
     <Compile Include="Entities\Eleme\Ele_ShopEntity.cs" />
     <Compile Include="Entities\OrderDtlEntity.cs" />
     <Compile Include="Entities\OrderEntity.cs" />
+    <Compile Include="Entities\PreProdEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
     <Compile Include="Maps\Eleme\Ele_AccountMap.cs" />
     <Compile Include="Maps\Eleme\Ele_ShopMap.cs" />
     <Compile Include="Maps\Meituan\Mt_AccountMap.cs" />
     <Compile Include="Maps\OrderDtlMap.cs" />
     <Compile Include="Maps\OrderMap.cs" />
+    <Compile Include="Maps\PreProdMap.cs" />
     <Compile Include="Maps\UserMap.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Migrations\202006160736268_init.cs" />
@@ -112,6 +114,14 @@
     <Compile Include="Migrations\202007140643376_2007141443.cs" />
     <Compile Include="Migrations\202007140643376_2007141443.designer.cs">
       <DependentUpon>202007140643376_2007141443.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007200228151_新增预订商品表.cs" />
+    <Compile Include="Migrations\202007200228151_新增预订商品表.designer.cs">
+      <DependentUpon>202007200228151_新增预订商品表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007201019341_增加OrderType字段.cs" />
+    <Compile Include="Migrations\202007201019341_增加OrderType字段.designer.cs">
+      <DependentUpon>202007201019341_增加OrderType字段.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="O2OContext.cs" />
@@ -162,7 +172,14 @@
     <EmbeddedResource Include="Migrations\202007140643376_2007141443.resx">
       <DependentUpon>202007140643376_2007141443.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007200228151_新增预订商品表.resx">
+      <DependentUpon>202007200228151_新增预订商品表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007201019341_增加OrderType字段.resx">
+      <DependentUpon>202007201019341_增加OrderType字段.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -1,4 +1,5 @@
 using log4net;
+using O2O.Model.Entities;
 using System.Data.Entity;
 using System.Reflection;
 
@@ -36,5 +37,7 @@ namespace O2O.Model
 
         public DbSet<Ele_AccountEntity> Ele_Account { get; set; }
         public DbSet<Ele_ShopEntity> Ele_Shop { get; set; }
+
+        public DbSet<PreProdEntity> PreProd { get; set; }
     }
 }

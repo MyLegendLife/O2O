@@ -168,8 +168,8 @@ namespace O2O.Web.Areas.Eleme.Controllers
                     if (spec.specId == specId)
                     {
                         spec.extendCode = prodNo;
+                        break;
                     }
-                    break;
                 }
 
                 OProduct product = new OProduct();

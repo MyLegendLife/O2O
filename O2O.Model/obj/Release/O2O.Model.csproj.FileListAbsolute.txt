@@ -39,13 +39,6 @@ D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.csproj.CoreCompil
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._06171116.resources
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._06171350.resources
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._06171535.resources
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\ModuData.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\ModuRoute.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\ModuHandleBase.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\ModuBase.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\ModuMiddle.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\ModuBind.dll
-D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\Ice.dll
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\EPPlus.dll
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\O2O.Common.dll.config
 D:\Projects\GitHubProjects\O2O\O2O.Model\bin\Release\EPPlus.xml
@@ -55,3 +48,5 @@ D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._20200
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._202007141146.resources
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._20207141403.resources
 D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations._2007141443.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations.新增预订商品表.resources
+D:\Projects\GitHubProjects\O2O\O2O.Model\obj\Release\O2O.Model.Migrations.增加OrderType字段.resources
