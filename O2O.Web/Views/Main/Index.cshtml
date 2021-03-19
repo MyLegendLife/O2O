@@ -28,7 +28,7 @@
     <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
-    <title>接口管理平台</title>
+    <title>外卖接口管理平台</title>
 </head>
 <body>
     <header class="navbar-wrapper">
@@ -72,34 +72,54 @@
                     <a data-href="../Home/Index" data-title="首页" href="javascript:void(0)"> 首页</a>
                 </dt>
             </dl>
-            <dl id="menu-article">
-                <dt><i class="Hui-iconfont"></i> 美团<i class="Hui-iconfont menu_dropdown-arrow"></i></dt>
-                <dd>
-                    <ul>
-                        <li><a data-href="../Meituan/ShopMap/Index" data-title="美团" href="javascript:void(0)">账户管理</a></li>
-                        <li><a data-href="../Meituan/ShopMap/List" data-title="门店管理" href="javascript:void(0)">门店管理</a></li>
-                        <li><a data-href="../Meituan/ShopMap/Index" data-title="美团" href="javascript:void(0)">菜品管理</a></li>
-                    </ul>
-                </dd>
-            </dl>
-            <dl id="menu-article">
-                <dt><i class="Hui-iconfont"></i> 饿了么<i class="Hui-iconfont menu_dropdown-arrow"></i></dt>
-                <dd>
-                    <ul>
-                        <li><a data-href="../Eleme/Account/List" data-title="账户管理" href="javascript:void(0)">账户管理</a></li>
-                        <li><a data-href="../Eleme/ShopMap/List" data-title="门店管理" href="javascript:void(0)">门店管理</a></li>
-                        <li><a data-href="../Eleme/FoodMap/Index" data-title="菜品管理" href="javascript:void(0)">菜品管理</a></li>
-                    </ul>
-                </dd>
-            </dl>
-            <dl id="menu-article">
-                <dt><i class="Hui-iconfont"></i> 设置<i class="Hui-iconfont menu_dropdown-arrow"></i></dt>
-                <dd>
-                    <ul>
-                        <li><a data-href="../PreProd/Index" data-title="预订商品管理" href="javascript:void(0)">预订商品管理</a></li>
-                    </ul>
-                </dd>
-            </dl>
+            @if (O2O.Common.Global.USER_ID != "admin")
+            {
+                <dl id="menu-article">
+                    <dt><i class="Hui-iconfont"></i> 美团<i class="Hui-iconfont menu_dropdown-arrow"></i></dt>
+                    <dd>
+                        <ul>
+                            <li><a data-href="../Meituan/ShopMap/Index" data-title="美团" href="javascript:void(0)">账户管理</a></li>
+                            <li><a data-href="../Meituan/ShopMap/List" data-title="门店管理" href="javascript:void(0)">门店管理</a></li>
+                            <li><a data-href="../Meituan/ShopMap/Index" data-title="美团" href="javascript:void(0)">菜品管理</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-article">
+                    <dt><i class="Hui-iconfont"></i> 饿了么<i class="Hui-iconfont menu_dropdown-arrow"></i></dt>
+                    <dd>
+                        <ul>
+                            <li><a data-href="../Eleme/Account/List" data-title="账户管理" href="javascript:void(0)">账户管理</a></li>
+                            <li><a data-href="../Eleme/ShopMap/List" data-title="门店管理" href="javascript:void(0)">门店管理</a></li>
+                            <li><a data-href="../Eleme/FoodMap/Index" data-title="菜品管理" href="javascript:void(0)">菜品管理</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-article">
+                    <dt><i class="Hui-iconfont"></i> 设置<i class="Hui-iconfont menu_dropdown-arrow"></i></dt>
+                    <dd>
+                        <ul>
+                            <li><a data-href="../PreProd/Index" data-title="预订商品管理" href="javascript:void(0)">预订商品管理</a></li>
+                            <li><a data-href="../Prod/List" data-title="订单商品管理" href="javascript:void(0)">订单商品管理</a></li>
+                            <li><a data-href="../ShopConfig/List" data-title="门店参数设置" href="javascript:void(0)">门店参数设置</a></li>
+                            <li><a data-href="../StockRule/RuleIndex" data-title="库存模板管理" href="javascript:void(0)">库存模板管理</a></li>
+                            <li><a data-href="../StockRule/ProdIndex" data-title="模板商品设置" href="javascript:void(0)">模板商品设置</a></li>
+                            <li><a data-href="../StockRule/ShopIndex" data-title="模板门店设置" href="javascript:void(0)">模板门店设置</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            }
+            else if (O2O.Common.Global.USER_ID == "admin")
+            {
+                <dl id="menu-article">
+                    <dt><i class="Hui-iconfont"></i> 管理<i class="Hui-iconfont menu_dropdown-arrow"></i></dt>
+                    <dd>
+                        <ul>
+                            <li><a data-href="../User/List" data-title="商户管理" href="javascript:void(0)">用户管理</a></li>
+                            <li><a data-href="../MtAccount/List" data-title="美团账户管理" href="javascript:void(0)">美团账户管理</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            }
         </div>
     </aside>
     <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onclick="displaynavbar(this)"></a></div>

@@ -1,0 +1,99 @@
+﻿@model List<UserDTO>
+@{
+    ViewBag.Title = "添加模板门店";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="pd-20">
+    <form class="form form-horizontal" id="form1" οnsubmit="return false;">
+        <input type="hidden" id="StockRuleId" name="StockRuleId" value="@ViewData["StockRuleId"]">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>门店编号：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="ShopNo" name="ShopNo" onkeydown="load_shop(event)" nullmsg="门店编号不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>门店名称：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="ShopName" name="ShopName" readonly="readonly" nullmsg="门店名称不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" id="btn" type="button" value="&nbsp;&nbsp;确定&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+
+        $(function() {
+            var validForm = $("#form1").Validform({ tiptype: 2 });
+            $('#btn').click(function() {
+
+                var formData = $("#form1").serializeArray();
+                if (validForm.check(false)) {
+                    $.ajax({
+                        url: 'ShopCreate',
+                        type: 'post',
+                        data: formData,
+                        dataType: 'json',
+                        success: function(data) {
+                            if (data.state === 'ok') {
+                                layer.msg('添加成功', { icon: 1, time: 1000 });
+                                layer_close();
+                            } else {
+                                layer.msg(data.msg, { icon: 2, time: 1000 });
+                            }
+                        },
+                        error: function() {
+                            layer.msg('服务器异常', { icon: 2, time: 1000 });
+                        }
+                    });
+                }
+            });
+        });
+
+
+        document.onkeydown = function() {
+            var evt = window.event || arguments[0];
+            if (evt && evt.keyCode === 13) {
+                if (typeof evt.cancelBubble != "undefined")
+                    evt.cancelBubble = true;
+                if (typeof evt.stopPropagation == "function")
+                    evt.stopPropagation();
+                return false;
+            }
+            return true;
+        }
+
+        function load_shop(e) {
+            var evt = window.event || e;
+            if (evt.keyCode === 13) {
+                var input = $(evt.target);
+
+                var shopNo = $(input).val();
+
+                $.ajax({
+                    url: '../GetShop',
+                    type: 'post',
+                    data: { "shopNo": shopNo },
+                    dataType: 'json',
+                    success: function(res) {
+                        if (res.state === 'ok') {
+                            $("#ShopName").val(res.data.ShopName);
+                        } else {
+                            layer.msg(res.msg, { icon: 2, time: 1000 });
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+}
+

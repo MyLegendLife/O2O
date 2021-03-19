@@ -19,7 +19,7 @@ namespace O2O.Api.App_Code
         public MtCouponService(string userNo, string shopNo)
         {
             IMtAccountService service = new MtAccountService();
-            AccountDTO account = service.GetAccount(userNo);
+            Mt_AccountDTO account = service.GetAccount(userNo);
 
             _tuangouAppKey = account.TuangouAppKey;
             _tuangouAppSecret = account.TuangouAppSecret;

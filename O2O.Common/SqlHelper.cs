@@ -17,13 +17,8 @@ namespace O2O.Common
         /// 获取数据库连接字符串
         /// </summary>
         /// <returns></returns>
-        private static string sqlConnectionString
-        {
-            get
-            {
-                return Global.CON_STR;
-            }
-        }
+        private static string sqlConnectionString => Global.CON_STR;
+
         /// <summary>
         /// 获取数据库连接
         /// </summary>
@@ -38,6 +33,7 @@ namespace O2O.Common
                 return Conn;
             }
         }
+
         /// <summary>
         /// 执行sql语句，返回DataSet
         /// </summary>
@@ -61,6 +57,7 @@ namespace O2O.Common
             }
             return dsSet;
         }
+
         /// <summary>
         /// 执行sql语句，返回DataTable
         /// </summary>
@@ -84,6 +81,31 @@ namespace O2O.Common
             }
             return dt;
         }
+
+        /// <summary>
+        /// 执行sql语句，返回DataTable
+        /// </summary>
+        /// <param name="sqlString">sql语句参数</param>
+        /// <returns>DataTable</returns>
+        public static DataTable ExecuteDataTable(string sqlString,string connString)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter adp = new SqlDataAdapter(sqlString, connString);
+            try
+            {
+                adp.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                throw (e);
+            }
+            finally
+            {
+                adp.Dispose();
+            }
+            return dt;
+        }
+
         /// <summary>
         /// 执行存储过程返回DataSet
         /// </summary>
@@ -129,6 +151,7 @@ namespace O2O.Common
             }
             return dataSet;
         }
+
         /// <summary>
         /// 执行存储过程返回DataTable
         /// </summary>
@@ -174,6 +197,7 @@ namespace O2O.Common
             }
             return dataTable;
         }
+
         /// <summary>
         /// 执行存储过程
         /// </summary>
@@ -217,6 +241,7 @@ namespace O2O.Common
             }
             return result;
         }
+
         /// <summary>
         /// 执行存储过程返回一个object对象
         /// </summary>
@@ -259,6 +284,7 @@ namespace O2O.Common
             }
             return ret;
         }
+
         /// <summary>
         /// 执行sql语句，返回一个object对象
         /// </summary>
@@ -285,6 +311,7 @@ namespace O2O.Common
             }
             return ret;
         }
+
         /// <summary>
         /// 执行自定义sql语句
         /// </summary>

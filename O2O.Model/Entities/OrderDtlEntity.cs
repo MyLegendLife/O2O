@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace O2O.Model
+namespace O2O.Model.Entities
 {
     public class OrderDtlEntity : BaseEntity
     {
@@ -14,6 +14,8 @@ namespace O2O.Model
         public double Price { set; get; } //商品原价
         public double ItemCnt { set; get; }//数量
         public double ItemSum { set; get; }//金额
+
+        public double RefundPartCnt { get; set; } //部分退款数量
 
         public Guid OrderId { get; set; }
         public virtual OrderEntity Order { get; set; }

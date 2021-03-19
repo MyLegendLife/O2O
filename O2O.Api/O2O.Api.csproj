@@ -201,6 +201,8 @@
     <Compile Include="App_Start\O2OExceptionFilter.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Eleme\EleCallBackController.cs" />
+    <Compile Include="Controllers\Eleme\EleUgcController.cs" />
+    <Compile Include="Controllers\ShopController.cs" />
     <Compile Include="Controllers\Meituan\MtCallBackController.cs" />
     <Compile Include="Controllers\Meituan\CouponController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
@@ -209,14 +211,25 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Eleme\CancelModel.cs" />
+    <Compile Include="Models\Eleme\UserExtraInfo.cs" />
+    <Compile Include="Models\Eleme\ORateQuery.cs" />
+    <Compile Include="Models\Eleme\Delivering.cs" />
     <Compile Include="Models\Eleme\DeliverState.cs" />
+    <Compile Include="Models\Eleme\GoodsList.cs" />
+    <Compile Include="Models\Eleme\Groups.cs" />
+    <Compile Include="Models\Eleme\Items.cs" />
     <Compile Include="Models\Eleme\UrgeModel.cs" />
     <Compile Include="Models\Eleme\StateChangeModel.cs" />
     <Compile Include="Models\Eleme\MessageModel.cs" />
     <Compile Include="Models\Eleme\OrderModel.cs" />
     <Compile Include="Models\Eleme\ElemeEnum.cs" />
+    <Compile Include="Models\Meituan\CouponCode.cs" />
+    <Compile Include="Models\Meituan\CouponSku.cs" />
     <Compile Include="Models\Meituan\CouponStatusQueryResponse.cs" />
     <Compile Include="Models\Meituan\BasicSimpleResponseModel.cs" />
+    <Compile Include="Models\Meituan\DealSkuMappingDetail.cs" />
+    <Compile Include="Models\Meituan\DetailModel.cs" />
+    <Compile Include="Models\Meituan\RefundPartDetailModel.cs" />
     <Compile Include="Models\Meituan\TuangouMatchConsumeResponse.cs" />
     <Compile Include="Models\Meituan\BasicResponseModel.cs" />
     <Compile Include="Models\Meituan\MeituanEnum.cs" />

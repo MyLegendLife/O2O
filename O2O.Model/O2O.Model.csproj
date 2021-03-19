@@ -63,9 +63,13 @@
     <Compile Include="Entities\Eleme\Ele_AccountEntity.cs" />
     <Compile Include="Entities\Meituan\Mt_AccountEntity.cs" />
     <Compile Include="Entities\Eleme\Ele_ShopEntity.cs" />
+    <Compile Include="Entities\StockRuleProdEntity.cs" />
+    <Compile Include="Entities\StockRuleShopEntity.cs" />
+    <Compile Include="Entities\StockRuleEntity.cs" />
     <Compile Include="Entities\OrderDtlEntity.cs" />
     <Compile Include="Entities\OrderEntity.cs" />
     <Compile Include="Entities\PreProdEntity.cs" />
+    <Compile Include="Entities\ShopConfigEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
     <Compile Include="Maps\Eleme\Ele_AccountMap.cs" />
     <Compile Include="Maps\Eleme\Ele_ShopMap.cs" />
@@ -73,6 +77,10 @@
     <Compile Include="Maps\OrderDtlMap.cs" />
     <Compile Include="Maps\OrderMap.cs" />
     <Compile Include="Maps\PreProdMap.cs" />
+    <Compile Include="Maps\ShopConfigMap.cs" />
+    <Compile Include="Maps\StockRuleMap.cs" />
+    <Compile Include="Maps\StockRuleShopMap.cs" />
+    <Compile Include="Maps\StockRuleProdMap.cs" />
     <Compile Include="Maps\UserMap.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Migrations\202006160736268_init.cs" />
@@ -122,6 +130,54 @@
     <Compile Include="Migrations\202007201019341_增加OrderType字段.cs" />
     <Compile Include="Migrations\202007201019341_增加OrderType字段.designer.cs">
       <DependentUpon>202007201019341_增加OrderType字段.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009100859300_202009101657.cs" />
+    <Compile Include="Migrations\202009100859300_202009101657.designer.cs">
+      <DependentUpon>202009100859300_202009101657.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009100908518_202009101708.cs" />
+    <Compile Include="Migrations\202009100908518_202009101708.designer.cs">
+      <DependentUpon>202009100908518_202009101708.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009140516451_202009141316.cs" />
+    <Compile Include="Migrations\202009140516451_202009141316.designer.cs">
+      <DependentUpon>202009140516451_202009141316.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011180132054_202011180931.cs" />
+    <Compile Include="Migrations\202011180132054_202011180931.designer.cs">
+      <DependentUpon>202011180132054_202011180931.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011180302183_202011181102.cs" />
+    <Compile Include="Migrations\202011180302183_202011181102.designer.cs">
+      <DependentUpon>202011180302183_202011181102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011200205589_202011200957.cs" />
+    <Compile Include="Migrations\202011200205589_202011200957.designer.cs">
+      <DependentUpon>202011200205589_202011200957.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011200921543_202011201718.cs" />
+    <Compile Include="Migrations\202011200921543_202011201718.designer.cs">
+      <DependentUpon>202011200921543_202011201718.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011250249209_202011251049.cs" />
+    <Compile Include="Migrations\202011250249209_202011251049.designer.cs">
+      <DependentUpon>202011250249209_202011251049.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012240907305_202012241707.cs" />
+    <Compile Include="Migrations\202012240907305_202012241707.designer.cs">
+      <DependentUpon>202012240907305_202012241707.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101270835500_202101271635.cs" />
+    <Compile Include="Migrations\202101270835500_202101271635.designer.cs">
+      <DependentUpon>202101270835500_202101271635.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101270916351_202101271716.cs" />
+    <Compile Include="Migrations\202101270916351_202101271716.designer.cs">
+      <DependentUpon>202101270916351_202101271716.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103190212528_202103191012.cs" />
+    <Compile Include="Migrations\202103190212528_202103191012.designer.cs">
+      <DependentUpon>202103190212528_202103191012.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="O2OContext.cs" />
@@ -177,6 +233,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007201019341_增加OrderType字段.resx">
       <DependentUpon>202007201019341_增加OrderType字段.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009100859300_202009101657.resx">
+      <DependentUpon>202009100859300_202009101657.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009100908518_202009101708.resx">
+      <DependentUpon>202009100908518_202009101708.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009140516451_202009141316.resx">
+      <DependentUpon>202009140516451_202009141316.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011180132054_202011180931.resx">
+      <DependentUpon>202011180132054_202011180931.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011180302183_202011181102.resx">
+      <DependentUpon>202011180302183_202011181102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011200205589_202011200957.resx">
+      <DependentUpon>202011200205589_202011200957.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011200921543_202011201718.resx">
+      <DependentUpon>202011200921543_202011201718.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011250249209_202011251049.resx">
+      <DependentUpon>202011250249209_202011251049.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012240907305_202012241707.resx">
+      <DependentUpon>202012240907305_202012241707.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101270835500_202101271635.resx">
+      <DependentUpon>202101270835500_202101271635.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101270916351_202101271716.resx">
+      <DependentUpon>202101270916351_202101271716.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103190212528_202103191012.resx">
+      <DependentUpon>202103190212528_202103191012.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

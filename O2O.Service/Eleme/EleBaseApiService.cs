@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using O2O.Common;
-using O2O.Common.Eleme;
 using System;
 using System.Collections.Generic;
 using System.Linq;

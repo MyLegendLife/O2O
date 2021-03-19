@@ -79,12 +79,12 @@
             if (evt.keyCode == 13) {
                 var input = $(evt.target);
 
-                var inputs = $(input).parents('td').eq(0).find('input');
+                var inputs = $(input).parents('td').eq(0).find('input').val().split('X');
 
                 var prodNos = [];
-                inputs.each(function () {
-                    prodNos.push($(this).val());
-                });
+                for (var i = 0; i < inputs.length; i++) {
+                    prodNos.push(inputs[i]);
+                }
 
                 $.ajax({
                     url: 'GetProd',
@@ -184,6 +184,9 @@
                 var specId = $(this).find('td[name="specId"]').html().trim();
                 var prodNo = $(this).find('td[name="no"]').html().trim();
 
+                var reg = new RegExp('<br>', 'g');
+                var prodNo = prodNo.replace(reg, 'X');
+
                 if (prodNo != '') {
                     data.push({ 'token': token, 'itemId': itemId, 'specId': specId, 'prodNo': prodNo });
                 }
@@ -261,7 +264,7 @@
             var prodNo = $(ele).parents('tr').eq(0).find('td[name="no"]').html().trim();
 
             var reg = new RegExp('<br>', 'g');
-            var prodNo = prodNo.replace(reg, 'X');
+            var prodNo = prodNo.replace(reg, 'X').trim();
 
             if (prodNo == '') {
                 layer.msg('商品不能为空', { icon: 2, time: 1000 });

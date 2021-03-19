@@ -3,3 +3,15 @@ D:\Projects\GitHubProjects\O2O\O2O.DTO\bin\Debug\O2O.DTO.pdb
 D:\Projects\GitHubProjects\O2O\O2O.DTO\obj\Debug\O2O.DTO.csproj.CoreCompileInputs.cache
 D:\Projects\GitHubProjects\O2O\O2O.DTO\obj\Debug\O2O.DTO.dll
 D:\Projects\GitHubProjects\O2O\O2O.DTO\obj\Debug\O2O.DTO.pdb
+D:\Projects\O2O-master\O2O.DTO\bin\Debug\O2O.DTO.dll
+D:\Projects\O2O-master\O2O.DTO\bin\Debug\O2O.DTO.pdb
+D:\Projects\O2O-master\O2O.DTO\obj\Debug\O2O.DTO.csprojAssemblyReference.cache
+D:\Projects\O2O-master\O2O.DTO\obj\Debug\O2O.DTO.csproj.CoreCompileInputs.cache
+D:\Projects\O2O-master\O2O.DTO\obj\Debug\O2O.DTO.dll
+D:\Projects\O2O-master\O2O.DTO\obj\Debug\O2O.DTO.pdb
+D:\Projects\WaimaiProject\O2O-master\O2O.DTO\bin\Debug\O2O.DTO.dll
+D:\Projects\WaimaiProject\O2O-master\O2O.DTO\bin\Debug\O2O.DTO.pdb
+D:\Projects\WaimaiProject\O2O-master\O2O.DTO\obj\Debug\O2O.DTO.csproj.CoreCompileInputs.cache
+D:\Projects\WaimaiProject\O2O-master\O2O.DTO\obj\Debug\O2O.DTO.dll
+D:\Projects\WaimaiProject\O2O-master\O2O.DTO\obj\Debug\O2O.DTO.pdb
+D:\Projects\WaimaiProject\O2O-master\O2O.DTO\obj\Debug\O2O.DTO.csprojAssemblyReference.cache

@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -139,6 +141,14 @@ namespace O2O.Service
             }
         }
 
+        public void UpdateForce(T entity, bool isSave = true)
+        {
+            this._db.Entry<T>(entity).State = EntityState.Modified;
+            if (!isSave)
+                return;
+            this.SaveChanges();
+        }
+
         public void Update(bool isSave = true, params T[] entitys)
         {
             var entry = _db.Entry(entitys);
@@ -150,6 +160,19 @@ namespace O2O.Service
             {
                 SaveChanges();
             }
+        }
+
+        public void UpdateEntityFields(T entity, List<string> fileds, bool isSave = true)
+        {
+            if ((object)entity == null || fileds == null || fileds.Count <= 0)
+                return;
+            this._db.Set<T>().Attach(entity);
+            ObjectStateEntry objectStateEntry = ((IObjectContextAdapter)this._db).ObjectContext.ObjectStateManager.GetObjectStateEntry((object)entity);
+            foreach (string filed in fileds)
+                objectStateEntry.SetModifiedProperty(filed);
+            if (!isSave)
+                return;
+            this.SaveChanges();
         }
 
         public bool Any(Expression<Func<T, bool>> @where)

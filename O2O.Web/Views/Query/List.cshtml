@@ -1,0 +1,90 @@
+﻿@model List<OrderQueryDTO>
+@{
+    ViewBag.Title = "订单统计";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="breadcrumb">
+    <i class="Hui-iconfont"></i>
+    首页
+    <span class="c-gray en">&gt;</span>
+    饿了么
+    <span class="c-gray en">&gt;</span>
+    账户管理
+</nav>
+<div class="page-container">
+    <div class="text-c">
+        日期范围：
+        <input type="text" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })" id="logmin" class="input-text Wdate" style="width:120px;">
+        <button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont"></i> 查询</button>
+    </div>
+    <table class="table table-border table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>门店编号</th>
+                <th>门店名称</th>
+                <th>平台类型</th>
+                <th>订单总数</th>
+                <th>流水数</th>
+                <th>订单金额</th>
+                <th>实付金额</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @item.ShopNo
+                </td>
+                <td>
+                    @{
+                    }
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                    <input class="btn btn-primary radius" type="button" value="详情" onclick="refresh('@item.Id')">
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+        function add(title, url, w, h) {
+            layer_show(title, url, w, h);
+        }
+
+        function refresh(id) {
+            layer.confirm('确定更新吗？', function (index) {
+                $.ajax({
+                    url: 'Refresh',
+                    type: 'post',
+                    data: { 'id': id },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.state == 'ok') {
+                            layer.msg('已更新!', { icon: 1, time: 1000 });
+                        }
+                        else {
+                            layer.msg('更新失败!', { icon: 2, time: 1000 });
+                        }
+                    },
+                    error: function () {
+                        layer.msg('服务器异常!', { icon: 2, time: 1000 });
+                    }
+                });
+            });
+        }
+    </script>
+}
+

@@ -15,6 +15,6 @@ namespace O2O.IService
 
         void Delete(string userId);
 
-        bool hasPreProd(string userId,string[] prodNos);
+        bool hasPreProd(string userId, string[] prodNos);
     }
 }

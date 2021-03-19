@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2O.Service", "O2O.Service\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2O.Web", "O2O.Web\O2O.Web.csproj", "{13DC40E6-E476-4CC8-A776-EA06A05FB1E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2O.BackgroundJobs", "O2O.BackgroundJobs\O2O.BackgroundJobs.csproj", "{2BDD3891-CFEF-4A44-B224-DD9234A9C392}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{13DC40E6-E476-4CC8-A776-EA06A05FB1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13DC40E6-E476-4CC8-A776-EA06A05FB1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13DC40E6-E476-4CC8-A776-EA06A05FB1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDD3891-CFEF-4A44-B224-DD9234A9C392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDD3891-CFEF-4A44-B224-DD9234A9C392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDD3891-CFEF-4A44-B224-DD9234A9C392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDD3891-CFEF-4A44-B224-DD9234A9C392}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

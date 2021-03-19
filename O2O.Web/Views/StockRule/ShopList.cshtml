@@ -1,0 +1,42 @@
+﻿@model List<StockRuleShopDTO>
+@{
+    Layout = null;
+    var stockRuleId = ViewData["StockRuleId"];
+}
+<div class="cl pd-5 bg-1 bk-gray">
+    <form id="file-form">
+        <span class="l">
+            <a class="btn btn-success radius" onclick="create('添加门店','../StockRule/ShopCreate/@stockRuleId','800','300')" href="javascript:;">
+                <i class="Hui-iconfont"></i>
+                添加
+            </a>
+        </span>
+        <span class="r">共有数据：<strong id="listCount"></strong> 条</span>
+    </form>
+</div>
+<table class="table table-border table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>门店编号</th>
+        <th>门店名称</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.ShopNo
+            </td>
+            <td>
+                @item.ShopName
+            </td>
+            
+            <td>
+                <input class="btn btn-danger-outline radius" type="button" value="删除" onclick="del(this,'@item.Id')">
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

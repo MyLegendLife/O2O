@@ -43,55 +43,119 @@
     <Reference Include="Ice">
       <HintPath>C:\Users\18372\Desktop\Modu11\Modu\Ice.dll</HintPath>
     </Reference>
-    <Reference Include="ModuBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\18372\Desktop\Modu\ModuBase.dll</HintPath>
+    <Reference Include="ModuBase">
+      <HintPath>..\O2O.Web\bin\ModuBase.dll</HintPath>
     </Reference>
-    <Reference Include="ModuBind, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\18372\Desktop\Modu\ModuBind.dll</HintPath>
+    <Reference Include="ModuBind">
+      <HintPath>..\O2O.Web\bin\ModuBind.dll</HintPath>
     </Reference>
     <Reference Include="ModuBusin">
-      <HintPath>C:\Users\18372\Desktop\Modu11\Modu\ModuBusin.dll</HintPath>
+      <HintPath>..\O2O.Web\bin\ModuBusin.dll</HintPath>
     </Reference>
     <Reference Include="ModuCache">
-      <HintPath>C:\Users\18372\Desktop\Modu11\Modu\ModuCache.dll</HintPath>
+      <HintPath>..\O2O.Web\bin\ModuCache.dll</HintPath>
     </Reference>
-    <Reference Include="ModuData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\18372\Desktop\Modu\ModuData.dll</HintPath>
+    <Reference Include="ModuData">
+      <HintPath>..\O2O.Web\bin\ModuData.dll</HintPath>
     </Reference>
-    <Reference Include="ModuHandleBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\18372\Desktop\Modu\ModuHandleBase.dll</HintPath>
+    <Reference Include="ModuDevice">
+      <HintPath>..\O2O.Web\bin\ModuDevice.dll</HintPath>
     </Reference>
-    <Reference Include="ModuHandleBuy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\18372\Desktop\Modu\ModuHandleBuy.dll</HintPath>
+    <Reference Include="ModuHandleAudit">
+      <HintPath>..\O2O.Web\bin\ModuHandleAudit.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleBase">
+      <HintPath>..\O2O.Web\bin\ModuHandleBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleBuy">
+      <HintPath>..\O2O.Web\bin\ModuHandleBuy.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleCake">
+      <HintPath>..\O2O.Web\bin\ModuHandleCake.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleCard">
+      <HintPath>..\O2O.Web\bin\ModuHandleCard.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleChie">
+      <HintPath>..\O2O.Web\bin\ModuHandleChie.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleCorp">
+      <HintPath>..\O2O.Web\bin\ModuHandleCorp.dll</HintPath>
     </Reference>
     <Reference Include="ModuHandleDisc">
-      <HintPath>C:\Users\18372\Desktop\Modu11\Modu\ModuHandleDisc.dll</HintPath>
+      <HintPath>..\O2O.Web\bin\ModuHandleDisc.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleGive">
+      <HintPath>..\O2O.Web\bin\ModuHandleGive.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleMake">
+      <HintPath>..\O2O.Web\bin\ModuHandleMake.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleMessage">
+      <HintPath>..\O2O.Web\bin\ModuHandleMessage.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleMove">
+      <HintPath>..\O2O.Web\bin\ModuHandleMove.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleNeed">
+      <HintPath>..\O2O.Web\bin\ModuHandleNeed.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleNote">
+      <HintPath>..\O2O.Web\bin\ModuHandleNote.dll</HintPath>
     </Reference>
     <Reference Include="ModuHandleOrder">
-      <HintPath>C:\Users\18372\Desktop\Modu11\Modu\ModuHandleOrder.dll</HintPath>
+      <HintPath>..\O2O.Web\bin\ModuHandleOrder.dll</HintPath>
     </Reference>
-    <Reference Include="ModuInterBuy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\18372\Desktop\Modu\ModuInterBuy.dll</HintPath>
+    <Reference Include="ModuHandlePay">
+      <HintPath>..\O2O.Web\bin\ModuHandlePay.dll</HintPath>
     </Reference>
-    <Reference Include="ModuMiddle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\18372\Desktop\Modu\ModuMiddle.dll</HintPath>
+    <Reference Include="ModuHandlePrint">
+      <HintPath>..\O2O.Web\bin\ModuHandlePrint.dll</HintPath>
     </Reference>
-    <Reference Include="ModuRoute, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\18372\Desktop\Modu\ModuRoute.dll</HintPath>
+    <Reference Include="ModuHandlePurc">
+      <HintPath>..\O2O.Web\bin\ModuHandlePurc.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleRare">
+      <HintPath>..\O2O.Web\bin\ModuHandleRare.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleTicket">
+      <HintPath>..\O2O.Web\bin\ModuHandleTicket.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuHandleTrack">
+      <HintPath>..\O2O.Web\bin\ModuHandleTrack.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuInterApp">
+      <HintPath>..\O2O.Web\bin\ModuInterApp.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuInterBuy">
+      <HintPath>..\O2O.Web\bin\ModuInterBuy.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuInterPay">
+      <HintPath>..\O2O.Web\bin\ModuInterPay.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuMiddle">
+      <HintPath>..\O2O.Web\bin\ModuMiddle.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuMQ">
+      <HintPath>..\O2O.Web\bin\ModuMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuNotice">
+      <HintPath>..\O2O.Web\bin\ModuNotice.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuPrint">
+      <HintPath>..\O2O.Web\bin\ModuPrint.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuRoute">
+      <HintPath>..\O2O.Web\bin\ModuRoute.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuSynch">
+      <HintPath>..\O2O.Web\bin\ModuSynch.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Sider">
-      <HintPath>..\O2O.Api\bin\Sider.dll</HintPath>
+      <HintPath>bin\Debug\Sider.dll</HintPath>
     </Reference>
     <Reference Include="Sider.Redis">
       <HintPath>C:\Users\18372\Desktop\Modu\Sider.Redis.dll</HintPath>
@@ -112,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EleAccountService.cs" />
+    <Compile Include="Eleme\EleUgcApiService.cs" />
     <Compile Include="MtAccountService.cs" />
     <Compile Include="BaseService.cs" />
     <Compile Include="Eleme\EleFoodApiService.cs" />
@@ -124,9 +189,11 @@
     <Compile Include="Meituan\MtBaseApiService.cs" />
     <Compile Include="Meituan\MtFoodApiService.cs" />
     <Compile Include="Meituan\MtOrderApiService.cs" />
+    <Compile Include="StockRuleService.cs" />
     <Compile Include="OrderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PreProdService.cs" />
+    <Compile Include="ShopConfigService.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>

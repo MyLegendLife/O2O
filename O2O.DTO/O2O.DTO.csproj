@@ -44,15 +44,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\FoodData.cs" />
+    <Compile Include="Api\FoodDataSellStatus.cs" />
     <Compile Include="Api\Sku.cs" />
+    <Compile Include="Api\SkuSellStatus.cs" />
     <Compile Include="BaseDTO.cs" />
     <Compile Include="Eleme\Ele_AccountDTO.cs" />
     <Compile Include="Eleme\Ele_ShopDTO.cs" />
-    <Compile Include="Meituan\AccountDTO.cs" />
+    <Compile Include="Meituan\Mt_AccountDTO.cs" />
     <Compile Include="OrderDtlDTO.cs" />
+    <Compile Include="OrderDtlGroupDto.cs" />
+    <Compile Include="StockRuleDTO.cs" />
+    <Compile Include="StockRuleProdDTO.cs" />
+    <Compile Include="StockRuleShopProdDTO.cs" />
+    <Compile Include="StockRuleShopDTO.cs" />
     <Compile Include="OrderDTO.cs" />
+    <Compile Include="OrderQueryDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PreProdDTO.cs" />
+    <Compile Include="ShopConfigDTO.cs" />
     <Compile Include="UserDTO.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -19,11 +19,23 @@ namespace O2O.Web.Models
         /// <summary>
         /// 
         /// </summary>
-        public string times { get; set; }
+        public List<TimesItem> times { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public string weekdays { get; set; }
+        public List<int> weekdays { get; set; }
+    }
+
+    public class TimesItem
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public string beginTime { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string endTime { get; set; }
     }
 
     public class OCategory

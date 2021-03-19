@@ -1,0 +1,121 @@
+﻿@model IEnumerable<ShopConfigDTO>
+@{
+    ViewBag.Title = "门店参数设置";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<nav class="breadcrumb">
+    <i class="Hui-iconfont"></i>
+    管理
+    <span class="c-gray en">&gt;</span>
+    美团账户管理
+</nav>
+<div class="cl pd-5 bg-1 bk-gray mt-20">
+    <span class="r" style="padding-right: 20px;">
+        <a class="btn btn-primary radius" onclick="update()" href="javascript:;">
+            确认
+        </a>
+    </span>
+</div>
+<div class="page-container">
+    <table class="table table-border table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>门店编号</th>
+                <th>门店名称</th>
+                <th>
+                    美团自动确认
+                    <input type="checkbox" onchange="checkAll(this,'MtAutoConfirm')" />
+                </th>
+                <th>
+                    饿了么自动确认
+                    <input type="checkbox" onchange="checkAll(this,'EleAutoConfirm')" />
+                </th>
+                <th>
+                    自动生成销售
+                    <input type="checkbox" onchange="checkAll(this,'AutoSale')" />
+                </th>
+                <th>
+                    美团自动同步库存
+                    <input type="checkbox" onchange="checkAll(this,'MtAutoSync')" />
+                </th>
+                <th>
+                    饿了么自动同步库存
+                    <input type="checkbox" onchange="checkAll(this,'EleAutoSync')" />
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td name="ShopNo">
+                    @item.ShopNo
+                </td>
+                <td>
+                    @item.ShopName
+                </td>
+                <td>
+                    @Html.CheckBox("MtAutoConfirm", item.MtAutoConfirm == 0)
+                </td>
+                <td>
+                    @Html.CheckBox("EleAutoConfirm", item.EleAutoConfirm == 0)
+                </td>
+                <td>
+                    @Html.CheckBox("AutoSale", item.AutoSale == 1)
+                </td>
+                <td>
+                    @Html.CheckBox("MtAutoSync", item.MtAutoSync == 1)
+                </td>
+                <td>
+                    @Html.CheckBox("EleAutoSync", item.EleAutoSync == 1)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@section footScript
+{
+    <script type="text/javascript">
+
+        function checkAll(obj, name) {
+            $('[name=' + name + ']').prop('checked', $(obj).is(':checked'));
+        }
+
+        function update(obj, id, userId) {
+            layer.load(0, { shade: [0.4, '#fff'] });
+
+            var data = [];
+            $('.table tbody tr').each(function() {
+                data.push({
+                    ShopNo: $(this).find('[name=ShopNo]').html().trim(),
+                    MtAutoConfirm: $(this).find('[name=MtAutoConfirm]').is(':checked') === true ? 0 : 1,  //0开启 1关闭
+                    EleAutoConfirm: $(this).find('[name=EleAutoConfirm]').is(':checked') === true ? 0 : 1, //0关闭 1开启
+                    AutoSale: $(this).find('[name=AutoSale]').is(':checked') === true ? 1 : 0, //0关闭 1开启
+                    MtAutoSync: $(this).find('[name=MtAutoSync]').is(':checked') === true ? 1 : 0, //0关闭 1开启
+                    EleAutoSync: $(this).find('[name=EleAutoSync]').is(':checked') === true ? 1 : 0 //0关闭 1开启
+                });
+            });
+
+            $.ajax({
+                url: 'Update',
+                type: 'post',
+                data: {'inputs': data },
+                dataType: 'json',
+                success: function (res) {
+                    layer.closeAll();
+                    if (res.state === 'ok') {
+                        layer.msg('修改成功!', { icon: 1, time: 1000 });
+                    } else {
+                        layer.msg(res.msg, { icon: 2, time: 2000 });
+                    }
+                },
+                error: function () {
+                    layer.closeAll();
+                    layer.msg('删除失败!', { icon: 2, time: 1000 });
+                }
+            });
+        }
+
+    </script>
+}

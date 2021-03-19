@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "模板商品管理";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/lib/zTree/v3/css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css" />
+
+<nav class="breadcrumb">
+    <i class="Hui-iconfont"></i>
+    首页
+    <span class="c-gray en">&gt;</span>
+    模板门店管理
+</nav>
+<table class="table">
+    <tbody>
+        <tr>
+            <td width="200" class="va-t">
+                <ul id="ruleTree" class="ztree">
+                </ul>
+            </td>
+            <td class="va-t">
+                <div id="list">
+                </div>
+            </td>
+    </tbody>
+</table>
+@section footScript
+{
+    <script type="text/javascript" src="~/lib/zTree/v3/js/jquery.ztree.all-3.5.min.js"></script>
+    <script type="text/javascript">
+
+        function create(title, url, w, h) {
+            layer_show(title, url, w, h);
+        }
+
+        //定义接收节点数据的变量
+        var zNodes;
+        //节点配置信息
+        var setting = {
+            data: {
+                //控制子节点加载时候是加载还是折叠
+                simpleData: {
+                    enable: true
+                }
+            },
+            callback: {
+                onClick: chooseNode
+            }
+        };
+
+        $(function () {
+            //获取访问方法获取节点数据
+            $.getJSON('RuleTree',
+                function(res) {
+                    zNodes = res;
+                    //初始化树节点
+                    $.fn.zTree.init($('#ruleTree'), setting, zNodes);
+                });
+        });
+
+        function chooseNode(event, treeId, treeNode) {
+            layer.load(0, { shade: [0.4, '#fff'] });
+
+            $('#list').load('ShopList?Id=' + treeNode.id,
+                function () {
+                    layer.closeAll();
+                    $('#listCount').html($('#list').find('tbody').find('tr').length);
+                });
+        }
+
+        function del(obj, id) {
+            layer.confirm('确认要删除吗？', function (index) {
+                //利用Ajax进行删除操作
+                $.ajax({
+                    url: '../StockRule/ShopDelete',
+                    type: 'post',
+                    data: { 'id': id },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.state == 'ok') {
+                            $(obj).parents("tr").eq(0).remove();
+                            $('#listCount').html($('#list').find('tbody').find('tr').length);
+                            layer.msg('已删除!', { icon: 1, time: 1000 });
+                        } else {
+                            layer.msg(data.msg, { icon: 2, time: 2000 });
+                        }
+                    },
+                    error: function () {
+                        layer.msg('删除失败!', { icon: 2, time: 1000 });
+                    }
+                });
+            });
+        }
+    </script>
+}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace O2O.Common.Eleme
+namespace O2O.Common
 {
     public class EleConfig
     {

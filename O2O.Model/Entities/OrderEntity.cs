@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
-namespace O2O.Model
+namespace O2O.Model.Entities
 {
     public class OrderEntity : BaseEntity
     {
@@ -29,8 +29,15 @@ namespace O2O.Model
         public string RefundCode { get; set; }  //退款状态
         public string RefundReason { get; set; }  //退款原因
 
-        public int BuyState { get; set; } //365状态
+        public int BuyState { get; set; } //365状态 0已生成现购单  1已经退货   2已生成预订单  3已提货  4预定作废退货
         public int OrderType { get; set; } //0 现购, 1 预订
+
+        public double RefundPartAmt { get; set; } //部分退款金额
+
+        public string DispatcherName { get; set; }  //骑手姓名
+        public string DispatcherMobile { get; set; }  //骑手姓名
+
+        public string Greeting { get; set; }  //祝福语（饿了么字段）
 
         [JsonIgnore]
         public virtual ICollection<OrderDtlEntity> OrderDtls { get; set; } = new List<OrderDtlEntity>();

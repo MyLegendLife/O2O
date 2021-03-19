@@ -1,5 +1,7 @@
 using log4net;
 using O2O.Model.Entities;
+using O2O.Model.Entities.Eleme;
+using O2O.Model.Entities.Meituan;
 using System.Data.Entity;
 using System.Reflection;
 
@@ -12,10 +14,10 @@ namespace O2O.Model
         public O2OContext() : base("name=connStr")
         {
             //关闭自动创建表的功能
-            //Database.SetInitializer<O2OContext>(null);
+            Database.SetInitializer<O2OContext>(null);
 
             //记录sql
-            //Database.Log = sql =>
+            //Database.Log = sql => 
             //{
             //    _log.DebugFormat("EF执行SQL:{0}", sql);
             //};
@@ -39,5 +41,12 @@ namespace O2O.Model
         public DbSet<Ele_ShopEntity> Ele_Shop { get; set; }
 
         public DbSet<PreProdEntity> PreProd { get; set; }
+
+        public DbSet<ShopConfigEntity> ShopConfig { get; set; }
+
+        public DbSet<StockRuleEntity> StockRule { get; set; }
+        public DbSet<StockRuleProdEntity> StockRuleProd { get; set; }
+        public DbSet<StockRuleShopEntity> StockRuleShop { get; set; }
+
     }
 }

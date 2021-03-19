@@ -1,0 +1,111 @@
+﻿@model List<OrderDtlGroupDto>
+@{
+    ViewBag.Title = "订单商品管理";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="breadcrumb">
+    <i class="Hui-iconfont"></i>
+    管理
+    <span class="c-gray en">&gt;</span>
+    订单商品管理
+</nav>
+
+<div class="page-container">
+    <div class="text-c" style="padding-bottom:10px;">
+        <form class="form form-horizontal" id="form-search">
+            <input type="text" name="Text" id="" placeholder=" 商品编号或名称" style="width:250px" class="input-text">
+            <button name="" id="search" class="btn btn-success" type="button"><i class="Hui-iconfont"></i> 搜索</button>
+        </form>
+    </div>
+    <table class="table table-border table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>商品编号</th>
+                <th>商品名称</th>
+                <th>商品单位</th>
+                <th>价格</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.ProdNo
+                    </td>
+                    <td>
+                        @item.ProdName
+                    </td>
+                    <td>
+                        @item.ProdUnit
+                    </td>
+                    <td>
+                        @item.Price
+                    </td>
+                    <td>
+                        <input class="btn btn-primary radius" type="button" value="编辑" onclick="edit('编辑','Edit?prodNo=@item.ProdNo&prodName=@item.ProdName','500','350')">
+                        @if (string.IsNullOrWhiteSpace(item.ProdNo))
+                        { 
+                            <input class="btn btn-danger-outline radius" type="button" value="删除" onclick="del(this,'@item.ProdNo','@item.ProdName')">
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+
+        $(function () {
+            $('#search').click(function () {
+                var dataFrom = $("#form-search").serializeArray();
+                $.ajax({
+                    url: 'SearchList',
+                    type: 'post',
+                    data: dataFrom,
+                    dataType: 'html',
+                    success: function (data) {
+                        $('.table').html(data);
+                    },
+                    error: function () {
+                        //layer.msg('服务器异常', { icon: 2, time: 1000 });
+                    }
+                });
+            });
+        });
+
+        function edit(title, url, w, h) {
+            layer_show(title, url, w, h);
+        }
+
+        function del(obj,prodNo, prodName) {
+            layer.confirm('确认要删除吗？', function (index) {
+                //利用Ajax进行删除操作
+                $.ajax({
+                    url: 'Delete',
+                    //type: 'get',
+                    type: 'post', //此处推荐用post请求，避免攻击
+                    data: { 'prodNo': prodNo, 'prodName': prodName },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.state == 'ok') {
+                            $(obj).parents("tr").remove();
+                            layer.msg('已删除!', { icon: 1, time: 1000 });
+                        } else {
+                            layer.msg(data.msg, { icon: 2, time: 2000 });
+                        }
+                    },
+                    error: function () {
+                        layer.msg('删除失败!', { icon: 2, time: 1000 });
+                    }
+                });
+            });
+        }
+
+    </script>
+}

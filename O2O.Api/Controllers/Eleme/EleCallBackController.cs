@@ -24,17 +24,17 @@ namespace O2O.Api.Controllers.Eleme
         {
             try
             {
-                string userId = state.Split('@')[0];
-                string accountNo = state.Split('@')[1];
-                string accountName = state.Split('@')[2];
+                var userId = state.Split('@')[0];
+                var accountNo = state.Split('@')[1];
+                var accountName = state.Split('@')[2];
 
-                EleUserApiService service = new EleUserApiService();
+                var service = new EleUserApiService();
 
                 var res = service.GetToken(code);
 
                 if (res == "") return Json(Tools.ResultErr());
 
-                JObject jo = JObject.Parse(res);
+                var jo = JObject.Parse(res);
 
                 if (jo["error"] != null) return Json(Tools.ResultErr(jo["error_description"].ToString()));
 
@@ -56,6 +56,7 @@ namespace O2O.Api.Controllers.Eleme
             catch (Exception e)
             {
                 _log.DebugFormat("【信息记录】用户:{0}  类型:Authorize  信息{1}", state, e.Message);
+                _log.DebugFormat("【信息记录】用户:{0}  类型:Authorize  信息{1}", state, e.GetOriginalException().Message);
                 return Json(new { message = "ok" });
             }
         }
@@ -65,20 +66,19 @@ namespace O2O.Api.Controllers.Eleme
         public IHttpActionResult PushMessage()
         {
             var context = HttpContext.Current;
-            Task task = Task.Factory.StartNew((con) =>
+            var task = Task.Factory.StartNew((con) =>
             {
+                var res = HttpCommon.PostReceive(con);
                 try
                 {
-                    EleCallBackService service = new EleCallBackService();
-                    string res = HttpCommon.PostReceive(con);
-
                     _log.DebugFormat("【信息记录】类型:Push  信息{0}", res);
-
+                    var service = new EleCallBackService();
                     service.HandlePushMessage(res);
                 }
                 catch (Exception e)
                 {
-                    _log.DebugFormat("【错误】用户:{0}  类型:Push  信息{1}", "", e.Message);
+                    _log.DebugFormat("【系统错误】类型:Push 信息：{0} 错误：{1}", res, e.Message);
+                    _log.DebugFormat("【系统错误】类型:Push 信息：{0} 错误：{1}", res, e.GetOriginalException().Message);
                 }
             }, context);
 

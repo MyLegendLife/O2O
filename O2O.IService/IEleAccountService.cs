@@ -20,8 +20,10 @@ namespace O2O.IService
 
         Ele_AccountDTO Get(string userNo);
 
-        Ele_AccountDTO Get(string userNo, string shopNo);
+        Ele_AccountDTO Get(string userId, string shopNo);
 
         List<Ele_AccountDTO> GetAccounts(string userId);
+
+        List<Ele_AccountDTO> GetExpiresAccounts(DateTime dateTime);
     }
 }

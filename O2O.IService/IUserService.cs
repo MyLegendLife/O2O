@@ -1,8 +1,5 @@
 using O2O.DTO;
-using O2O.DTO.Meituan;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace O2O.IService
 {
@@ -10,18 +7,32 @@ namespace O2O.IService
     {
         UserDTO Get(string id);
 
-        UserDTO GetByLoginName(string loginName);
+        UserDTO GetByLoginName(string loginName, string id = "");
 
         void Add(UserDTO dto);
 
-        List<UserDTO> GetAll();
+        void Add(
+          string id,
+          string userName,
+          string loginName,
+          string password,
+          string connString,
+          string ket,
+          string description);
 
-        /// <summary>
-        /// 检验用户是否登录成功
-        /// </summary>
-        /// <param name="phoneNum"></param>
-        /// <param name="password"></param>
-        /// <returns></returns>
+        void Update(
+          string id,
+          string userName,
+          string loginName,
+          string password,
+          string connString,
+          string ket,
+          string description);
+
+        void Delete(string id);
+
+        List<UserDTO> GetAll(string para = "");
+
         bool CheckLogin(string phoneNum, string password);
     }
 }

@@ -40,6 +40,12 @@ namespace O2O.Common
         {
             return first.Compose(second, Expression.And);
         }
+
+        public static Expression<Func<T, S, bool>> And<T, S>(this Expression<Func<T, S, bool>> first, Expression<Func<T, S, bool>> second)
+        {
+            return first.Compose(second, new Func<Expression, Expression, Expression>(Expression.And));
+        }
+
         /// <summary>
         /// or扩展
         /// </summary>

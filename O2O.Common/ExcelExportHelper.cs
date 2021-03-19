@@ -185,7 +185,7 @@ namespace O2O.Common
                     T t = new T();
                     Type type = t.GetType();
 
-                    for (int j = 1; j < colCount; j++)
+                    for (int j = 1; j <= colCount; j++)
                     {
                         PropertyInfo prop = type.GetProperty(sheet.Cells[1,j].Text);
                         if (prop != null)

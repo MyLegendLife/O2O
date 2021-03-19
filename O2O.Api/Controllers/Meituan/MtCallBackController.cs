@@ -1,7 +1,10 @@
 using log4net;
 using O2O.Api.App_Code;
 using O2O.Common;
+using O2O.IService;
+using O2O.Service;
 using System;
+using System.Data;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
@@ -12,7 +15,7 @@ namespace O2O.Api.Controllers.Meituan
     public class MtCallBackController : ApiController
     {
         private static ILog _log = LogManager.GetLogger("Meituan");
-        MtCallBackService _service { get; set; }
+        MtCallBackService _service { get; set; }        
 
         public MtCallBackController()
         {
@@ -29,15 +32,16 @@ namespace O2O.Api.Controllers.Meituan
 
             Task task = Task.Factory.StartNew((con) =>
             {
+                string res = HttpCommon.PostReceive(con);
                 try
                 {
-                    string res = HttpCommon.PostReceive(con);
-                    _log.DebugFormat("【信息记录】用户:{0}  类型:OrderPayed  信息{1}", userId, res);
-                    _service.OrderNew(userId, res);                    
+                    _log.DebugFormat("【信息记录】用户:{0}  类型:OrderPayed 信息{1}", userId, res);
+                    _service.OrderPayed(userId, res);                    
                 }
                 catch (Exception e)
                 {
-                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderPayed  信息:{1}", userId, e.Message);
+                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderPayed 信息:{1} 错误:{2}", userId, res, e.Message);
+                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderPayed 信息:{1} 错误:{2}", userId, res, e.GetOriginalException().Message);
                 }
             }, context);
 
@@ -52,15 +56,16 @@ namespace O2O.Api.Controllers.Meituan
 
             Task task = Task.Factory.StartNew((con) =>
             {
+                string res = HttpCommon.PostReceive(con);
                 try
-                {                    
-                    string res = HttpCommon.PostReceive(con);
-                    _log.DebugFormat("【信息记录】用户:{0}  类型:OrderConfirmed  信息{1}", userId, res);
-                    _service.Handle("OrderConfirmed", res, userId);
+                {
+                    _log.DebugFormat("【信息记录】用户:{0}  类型:OrderConfirmed 信息{1}", userId, res);
+                    _service.OrderConfirmed(userId, res);
                 }
                 catch (Exception e)
                 {
-                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderConfirmed  信息:{1}", userId, e.Message);
+                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderConfirmed 信息:{1} 错误:{2}", userId, res, e.Message);
+                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderConfirmed 信息:{1} 错误:{2}", userId, res, e.GetOriginalException().Message);
                 }
             }, context);
 
@@ -75,15 +80,16 @@ namespace O2O.Api.Controllers.Meituan
 
             Task task = Task.Factory.StartNew((con) =>
             {
+                string res = HttpCommon.PostReceive(con);
                 try
                 {
-                    string res = HttpCommon.PostReceive(con);
-                    _log.DebugFormat("【信息记录】用户:{0}  类型:OrderFinished  信息{1}", userId, res);
-                    _service.Handle("OrderFinished", res, userId);
+                    _log.DebugFormat("【信息记录】用户:{0}  类型:OrderFinished 信息{1}", userId, res);
+                    _service.HandlePush("OrderFinished",userId, res);
                 }
                 catch (Exception e)
                 {
-                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderFinished  信息:{1}", userId, e.Message);
+                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderFinished 信息:{1} 错误:{2}", userId, res, e.Message);
+                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderFinished 信息:{1} 错误:{2}", userId, res, e.GetOriginalException().Message);
                 }
             }, context);
 
@@ -98,15 +104,16 @@ namespace O2O.Api.Controllers.Meituan
 
             Task task = Task.Factory.StartNew((con) =>
             {
+                string res = HttpCommon.GetReceive(con);
                 try
                 {
-                    string res = HttpCommon.GetReceive(con);
-                    _log.DebugFormat("【信息记录】类型:OrderCanceled  信息{0}", res);
-                    _service.Handle("OrderCanceled", res, userId);
+                    _log.DebugFormat("【信息记录】类型:OrderCanceled 信息{0}", res);
+                    _service.HandlePush("OrderCanceled", userId, res);
                 }
                 catch (Exception e)
                 {
-                    _log.DebugFormat("【系统错误】类型:OrderCanceled  信息:{0}", e.Message);
+                    _log.DebugFormat("【系统错误】类型:OrderCanceled 信息:{0} 错误:{1}", res, e.Message);
+                    _log.DebugFormat("【系统错误】类型:OrderCanceled 信息:{0} 错误:{1}", res, e.GetOriginalException().Message);
                 }
             }, context);
 
@@ -121,15 +128,16 @@ namespace O2O.Api.Controllers.Meituan
 
             Task task = Task.Factory.StartNew((con) =>
             {
+                string res = HttpCommon.GetReceive(con);
                 try
                 {
-                    string res = HttpCommon.GetReceive(con);
-                    _log.DebugFormat("【信息记录】类型:OrderRefunded  信息{0}", res);
-                    _service.Handle("OrderRefunded", res, userId);
+                    _log.DebugFormat("【信息记录】类型:OrderRefunded 信息{0}", res);
+                    _service.OrderRefund(res);
                 }
                 catch (Exception e)
                 {
-                    _log.DebugFormat("【系统错误】类型:OrderRefunded  信息:{0}", e.Message);
+                    _log.DebugFormat("【系统错误】类型:OrderRefunded 信息:{0} 错误:{1}", res, e.Message);
+                    _log.DebugFormat("【系统错误】类型:OrderRefunded 信息:{0} 错误:{1}", res, e.GetOriginalException().Message);
                 }
             }, context);
 
@@ -144,15 +152,16 @@ namespace O2O.Api.Controllers.Meituan
 
             Task task = Task.Factory.StartNew((con) =>
             {
+                string res = HttpCommon.GetReceive(con);
                 try
                 {
-                    string res = HttpCommon.GetReceive(con);
-                    _log.DebugFormat("【信息记录】类型:OrderRefundedPart  信息{0}", res);
-                    _service.Handle("OrderRefundedPart", res, userId);
+                    _log.DebugFormat("【信息记录】类型:OrderRefundedPart 信息{0}", res);
+                    _service.OrderRefundPart(res);
                 }
                 catch (Exception e)
                 {
-                    _log.DebugFormat("【系统错误】类型:OrderRefundedPart  信息:{0}", e.Message);
+                    _log.DebugFormat("【系统错误】类型:OrderRefundedPart 信息:{0} 错误:{1}", res, e.Message);
+                    _log.DebugFormat("【系统错误】类型:OrderRefundedPart 信息:{0} 错误:{1}", res, e.GetOriginalException().Message);
                 }
             }, context);
 
@@ -163,21 +172,21 @@ namespace O2O.Api.Controllers.Meituan
         [HttpPost]
         public IHttpActionResult OrderUrge(string userId)
         {
-            var context = HttpContext.Current;
+            //var context = HttpContext.Current;
 
-            Task task1 = Task.Factory.StartNew((con) =>
-            {
-                try
-                {
-                    string res = HttpCommon.PostReceive(con);
-                    _log.DebugFormat("【信息记录】用户:{0}  类型:OrderUrge  信息{1}", userId, res);
-                    _service.Handle("OrderUrge", res, userId);
-                }
-                catch (Exception e)
-                {
-                    _log.DebugFormat("【系统错误】用户:{0}  类型:OrderUrge  信息:{1}", userId, e.Message);
-                }
-            }, context);
+            //Task task1 = Task.Factory.StartNew((con) =>
+            //{
+            //    string res = HttpCommon.PostReceive(con);
+            //    try
+            //    {
+            //        _log.DebugFormat("【信息记录】用户:{0}  类型:OrderUrge 信息{1}", userId, res);
+            //        _service.Handle("OrderUrge", res, userId);
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        _log.DebugFormat("【系统错误】用户:{0}  类型:OrderUrge 信息:{1} 错误:{2}", userId, res, e.GetOriginalException().Message);
+            //    }
+            //}, context);
             return Json(new { data = "ok" });
         }
 
@@ -185,10 +194,22 @@ namespace O2O.Api.Controllers.Meituan
         [HttpPost]
         public IHttpActionResult OrderDeliveringStatus(string userId)
         {
-            Task task1 = Task.Factory.StartNew(() =>
+            var context = HttpContext.Current;
+
+            Task task = Task.Factory.StartNew((con) =>
             {
-                
-            });
+                string res = HttpCommon.PostReceive(con);
+                try
+                {
+                    _log.DebugFormat("【信息记录】类型:OrderDeliveringStatus 信息{0}", res);
+                    _service.HandlePush("OrderDeliveringStatus", "",res);
+                }
+                catch (Exception e)
+                {
+                    _log.DebugFormat("【系统错误】用户:{0} 类型:OrderDeliveringStatus 信息:{1} 错误:{2}", "",res, e.Message);
+                    _log.DebugFormat("【系统错误】用户:{0} 类型:OrderDeliveringStatus 信息:{1} 错误:{2}", "",res, e.GetOriginalException().Message);
+                }
+            }, context);
             return Json(new { data = "ok" });
         }
 
@@ -196,10 +217,6 @@ namespace O2O.Api.Controllers.Meituan
         [HttpPost]
         public IHttpActionResult OrderPrivacy(string userId)
         {
-            Task task1 = Task.Factory.StartNew(() =>
-            {
-                
-            });
             return Json(new { data = "ok" });
         }
 

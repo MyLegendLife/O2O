@@ -20,7 +20,7 @@ namespace O2O.Web.Areas.Meituan.Controllers
         public ShopMapController()
         {
             IMtAccountService service = new MtAccountService();
-            AccountDTO account = service.GetAccount(Global.USER_ID);
+            Mt_AccountDTO account = service.GetAccount(Global.USER_ID);
 
             _tuangouAppKey = account.TuangouAppKey;
             _tuangouAppSecret = account.TuangouAppSecret;

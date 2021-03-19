@@ -1,6 +1,6 @@
 using System;
 
-namespace O2O.Model
+namespace O2O.Model.Entities
 {
     public abstract class BaseEntity
     {

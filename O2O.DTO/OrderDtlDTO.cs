@@ -14,5 +14,6 @@ namespace O2O.DTO
         public double Price { set; get; } //商品原价
         public double ItemCnt { set; get; }//数量
         public double ItemSum { set; get; }//金额
+        public double RefundPartCnt { get; set; } //部分退款数量
     }
 }

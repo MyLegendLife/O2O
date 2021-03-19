@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
 using O2O.Common;
-using O2O.Common.Eleme;
 using O2O.IService;
 using O2O.Service.Eleme;
 using System;

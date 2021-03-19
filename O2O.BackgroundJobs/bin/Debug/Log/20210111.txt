@@ -1,0 +1,537 @@
+2021-01-11 16:02:23,046 [5] INFO  Hangfire.SqlServer.SqlServerObjectsInstaller - Start installing Hangfire SQL objects...
+2021-01-11 16:02:23,279 [5] INFO  Hangfire.SqlServer.SqlServerObjectsInstaller - Hangfire SQL objects installed.
+2021-01-11 16:02:23,300 [5] INFO  Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: .@BakO2O'
+2021-01-11 16:02:23,301 [5] INFO  Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2021-01-11 16:02:23,301 [5] INFO  Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-01-11 16:02:23,316 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop BackgroundServerProcess:34bea5c6 has started in 4.2962 ms
+2021-01-11 16:02:23,319 [5] DEBUG Hangfire.Server.AspNetShutdownDetector - HostingEnvironment.StopListening shutdown trigger initialized successfully.
+2021-01-11 16:02:23,319 [5] DEBUG Hangfire.Server.AspNetShutdownDetector - HostingEnvironment.ShutdownReason shutdown trigger initialized successfully.
+2021-01-11 16:02:23,321 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 is announcing itself...
+2021-01-11 16:02:23,458 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 successfully announced in 137.0206 ms
+2021-01-11 16:02:23,462 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerHeartbeatProcess:7f0fcdd1 has started in 1.6334 ms
+2021-01-11 16:02:23,463 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-01-11 16:02:23,464 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerWatchdog:aa305497 has started in 0.85 ms
+2021-01-11 16:02:23,465 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:15904:6da48578 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:02:23,466 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerJobCancellationWatcher:205d83c5 has started in 0.5258 ms
+2021-01-11 16:02:23,467 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:02:23,467 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:02:23,468 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ExpirationManager:3b2643e0 has started in 0.6158 ms
+2021-01-11 16:02:23,469 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'AggregatedCounter' table...
+2021-01-11 16:02:23,469 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop CountersAggregator:df2026ab has started in 0.8442 ms
+2021-01-11 16:02:23,469 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator - Aggregating records in 'Counter' table...
+2021-01-11 16:02:23,470 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:fc9b66da has started in 0.6653 ms
+2021-01-11 16:02:23,471 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:beb5c5b6 has started in 1.0843 ms
+2021-01-11 16:02:23,472 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:35071540 has started in 1.8501 ms
+2021-01-11 16:02:23,479 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:b4d7cb16 has started in 9.527 ms
+2021-01-11 16:02:23,481 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:e6a1b90f has started in 11.2688 ms
+2021-01-11 16:02:23,481 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:a885cbc9 has started in 11.5348 ms
+2021-01-11 16:02:23,481 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:90578742 has started in 11.686 ms
+2021-01-11 16:02:23,482 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:7e5f0cd4 has started in 11.9611 ms
+2021-01-11 16:02:23,482 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:640b4a76 has started in 12.1179 ms
+2021-01-11 16:02:23,482 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:fb80cc99 has started in 12.5644 ms
+2021-01-11 16:02:23,482 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:a88dc52b has started in 12.6851 ms
+2021-01-11 16:02:23,483 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:41af2579 has started in 13.0095 ms
+2021-01-11 16:02:23,483 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:27dde121 has started in 13.168 ms
+2021-01-11 16:02:23,483 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:64b0c7bd has started in 13.3341 ms
+2021-01-11 16:02:23,483 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:3df432ae has started in 13.4735 ms
+2021-01-11 16:02:23,483 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6eeff913 has started in 13.6026 ms
+2021-01-11 16:02:23,483 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:95187dad has started in 13.7113 ms
+2021-01-11 16:02:23,484 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:f56965c5 has started in 13.859 ms
+2021-01-11 16:02:23,484 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:466afe6d has started in 13.9819 ms
+2021-01-11 16:02:23,484 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0e52616a has started in 14.0701 ms
+2021-01-11 16:02:23,485 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop DelayedJobScheduler:2cbfe06c has started in 0.4757 ms
+2021-01-11 16:02:23,486 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'AggregatedCounter' table.
+2021-01-11 16:02:23,486 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Job' table...
+2021-01-11 16:02:23,486 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 all the dispatchers started
+2021-01-11 16:02:23,486 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop RecurringJobScheduler:6fe020dd has started in 0.5017 ms
+2021-01-11 16:02:23,510 [5] DEBUG Hangfire.RecurringJobManager - Recurring job 'AuthJob.ExecuteAsync' is being updated. RecurringJob: (), Changes: (Queue:default;Cron:3 16 * * *;TimeZoneId:UTC;Job:{"Type":"O2O.BackgroundJobs.Jobs.AuthJob, O2O.BackgroundJobs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","Method":"ExecuteAsync","ParameterTypes":"[]","Arguments":"[]"};CreatedAt:2021-01-11T08:02:23.5010321Z;NextExecution:2021-01-11T16:03:00.0000000Z;V:2), NextExecution: (2021/1/11 16:03:00)
+2021-01-11 16:02:23,522 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Job' table.
+2021-01-11 16:02:23,522 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'List' table...
+2021-01-11 16:02:23,524 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'List' table.
+2021-01-11 16:02:23,524 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Set' table...
+2021-01-11 16:02:23,526 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Set' table.
+2021-01-11 16:02:23,526 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Hash' table...
+2021-01-11 16:02:23,528 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Hash' table.
+2021-01-11 16:02:23,536 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator - Records from the 'Counter' table aggregated.
+2021-01-11 16:02:23,561 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler - Recurring job 'UpDownJob.ExecuteAsync' is being updated. RecurringJob: (CreatedAt:2020-11-26T03:22:29.1098009Z;Cron:0 0/5 6-23 * * ?;Job:{"Type":"O2O.BackgroundJobs.Jobs.UpDownJob, O2O.BackgroundJobs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","Method":"ExecuteAsync","ParameterTypes":"[]","Arguments":"[]"};LastExecution:2020-11-27T06:05:56.1775597Z;LastJobId:32;NextExecution:2020-11-27T06:10:00.0000000Z;Queue:default;TimeZoneId:China Standard Time;V:2), Changes: (LastExecution:2021-01-11T08:02:23.5080333Z;NextExecution:2021-01-11T08:05:00.0000000Z;LastJobId:10032), NextExecution: (2021/1/11 8:05:00)
+2021-01-11 16:02:23,573 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler - 1 recurring job(s) processed by scheduler.
+2021-01-11 16:02:25,976 [38] DEBUG UpDownJob - 【系统错误】：Login failed for user 'addlove_365_new'.
+2021-01-11 16:02:28,467 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:02:28,467 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:02:33,397 [4] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 caught stopping signal...
+2021-01-11 16:02:33,398 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ExpirationManager:3b2643e0 stopped in 0 ms
+2021-01-11 16:02:33,398 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:466afe6d stopped in 0 ms
+2021-01-11 16:02:33,398 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:35071540 stopped in 0.0509 ms
+2021-01-11 16:02:33,398 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:90578742 stopped in 0.0475 ms
+2021-01-11 16:02:33,398 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop CountersAggregator:df2026ab stopped in 0.2111 ms
+2021-01-11 16:02:33,399 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0e52616a stopped in 0.3095 ms
+2021-01-11 16:02:33,399 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6eeff913 stopped in 0.379 ms
+2021-01-11 16:02:33,399 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:7e5f0cd4 stopped in 0.4363 ms
+2021-01-11 16:02:33,399 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:41af2579 stopped in 0.3872 ms
+2021-01-11 16:02:33,399 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:b4d7cb16 stopped in 0.5308 ms
+2021-01-11 16:02:33,399 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop RecurringJobScheduler:6fe020dd stopped in 1.049 ms
+2021-01-11 16:02:33,399 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:95187dad stopped in 0.611 ms
+2021-01-11 16:02:33,399 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:27dde121 stopped in 0.663 ms
+2021-01-11 16:02:33,399 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:640b4a76 stopped in 0.7299 ms
+2021-01-11 16:02:33,399 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:e6a1b90f stopped in 0.7806 ms
+2021-01-11 16:02:33,399 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:fc9b66da stopped in 0.8364 ms
+2021-01-11 16:02:33,399 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerJobCancellationWatcher:205d83c5 stopped in 0.8679 ms
+2021-01-11 16:02:33,399 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:a885cbc9 stopped in 0.9077 ms
+2021-01-11 16:02:33,399 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:64b0c7bd stopped in 1.0162 ms
+2021-01-11 16:02:33,399 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:f56965c5 stopped in 1.0396 ms
+2021-01-11 16:02:33,399 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:fb80cc99 stopped in 1.0509 ms
+2021-01-11 16:02:33,399 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:beb5c5b6 stopped in 1.1211 ms
+2021-01-11 16:02:33,399 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:3df432ae stopped in 1.2045 ms
+2021-01-11 16:02:33,400 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:a88dc52b stopped in 1.3092 ms
+2021-01-11 16:02:33,400 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerWatchdog:aa305497 stopped in 1.358 ms
+2021-01-11 16:02:33,400 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop DelayedJobScheduler:2cbfe06c stopped in 1.9632 ms
+2021-01-11 16:02:33,400 [6] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 caught stopped signal...
+2021-01-11 16:02:33,400 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 All dispatchers stopped
+2021-01-11 16:02:33,400 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerHeartbeatProcess:7f0fcdd1 stopped in 2.0706 ms
+2021-01-11 16:02:33,402 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 is reporting itself as stopped...
+2021-01-11 16:02:33,404 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 successfully reported itself as stopped in 2.546 ms
+2021-01-11 16:02:33,404 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:15904:6da48578 has been stopped in total 6.0016 ms
+2021-01-11 16:02:33,405 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop BackgroundServerProcess:34bea5c6 stopped in 5.1051 ms
+2021-01-11 16:03:35,675 [5] INFO  Hangfire.SqlServer.SqlServerObjectsInstaller - Start installing Hangfire SQL objects...
+2021-01-11 16:03:35,889 [5] INFO  Hangfire.SqlServer.SqlServerObjectsInstaller - Hangfire SQL objects installed.
+2021-01-11 16:03:35,918 [5] INFO  Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: .@BakO2O'
+2021-01-11 16:03:35,919 [5] INFO  Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2021-01-11 16:03:35,919 [5] INFO  Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-01-11 16:03:35,966 [5] DEBUG Hangfire.Server.AspNetShutdownDetector - HostingEnvironment.StopListening shutdown trigger initialized successfully.
+2021-01-11 16:03:35,966 [5] DEBUG Hangfire.Server.AspNetShutdownDetector - HostingEnvironment.ShutdownReason shutdown trigger initialized successfully.
+2021-01-11 16:03:35,966 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop BackgroundServerProcess:c18ef471 has started in 14.7103 ms
+2021-01-11 16:03:35,975 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 is announcing itself...
+2021-01-11 16:03:36,154 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 successfully announced in 177.8536 ms
+2021-01-11 16:03:36,158 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerHeartbeatProcess:77e5f712 has started in 2.6712 ms
+2021-01-11 16:03:36,161 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:29536:185d8c26 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:03:36,162 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-01-11 16:03:36,169 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerWatchdog:ae6db431 has started in 5.8316 ms
+2021-01-11 16:03:36,174 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerJobCancellationWatcher:f36f1426 has started in 6.1748 ms
+2021-01-11 16:03:36,177 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:03:36,178 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:03:36,184 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ExpirationManager:e4bcc072 has started in 10.4817 ms
+2021-01-11 16:03:36,185 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'AggregatedCounter' table...
+2021-01-11 16:03:36,187 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop CountersAggregator:b21148f7 has started in 7.1741 ms
+2021-01-11 16:03:36,188 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator - Aggregating records in 'Counter' table...
+2021-01-11 16:03:36,201 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:fde54e19 has started in 14.2635 ms
+2021-01-11 16:03:36,204 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'AggregatedCounter' table.
+2021-01-11 16:03:36,204 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Job' table...
+2021-01-11 16:03:36,212 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Job' table.
+2021-01-11 16:03:36,212 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'List' table...
+2021-01-11 16:03:36,235 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:922fb0a6 has started in 47.9701 ms
+2021-01-11 16:03:36,249 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'List' table.
+2021-01-11 16:03:36,249 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Set' table...
+2021-01-11 16:03:36,270 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator - Records from the 'Counter' table aggregated.
+2021-01-11 16:03:36,270 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:85c6fd6b has started in 83.4714 ms
+2021-01-11 16:03:36,273 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Set' table.
+2021-01-11 16:03:36,273 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Hash' table...
+2021-01-11 16:03:36,297 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:9f67882a has started in 110.4684 ms
+2021-01-11 16:03:36,302 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Hash' table.
+2021-01-11 16:03:36,329 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:b1428de6 has started in 142.2833 ms
+2021-01-11 16:03:36,343 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:3a3739a7 has started in 157.0149 ms
+2021-01-11 16:03:36,361 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:842c4efe has started in 174.605 ms
+2021-01-11 16:03:36,367 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6726be0d has started in 180.6879 ms
+2021-01-11 16:03:36,373 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:ea148d7f has started in 186.9753 ms
+2021-01-11 16:03:36,379 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0ea422a7 has started in 192.3439 ms
+2021-01-11 16:03:36,395 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:a485f4e8 has started in 208.9853 ms
+2021-01-11 16:03:36,396 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:7582000c has started in 209.9679 ms
+2021-01-11 16:03:36,402 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:c4b89efc has started in 215.6095 ms
+2021-01-11 16:03:36,406 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:c00c5c4d has started in 220.2426 ms
+2021-01-11 16:03:36,417 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:79a03e03 has started in 231.0863 ms
+2021-01-11 16:03:36,424 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6710ea1e has started in 237.9584 ms
+2021-01-11 16:03:36,433 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:082a0d5a has started in 246.7421 ms
+2021-01-11 16:03:36,449 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:c4f0d57e has started in 262.7684 ms
+2021-01-11 16:03:36,455 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6d8e2e8b has started in 268.9725 ms
+2021-01-11 16:03:36,466 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0bf8ef80 has started in 279.9924 ms
+2021-01-11 16:03:36,471 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop DelayedJobScheduler:5947ad0d has started in 10.4723 ms
+2021-01-11 16:03:36,473 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 all the dispatchers started
+2021-01-11 16:03:36,488 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop RecurringJobScheduler:35ce4ed8 has started in 18.442 ms
+2021-01-11 16:03:41,189 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:03:41,189 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:03:46,198 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:03:46,198 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:03:51,199 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:03:51,199 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:03:56,211 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:03:56,211 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:01,213 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:01,213 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:06,166 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:29536:185d8c26 heartbeat successfully sent
+2021-01-11 16:04:06,166 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:29536:185d8c26 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:04:06,214 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:06,214 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:11,222 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:11,222 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:16,032 [6] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 caught stopping signal...
+2021-01-11 16:04:16,033 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0bf8ef80 stopped in 0 ms
+2021-01-11 16:04:16,033 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6710ea1e stopped in 0.0209 ms
+2021-01-11 16:04:16,033 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop DelayedJobScheduler:5947ad0d stopped in 1.0588 ms
+2021-01-11 16:04:16,033 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:082a0d5a stopped in 0.2678 ms
+2021-01-11 16:04:16,034 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:b1428de6 stopped in 0.7517 ms
+2021-01-11 16:04:16,034 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerWatchdog:ae6db431 stopped in 0.9001 ms
+2021-01-11 16:04:16,034 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:c4f0d57e stopped in 1.148 ms
+2021-01-11 16:04:16,034 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:c00c5c4d stopped in 1.1862 ms
+2021-01-11 16:04:16,035 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:3a3739a7 stopped in 1.2977 ms
+2021-01-11 16:04:16,035 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:922fb0a6 stopped in 1.3726 ms
+2021-01-11 16:04:16,035 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6d8e2e8b stopped in 1.4663 ms
+2021-01-11 16:04:16,035 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:79a03e03 stopped in 1.5081 ms
+2021-01-11 16:04:16,035 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ExpirationManager:e4bcc072 stopped in 1.6429 ms
+2021-01-11 16:04:16,035 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:842c4efe stopped in 1.6745 ms
+2021-01-11 16:04:16,035 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:7582000c stopped in 1.856 ms
+2021-01-11 16:04:16,035 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6726be0d stopped in 1.9524 ms
+2021-01-11 16:04:16,035 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:9f67882a stopped in 1.9933 ms
+2021-01-11 16:04:16,035 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop CountersAggregator:b21148f7 stopped in 2.0057 ms
+2021-01-11 16:04:16,035 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:c4b89efc stopped in 2.0939 ms
+2021-01-11 16:04:16,035 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:ea148d7f stopped in 2.2125 ms
+2021-01-11 16:04:16,035 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:fde54e19 stopped in 2.2209 ms
+2021-01-11 16:04:16,036 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop RecurringJobScheduler:35ce4ed8 stopped in 3.2683 ms
+2021-01-11 16:04:16,036 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerJobCancellationWatcher:f36f1426 stopped in 2.3699 ms
+2021-01-11 16:04:16,036 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0ea422a7 stopped in 2.5441 ms
+2021-01-11 16:04:16,036 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:a485f4e8 stopped in 2.6023 ms
+2021-01-11 16:04:16,036 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:85c6fd6b stopped in 2.6532 ms
+2021-01-11 16:04:16,036 [4] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 caught stopped signal...
+2021-01-11 16:04:16,037 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 All dispatchers stopped
+2021-01-11 16:04:16,037 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerHeartbeatProcess:77e5f712 stopped in 3.7261 ms
+2021-01-11 16:04:16,039 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 is reporting itself as stopped...
+2021-01-11 16:04:16,046 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 successfully reported itself as stopped in 7.3733 ms
+2021-01-11 16:04:16,046 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:29536:185d8c26 has been stopped in total 12.9632 ms
+2021-01-11 16:04:16,046 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop BackgroundServerProcess:c18ef471 stopped in 11.4548 ms
+2021-01-11 16:04:25,633 [5] INFO  Hangfire.SqlServer.SqlServerObjectsInstaller - Start installing Hangfire SQL objects...
+2021-01-11 16:04:25,814 [5] INFO  Hangfire.SqlServer.SqlServerObjectsInstaller - Hangfire SQL objects installed.
+2021-01-11 16:04:25,837 [5] INFO  Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: .@BakO2O'
+2021-01-11 16:04:25,837 [5] INFO  Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2021-01-11 16:04:25,837 [5] INFO  Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-01-11 16:04:25,856 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop BackgroundServerProcess:2532bc2c has started in 6.1775 ms
+2021-01-11 16:04:25,861 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d is announcing itself...
+2021-01-11 16:04:25,866 [5] DEBUG Hangfire.Server.AspNetShutdownDetector - HostingEnvironment.StopListening shutdown trigger initialized successfully.
+2021-01-11 16:04:25,867 [5] DEBUG Hangfire.Server.AspNetShutdownDetector - HostingEnvironment.ShutdownReason shutdown trigger initialized successfully.
+2021-01-11 16:04:26,003 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d successfully announced in 141.0141 ms
+2021-01-11 16:04:26,010 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerHeartbeatProcess:51f9717f has started in 5.116 ms
+2021-01-11 16:04:26,010 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-01-11 16:04:26,013 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:27812:d818741d waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:04:26,014 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerWatchdog:079362d0 has started in 2.8972 ms
+2021-01-11 16:04:26,018 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerJobCancellationWatcher:82911365 has started in 3.6951 ms
+2021-01-11 16:04:26,019 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:26,019 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:26,023 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ExpirationManager:49eaca1e has started in 4.4825 ms
+2021-01-11 16:04:26,025 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'AggregatedCounter' table...
+2021-01-11 16:04:26,026 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop CountersAggregator:5323d41f has started in 3.7561 ms
+2021-01-11 16:04:26,027 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator - Aggregating records in 'Counter' table...
+2021-01-11 16:04:26,030 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:023df3ef has started in 4.4277 ms
+2021-01-11 16:04:26,034 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6571ee3b has started in 8.7224 ms
+2021-01-11 16:04:26,045 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'AggregatedCounter' table.
+2021-01-11 16:04:26,045 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Job' table...
+2021-01-11 16:04:26,045 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:aadb5162 has started in 19.7001 ms
+2021-01-11 16:04:26,054 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Job' table.
+2021-01-11 16:04:26,055 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'List' table...
+2021-01-11 16:04:26,056 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:bbde3f67 has started in 30.34 ms
+2021-01-11 16:04:26,061 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'List' table.
+2021-01-11 16:04:26,061 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Set' table...
+2021-01-11 16:04:26,061 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:899dd3e8 has started in 36.0166 ms
+2021-01-11 16:04:26,073 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:ae88985e has started in 47.8637 ms
+2021-01-11 16:04:26,079 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator - Records from the 'Counter' table aggregated.
+2021-01-11 16:04:26,079 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:37aceb79 has started in 53.7058 ms
+2021-01-11 16:04:26,085 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:ecfbf6cc has started in 59.9666 ms
+2021-01-11 16:04:26,096 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:58e9c402 has started in 70.5201 ms
+2021-01-11 16:04:26,098 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Set' table.
+2021-01-11 16:04:26,098 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Hash' table...
+2021-01-11 16:04:26,103 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d34a3982 has started in 78.0855 ms
+2021-01-11 16:04:26,104 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Hash' table.
+2021-01-11 16:04:26,107 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:973d530a has started in 81.6803 ms
+2021-01-11 16:04:26,109 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:dd982973 has started in 83.7645 ms
+2021-01-11 16:04:26,111 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0798f9ba has started in 85.9298 ms
+2021-01-11 16:04:26,113 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:322c7b84 has started in 87.416 ms
+2021-01-11 16:04:26,114 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d8d82fb7 has started in 89.1544 ms
+2021-01-11 16:04:26,118 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:627cc038 has started in 92.6315 ms
+2021-01-11 16:04:26,120 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d2b61b4e has started in 94.456 ms
+2021-01-11 16:04:26,121 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:8e6522d3 has started in 96.082 ms
+2021-01-11 16:04:26,124 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:e49cfdba has started in 98.5065 ms
+2021-01-11 16:04:26,125 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0a1cccfa has started in 100.0314 ms
+2021-01-11 16:04:26,128 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop DelayedJobScheduler:3ce53d11 has started in 2.7401 ms
+2021-01-11 16:04:26,130 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d all the dispatchers started
+2021-01-11 16:04:26,137 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop RecurringJobScheduler:5290f1df has started in 8.2845 ms
+2021-01-11 16:04:31,021 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:31,021 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:36,022 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:36,022 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:41,024 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:41,024 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:46,026 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:46,026 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:51,026 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:51,026 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:04:56,022 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:27812:d818741d heartbeat successfully sent
+2021-01-11 16:04:56,023 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:27812:d818741d waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:04:56,026 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:04:56,026 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:01,027 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:01,027 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:06,027 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:06,027 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:11,028 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:11,028 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:11,205 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler - Recurring job 'UpDownJob.ExecuteAsync' is being updated. RecurringJob: (CreatedAt:2020-11-26T03:22:29.1098009Z;Cron:0 0/5 6-23 * * ?;Job:{"Type":"O2O.BackgroundJobs.Jobs.UpDownJob, O2O.BackgroundJobs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","Method":"ExecuteAsync","ParameterTypes":"[]","Arguments":"[]"};LastExecution:2021-01-11T08:02:23.5080333Z;LastJobId:10032;NextExecution:2021-01-11T08:05:00.0000000Z;Queue:default;TimeZoneId:China Standard Time;V:2), Changes: (LastExecution:2021-01-11T08:05:11.1483661Z;NextExecution:2021-01-11T08:10:00.0000000Z;LastJobId:10033), NextExecution: (2021/1/11 8:10:00)
+2021-01-11 16:05:11,235 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler - 1 recurring job(s) processed by scheduler.
+2021-01-11 16:05:13,742 [4] DEBUG UpDownJob - 【系统错误】：Login failed for user 'addlove_365_new'.
+2021-01-11 16:05:16,028 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:16,028 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:21,028 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:21,028 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:26,027 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:27812:d818741d heartbeat successfully sent
+2021-01-11 16:05:26,027 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:27812:d818741d waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:05:26,029 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:26,029 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:31,029 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:31,029 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:36,030 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:36,030 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:41,030 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:41,030 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:46,030 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:46,030 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:51,030 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:51,030 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:05:56,029 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:27812:d818741d heartbeat successfully sent
+2021-01-11 16:05:56,029 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:27812:d818741d waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:05:56,031 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:05:56,031 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:06:01,032 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:06:01,032 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:06:06,032 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:06:06,032 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:06:11,033 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:06:11,033 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:06:16,033 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:06:16,033 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:06:19,063 [5] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d caught stopping signal...
+2021-01-11 16:06:19,064 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:dd982973 stopped in 0 ms
+2021-01-11 16:06:19,065 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:023df3ef stopped in 0.2551 ms
+2021-01-11 16:06:19,065 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop DelayedJobScheduler:3ce53d11 stopped in 0.7573 ms
+2021-01-11 16:06:19,065 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:627cc038 stopped in 0.432 ms
+2021-01-11 16:06:19,065 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:58e9c402 stopped in 0.4411 ms
+2021-01-11 16:06:19,065 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerWatchdog:079362d0 stopped in 0.4979 ms
+2021-01-11 16:06:19,065 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerJobCancellationWatcher:82911365 stopped in 0.5853 ms
+2021-01-11 16:06:19,065 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:8e6522d3 stopped in 0.6373 ms
+2021-01-11 16:06:19,065 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:322c7b84 stopped in 0.647 ms
+2021-01-11 16:06:19,065 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:ae88985e stopped in 0.7717 ms
+2021-01-11 16:06:19,065 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:6571ee3b stopped in 0.8124 ms
+2021-01-11 16:06:19,065 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:e49cfdba stopped in 0.8111 ms
+2021-01-11 16:06:19,065 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:973d530a stopped in 0.919 ms
+2021-01-11 16:06:19,065 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ExpirationManager:49eaca1e stopped in 0.9514 ms
+2021-01-11 16:06:19,065 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:37aceb79 stopped in 1.0369 ms
+2021-01-11 16:06:19,065 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:aadb5162 stopped in 1.0743 ms
+2021-01-11 16:06:19,066 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0a1cccfa stopped in 1.2503 ms
+2021-01-11 16:06:19,066 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:ecfbf6cc stopped in 1.2992 ms
+2021-01-11 16:06:19,066 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop CountersAggregator:5323d41f stopped in 1.3068 ms
+2021-01-11 16:06:19,066 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:bbde3f67 stopped in 1.3816 ms
+2021-01-11 16:06:19,066 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d2b61b4e stopped in 1.4646 ms
+2021-01-11 16:06:19,066 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:0798f9ba stopped in 1.4823 ms
+2021-01-11 16:06:19,066 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:899dd3e8 stopped in 1.5857 ms
+2021-01-11 16:06:19,066 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop RecurringJobScheduler:5290f1df stopped in 2.1332 ms
+2021-01-11 16:06:19,066 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d34a3982 stopped in 1.7632 ms
+2021-01-11 16:06:19,066 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d8d82fb7 stopped in 1.8666 ms
+2021-01-11 16:06:19,066 [4] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d caught stopped signal...
+2021-01-11 16:06:19,067 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d All dispatchers stopped
+2021-01-11 16:06:19,067 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerHeartbeatProcess:51f9717f stopped in 2.8044 ms
+2021-01-11 16:06:19,070 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d is reporting itself as stopped...
+2021-01-11 16:06:19,074 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d successfully reported itself as stopped in 4.3743 ms
+2021-01-11 16:06:19,074 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:27812:d818741d has been stopped in total 9.6242 ms
+2021-01-11 16:06:19,074 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop BackgroundServerProcess:2532bc2c stopped in 8.7931 ms
+2021-01-11 16:06:49,882 [5] INFO  Hangfire.SqlServer.SqlServerObjectsInstaller - Start installing Hangfire SQL objects...
+2021-01-11 16:06:50,074 [5] INFO  Hangfire.SqlServer.SqlServerObjectsInstaller - Hangfire SQL objects installed.
+2021-01-11 16:06:50,095 [5] INFO  Hangfire.BackgroundJobServer - Starting Hangfire Server using job storage: 'SQL Server: .@BakO2O'
+2021-01-11 16:06:50,095 [5] INFO  Hangfire.BackgroundJobServer - Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2021-01-11 16:06:50,095 [5] INFO  Hangfire.BackgroundJobServer - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-01-11 16:06:50,116 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop BackgroundServerProcess:360907ef has started in 6.0295 ms
+2021-01-11 16:06:50,126 [5] DEBUG Hangfire.Server.AspNetShutdownDetector - HostingEnvironment.StopListening shutdown trigger initialized successfully.
+2021-01-11 16:06:50,126 [5] DEBUG Hangfire.Server.AspNetShutdownDetector - HostingEnvironment.ShutdownReason shutdown trigger initialized successfully.
+2021-01-11 16:06:50,128 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 is announcing itself...
+2021-01-11 16:06:50,265 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 successfully announced in 136.3123 ms
+2021-01-11 16:06:50,271 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerHeartbeatProcess:9cbd710f has started in 3.4853 ms
+2021-01-11 16:06:50,271 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-01-11 16:06:50,274 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:06:50,274 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerWatchdog:a97a0718 has started in 2.6845 ms
+2021-01-11 16:06:50,277 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerJobCancellationWatcher:f28636e2 has started in 2.7634 ms
+2021-01-11 16:06:50,285 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:06:50,285 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:06:50,308 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ExpirationManager:3b428114 has started in 30.7234 ms
+2021-01-11 16:06:50,310 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop CountersAggregator:ebfacd7c has started in 23.9767 ms
+2021-01-11 16:06:50,310 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'AggregatedCounter' table...
+2021-01-11 16:06:50,310 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator - Aggregating records in 'Counter' table...
+2021-01-11 16:06:50,333 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:70e75828 has started in 22.5313 ms
+2021-01-11 16:06:50,333 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:58694406 has started in 22.5678 ms
+2021-01-11 16:06:50,338 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:237f9e3a has started in 27.8747 ms
+2021-01-11 16:06:50,343 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:19a9dcc7 has started in 32.738 ms
+2021-01-11 16:06:50,346 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:82c8ef94 has started in 35.623 ms
+2021-01-11 16:06:50,347 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:8b9b6eba has started in 36.5709 ms
+2021-01-11 16:06:50,347 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'AggregatedCounter' table.
+2021-01-11 16:06:50,347 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Job' table...
+2021-01-11 16:06:50,355 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:43caf31e has started in 45.1711 ms
+2021-01-11 16:06:50,358 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:86db8fe2 has started in 47.8472 ms
+2021-01-11 16:06:50,362 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d8e15013 has started in 51.6127 ms
+2021-01-11 16:06:50,365 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:4f1f6c89 has started in 54.8171 ms
+2021-01-11 16:06:50,368 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:466e705c has started in 58.2049 ms
+2021-01-11 16:06:50,368 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Job' table.
+2021-01-11 16:06:50,370 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'List' table...
+2021-01-11 16:06:50,370 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:5e286823 has started in 59.82 ms
+2021-01-11 16:06:50,372 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:86729cc5 has started in 62.132 ms
+2021-01-11 16:06:50,373 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'List' table.
+2021-01-11 16:06:50,373 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Set' table...
+2021-01-11 16:06:50,374 [CountersAggregator #1] DEBUG Hangfire.SqlServer.CountersAggregator - Records from the 'Counter' table aggregated.
+2021-01-11 16:06:50,375 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:7bb1a77e has started in 64.516 ms
+2021-01-11 16:06:50,376 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:c9771333 has started in 66.2558 ms
+2021-01-11 16:06:50,377 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Set' table.
+2021-01-11 16:06:50,377 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Removing outdated records from the 'Hash' table...
+2021-01-11 16:06:50,379 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:611bd28c has started in 69.1205 ms
+2021-01-11 16:06:50,380 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:a71ac012 has started in 70.3059 ms
+2021-01-11 16:06:50,381 [ExpirationManager #1] DEBUG Hangfire.SqlServer.ExpirationManager - Outdated records removed from the 'Hash' table.
+2021-01-11 16:06:50,406 [5] DEBUG Hangfire.RecurringJobManager - Recurring job 'AuthJob.ExecuteAsync' is being updated. RecurringJob: (CreatedAt:2021-01-11T08:02:23.5010321Z;Cron:3 16 * * *;Job:{"Type":"O2O.BackgroundJobs.Jobs.AuthJob, O2O.BackgroundJobs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","Method":"ExecuteAsync","ParameterTypes":"[]","Arguments":"[]"};NextExecution:2021-01-11T16:03:00.0000000Z;Queue:default;TimeZoneId:UTC;V:2), Changes: (Cron:8 16 * * *;TimeZoneId:China Standard Time;NextExecution:2021-01-11T08:08:00.0000000Z), NextExecution: (2021/1/11 8:08:00)
+2021-01-11 16:06:50,406 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:2bf1e105 has started in 96.1378 ms
+2021-01-11 16:06:50,406 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:df30d54a has started in 96.2054 ms
+2021-01-11 16:06:50,408 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d8ccef07 has started in 98.0459 ms
+2021-01-11 16:06:50,411 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop DelayedJobScheduler:91453a0d has started in 2.1972 ms
+2021-01-11 16:06:50,413 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 all the dispatchers started
+2021-01-11 16:06:50,416 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop RecurringJobScheduler:ccc6991d has started in 4.6042 ms
+2021-01-11 16:06:55,290 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:06:55,290 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:00,290 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:00,290 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:05,290 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:05,290 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:10,291 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:10,291 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:15,292 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:15,292 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:20,281 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 heartbeat successfully sent
+2021-01-11 16:07:20,281 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:07:20,293 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:20,293 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:25,293 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:25,293 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:30,293 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:30,293 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:35,293 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:35,293 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:40,294 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:40,294 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:45,294 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:45,294 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:50,283 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 heartbeat successfully sent
+2021-01-11 16:07:50,283 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:07:50,295 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:50,295 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:07:55,295 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:07:55,295 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:08:00,295 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:08:00,295 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:08:05,296 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:08:05,296 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:08:05,499 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler - Recurring job 'AuthJob.ExecuteAsync' is being updated. RecurringJob: (CreatedAt:2021-01-11T08:02:23.5010321Z;Cron:8 16 * * *;Job:{"Type":"O2O.BackgroundJobs.Jobs.AuthJob, O2O.BackgroundJobs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","Method":"ExecuteAsync","ParameterTypes":"[]","Arguments":"[]"};NextExecution:2021-01-11T08:08:00.0000000Z;Queue:default;TimeZoneId:China Standard Time;V:2), Changes: (LastExecution:2021-01-11T08:08:05.4389446Z;NextExecution:2021-01-12T08:08:00.0000000Z;LastJobId:10034), NextExecution: (2021/1/12 8:08:00)
+2021-01-11 16:08:05,519 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler - 1 recurring job(s) processed by scheduler.
+2021-01-11 16:08:10,859 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:08:10,860 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:08:46,043 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:08:46,049 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:08:46,049 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 heartbeat successfully sent
+2021-01-11 16:08:46,571 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:08:54,136 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:08:54,136 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:09:02,816 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:09:02,816 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:09:06,286 [4] DEBUG UpDownJob - 【更新授权异常】：Unauthorized refresh token.
+2021-01-11 16:09:42,338 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:09:42,338 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:09:42,338 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 heartbeat successfully sent
+2021-01-11 16:09:42,338 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:10:03,314 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:03,318 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:04,076 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler - Recurring job 'UpDownJob.ExecuteAsync' is being updated. RecurringJob: (CreatedAt:2020-11-26T03:22:29.1098009Z;Cron:0 0/5 6-23 * * ?;Job:{"Type":"O2O.BackgroundJobs.Jobs.UpDownJob, O2O.BackgroundJobs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","Method":"ExecuteAsync","ParameterTypes":"[]","Arguments":"[]"};LastExecution:2021-01-11T08:05:11.1483661Z;LastJobId:10033;NextExecution:2021-01-11T08:10:00.0000000Z;Queue:default;TimeZoneId:China Standard Time;V:2), Changes: (LastExecution:2021-01-11T08:10:03.3185633Z;NextExecution:2021-01-11T08:15:00.0000000Z;LastJobId:10035), NextExecution: (2021/1/11 8:15:00)
+2021-01-11 16:10:13,423 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:13,424 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:13,424 [4] DEBUG UpDownJob - 【系统错误】：输入字符串的格式不正确。
+2021-01-11 16:10:13,427 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 heartbeat successfully sent
+2021-01-11 16:10:13,428 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:10:13,447 [RecurringJobScheduler #1] DEBUG Hangfire.Server.RecurringJobScheduler - 1 recurring job(s) processed by scheduler.
+2021-01-11 16:10:14,079 [40] DEBUG UpDownJob - 【系统错误】：Login failed for user 'addlove_365_new'.
+2021-01-11 16:10:18,424 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:18,424 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:23,424 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:23,424 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:28,425 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:28,425 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:33,425 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:33,425 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:38,426 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:38,426 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:43,426 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:43,426 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:43,428 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 heartbeat successfully sent
+2021-01-11 16:10:43,428 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:10:48,427 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:48,427 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:53,428 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:53,428 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:10:58,428 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:10:58,428 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:11:03,428 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:11:03,428 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:11:08,429 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:11:08,429 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:11:13,430 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:11:13,430 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:11:13,432 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 heartbeat successfully sent
+2021-01-11 16:11:13,433 [ServerHeartbeatProcess #1] DEBUG Hangfire.Server.ServerHeartbeatProcess - Server pc-202008221017:24388:2d3b66e9 waiting for 00:00:30 delay before sending a heartbeat
+2021-01-11 16:11:18,431 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:11:18,431 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:11:23,432 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+2021-01-11 16:11:23,432 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+2021-01-11 16:11:26,344 [5] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 caught stopping signal...
+2021-01-11 16:11:26,345 [Worker #20] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d8ccef07 stopped in 0 ms
+2021-01-11 16:11:26,345 [CountersAggregator #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop CountersAggregator:ebfacd7c stopped in 0 ms
+2021-01-11 16:11:26,345 [Worker #16] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:611bd28c stopped in 0.1432 ms
+2021-01-11 16:11:26,345 [Worker #12] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:5e286823 stopped in 0.1449 ms
+2021-01-11 16:11:26,345 [DelayedJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop DelayedJobScheduler:91453a0d stopped in 0.7759 ms
+2021-01-11 16:11:26,345 [Worker #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:70e75828 stopped in 0.2815 ms
+2021-01-11 16:11:26,346 [Worker #8] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:86db8fe2 stopped in 1.3752 ms
+2021-01-11 16:11:26,346 [Worker #4] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:19a9dcc7 stopped in 1.563 ms
+2021-01-11 16:11:26,347 [Worker #17] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:a71ac012 stopped in 1.7093 ms
+2021-01-11 16:11:26,347 [Worker #13] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:86729cc5 stopped in 1.7377 ms
+2021-01-11 16:11:26,347 [ServerWatchdog #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerWatchdog:a97a0718 stopped in 1.8422 ms
+2021-01-11 16:11:26,347 [RecurringJobScheduler #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop RecurringJobScheduler:ccc6991d stopped in 2.4321 ms
+2021-01-11 16:11:26,347 [ServerJobCancellationWatcher #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerJobCancellationWatcher:f28636e2 stopped in 2.0207 ms
+2021-01-11 16:11:26,347 [Worker #14] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:7bb1a77e stopped in 2.1449 ms
+2021-01-11 16:11:26,347 [Worker #10] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:4f1f6c89 stopped in 2.1589 ms
+2021-01-11 16:11:26,347 [ExpirationManager #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ExpirationManager:3b428114 stopped in 2.2642 ms
+2021-01-11 16:11:26,347 [Worker #15] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:c9771333 stopped in 2.3205 ms
+2021-01-11 16:11:26,347 [Worker #3] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:237f9e3a stopped in 2.4325 ms
+2021-01-11 16:11:26,345 [Worker #9] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:d8e15013 stopped in 0.5178 ms
+2021-01-11 16:11:26,346 [Worker #5] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:8b9b6eba stopped in 0.5676 ms
+2021-01-11 16:11:26,348 [4] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 caught stopped signal...
+2021-01-11 16:11:26,346 [Worker #18] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:2bf1e105 stopped in 0.7763 ms
+2021-01-11 16:11:26,346 [Worker #6] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:82c8ef94 stopped in 0.9492 ms
+2021-01-11 16:11:26,346 [Worker #2] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:58694406 stopped in 0.7334 ms
+2021-01-11 16:11:26,346 [Worker #19] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:df30d54a stopped in 0.9756 ms
+2021-01-11 16:11:26,346 [Worker #11] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:466e705c stopped in 1.1614 ms
+2021-01-11 16:11:26,346 [Worker #7] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop Worker:43caf31e stopped in 1.1786 ms
+2021-01-11 16:11:26,348 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 All dispatchers stopped
+2021-01-11 16:11:26,348 [ServerHeartbeatProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop ServerHeartbeatProcess:9cbd710f stopped in 3.5057 ms
+2021-01-11 16:11:26,350 [BackgroundServerProcess #1] DEBUG Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 is reporting itself as stopped...
+2021-01-11 16:11:26,355 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 successfully reported itself as stopped in 4.6686 ms
+2021-01-11 16:11:26,355 [BackgroundServerProcess #1] INFO  Hangfire.Server.BackgroundServerProcess - Server pc-202008221017:24388:2d3b66e9 has been stopped in total 9.5213 ms
+2021-01-11 16:11:26,355 [BackgroundServerProcess #1] DEBUG Hangfire.Processing.BackgroundExecution - Execution loop BackgroundServerProcess:360907ef stopped in 8.5096 ms

@@ -49,6 +49,16 @@ namespace O2O.Common
                     continue;
                 if (sourceType.GetProperty(item.Name) == null) 
                     continue;
+
+                ////DateTime转string（1970->立即送达）
+                //if (item.PropertyType == typeof(string) && sourceType.GetProperty(item.Name).PropertyType == typeof(DateTime))
+                //{
+                //    item.SetValue(targetEntity, sourceType.GetProperty(item.Name).GetValue(sourceEntity, null).ToString(), null);
+                //}
+                //else
+                //{
+                //    item.SetValue(targetEntity, sourceType.GetProperty(item.Name).GetValue(sourceEntity, null), null);
+                //}
                 item.SetValue(targetEntity, sourceType.GetProperty(item.Name).GetValue(sourceEntity, null), null);
             }
 
@@ -304,9 +314,36 @@ namespace O2O.Common
             return Enum.GetValues(type).OfType<Enum>()
                 .Select(a => new
                 {
-                    Key = Convert.ToInt32(a),
+                    Key = a.ToString(),
                     Value = a.GetDescription()
                 });
+        }
+
+        /// <summary>
+        /// 截取两个字符串间的内容
+        /// </summary>
+        /// <param name="sourse"></param>
+        /// <param name="startstr"></param>
+        /// <param name="endstr"></param>
+        /// <returns></returns>
+        public static string MidStrEx(string sourse, string startstr, string endstr)
+        {
+            string str1 = string.Empty;
+            try
+            {
+                int num = sourse.IndexOf(startstr);
+                if (num == -1)
+                    return str1;
+                string str2 = sourse.Substring(num + startstr.Length);
+                int startIndex = str2.IndexOf(endstr);
+                if (startIndex == -1)
+                    return str1;
+                str1 = str2.Remove(startIndex);
+            }
+            catch (Exception ex)
+            {
+            }
+            return str1;
         }
     }
 }

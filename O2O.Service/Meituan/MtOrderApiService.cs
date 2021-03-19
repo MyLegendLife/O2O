@@ -1,5 +1,6 @@
 using Newtonsoft.Json.Linq;
 using O2O.Common;
+using System;
 
 namespace O2O.Service.Meituan
 {
@@ -10,6 +11,17 @@ namespace O2O.Service.Meituan
         public MtOrderApiService(string userId, string shopNo = "") : base(userId, shopNo)
         {
 
+        }
+
+        public Result GetOrderDetail(string orderId)
+        {
+            var data = new
+            {
+                timestamp = ToolsCommon.GetTimestamp(),
+                app_id = _waimaiAppId,
+                order_id = orderId
+            };
+            return Tools.ResultMt(HttpCommon.Get(this.GetUrl("https://waimaiopen.meituan.com/api/v1/order/getOrderDetail", data)));
         }
 
         public Result Confirm(string orderID)
@@ -136,6 +148,19 @@ namespace O2O.Service.Meituan
             string url = GetUrl("https://waimaiopen.meituan.com/api/v1/order/getRiderInfoPhoneNumber", model);
 
             return Tools.ResultMt(HttpCommon.Post(url, modelBody));
+        }
+
+        public Result GetOrderIdByDaySeq(DateTime datetime, int daySeq)
+        {
+            var data = new
+            {
+                timestamp = ToolsCommon.GetTimestamp(),
+                app_id = this._waimaiAppId,
+                app_poi_code = this._shopNo,
+                date_time = datetime.ToString("yyyyMMdd"),
+                day_seq = daySeq
+            };
+            return Tools.ResultMt(HttpCommon.Get(this.GetUrl("https://waimaiopen.meituan.com/api/v1/order/getOrderIdByDaySeq", (object)data)));
         }
     }
 }

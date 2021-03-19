@@ -19,7 +19,7 @@ namespace O2O.Api.Models.Meituan
             [Description("向商家推送订单")]
             Two = 2,
 
-            [Display(Order = 1)]
+            [Display(Order = 0)]
             [Description("商家已收到")]
             Three = 3,
 
@@ -31,15 +31,15 @@ namespace O2O.Api.Models.Meituan
             [Description("订单配送中")]
             Six = 6,
 
-            [Display(Order = 1)]
+            [Display(Order = 4)]
             [Description("订单已送达")]
             Seven = 7,
 
-            [Display(Order = 3)]
+            [Display(Order = 4)]
             [Description("订单已完成")]
             Eight = 8,
 
-            [Display(Order = 4)]
+            [Display(Order = 2)]
             [Description("订单已取消")]
             Nine = 9,
         }
@@ -89,7 +89,7 @@ namespace O2O.Api.Models.Meituan
             C = 2003,
 
             [Description("APP方配送延迟")]
-            D = 20014,
+            D = 2004,
 
             [Description("APP方售后投诉")]
             E = 2005,
@@ -149,6 +149,27 @@ namespace O2O.Api.Models.Meituan
             [Display(Order = 4)]
             [Description("用户取消退款申请")]
             cancelRefund,
+
+            [Display(Order = 4), Description("用户取消退款申请")] 
+            cancelRefundComplaint,
+        }
+
+        public enum LogisticsStatus
+        {
+            [Display(Order = 1), Description("配送单发往配送")] 
+            A = 0,
+            [Display(Order = 1), Description(" 推送配送状态")]
+            Z = 5,
+            [Display(Order = 1), Description("配送单已确认")] 
+            B = 10, 
+            [Display(Order = 1), Description("骑手已到店")] 
+            C = 15, 
+            [Display(Order = 1), Description("骑手已取餐")] 
+            D = 20, 
+            [Display(Order = 4), Description("骑手已送达")] 
+            E = 40,
+            [Description("配送单已取消")] 
+            F = 100,
         }
     }
 }

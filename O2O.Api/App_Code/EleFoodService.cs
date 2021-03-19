@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using O2O.Common;
+using O2O.DTO.Eleme;
 using O2O.IService;
 using O2O.Service;
 using O2O.Service.Eleme;
@@ -57,12 +58,13 @@ namespace O2O.Api.App_Code
                                 var prod = new
                                 {
                                     CateName = cateName,
-                                    ProdCode = spec["specId"],
+                                    ProdCode = item.Value["id"]?.ToString() + ";" + spec["specId"]?.ToString(),
                                     ProdNo = spec["extendCode"],
                                     ProdName = itemName + spec["name"],
                                     Spec = "",
                                     Price = spec["price"],
-                                    Stock = spec["stock"]
+                                    Stock = spec["stock"],
+                                    State = item.Value["onShelf"].ToString() == "0" ? "1" : "0"
                                 };
 
                                 list.Add(prod);
@@ -89,7 +91,7 @@ namespace O2O.Api.App_Code
             {
                 var dd = data.Skip(i * size).Take(size);
 
-                Dictionary<string, int> dic = new Dictionary<string, int>();
+                var dic = new Dictionary<long, int>();
 
                 foreach (var item in dd)
                 {
@@ -98,10 +100,12 @@ namespace O2O.Api.App_Code
                     {
                         stock = (int)item["Stock"];
                     }
-                    dic.Add(item["ProdCode"].ToString(), stock);
+                    dic.Add(long.Parse(item["ProdCode"].ToString().Split(';')[1]), stock);
                 }
 
-                string res = Good(shop.AccessToken, dic);
+                var result = _foodApiService.BatchUpdateStock(shop.AccessToken, dic);
+
+                msg += this.Good(result);
             }
 
             if (string.IsNullOrEmpty(msg))
@@ -114,31 +118,50 @@ namespace O2O.Api.App_Code
             }
         }
 
-        public string Good(string token, Dictionary<string, int> dic)
+        public Result UpdateState(string userId, string shopNo, int state, JArray data)
         {
-            var res = _foodApiService.BatchUpdateStock(token, dic);
-
-            if (res.error != null)
+            Ele_ShopDTO eleShopDto = _shopService.Get(userId, shopNo);
+            if (eleShopDto == null)
+                return Tools.ResultErr("未找到此门店");
+            int num1 = data.Count<JToken>();
+            int count = 50;
+            int num2 = (num1 + count - 1) / count;
+            string msg = "";
+            for (int index = 0; index < num2; ++index)
             {
-                return "ERR," + res.error.message;
-            }
-            else
-            {
-                JObject joRes = JObject.Parse(res.result.ToString());
-                if (((JContainer)joRes["failures"]).Count > 0)
+                IEnumerable<JToken> jtokens = data.Skip<JToken>(index * count).Take<JToken>(count);
+                System.Collections.Generic.List<long> itemIds = new System.Collections.Generic.List<long>();
+                foreach (JToken jtoken in jtokens)
+                    itemIds.Add(long.Parse(jtoken[(object)"ProdCode"].ToString().Split(';')[0]));
+                EleResult result = new EleResult();
+                if (state == 0)
                 {
-                    string msg = "";
-                    JArray jaRes = JArray.Parse(joRes["failures"].ToString());
-                    foreach (var i in jaRes)
-                    {
-                        msg += i["id"] + ":" + i["description"] + ";";
-                    }
-
-                    return msg;
+                    result = _foodApiService.BatchListItems(eleShopDto.AccessToken, itemIds);
                 }
+                else if (state == 1)
+                {
+                    result = _foodApiService.BatchDelistItems(eleShopDto.AccessToken, itemIds);
+                }
+                msg += this.Good(result);
+            }
+            return string.IsNullOrEmpty(msg) ? Tools.ResultOk() : Tools.ResultErr(msg);
+        }
+
+        public string Good(EleResult result)
+        {
+            if (result.error != null)
+            {
+                return "ERR," + result.error.message;
             }
 
-            return "";
+            JObject jobject = JObject.Parse(result.result.ToString());
+
+            if (((JContainer)jobject["failures"]).Count <= 0) return "";
+
+            string str = "";
+            foreach (JToken jtoken in JArray.Parse(jobject["failures"].ToString()))
+                str = str + jtoken["id"]?.ToString() + ":" + jtoken["description"]?.ToString() + ";";
+            return str;
         }
     }
 }

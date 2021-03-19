@@ -2,11 +2,12 @@ using O2O.Common;
 using O2O.DTO.Eleme;
 using O2O.IService;
 using O2O.Model;
+using O2O.Model.Entities.Eleme;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace O2O.Service.NewFolder1
+namespace O2O.Service
 {
     public class EleAccountService : IEleAccountService
     {
@@ -69,9 +70,17 @@ namespace O2O.Service.NewFolder1
             throw new NotImplementedException();
         }
 
-        public Ele_AccountDTO Get(string userNo, string shopNo)
+        public Ele_AccountDTO Get(string userId, string shopNo)
         {
-            throw new NotImplementedException();
+            using (var context = new O2OContext())
+            {
+                var entity = from a in context.Ele_Account
+                    join b in context.Ele_Shop on a.Id equals b.AccountId
+                    where a.UserId == userId && b.ShopNo == shopNo
+                    select a;
+
+                return ToolsCommon.EntityToEntity(entity, new Ele_AccountDTO()) as Ele_AccountDTO;
+            }
         }
 
         public List<Ele_AccountDTO> GetAccounts(string userId)
@@ -82,6 +91,22 @@ namespace O2O.Service.NewFolder1
 
                  var list = service.Entities.
                     Where(a => a.UserId == userId).
+                    ToList().
+                    Select(a => ToolsCommon.EntityToEntity(a, new Ele_AccountDTO()) as Ele_AccountDTO).
+                    ToList();
+
+                return list;
+            }
+        }
+
+        public List<Ele_AccountDTO> GetExpiresAccounts(DateTime dateTime)
+        {
+            using (O2OContext context = new O2OContext())
+            {
+                var service = new BaseService<Ele_AccountEntity>(context);
+
+                var list = service.Entities.
+                    Where(a => a.ExpiresDate <= dateTime).
                     ToList().
                     Select(a => ToolsCommon.EntityToEntity(a, new Ele_AccountDTO()) as Ele_AccountDTO).
                     ToList();

@@ -1,7 +1,8 @@
+using O2O.Model.Entities.Meituan;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace O2O.Model.Maps.Eleme
+namespace O2O.Model.Maps.Meituan
 {
     public class Mt_AccountMap : EntityTypeConfiguration<Mt_AccountEntity>
     {
@@ -14,10 +15,10 @@ namespace O2O.Model.Maps.Eleme
             Property(a => a.AccountName).HasMaxLength(50).IsRequired().IsUnicode(false);
             Property(a => a.Description).HasMaxLength(200).IsUnicode(false);
 
-            Property(a => a.WaimaiAppId).HasMaxLength(20).IsRequired().IsUnicode(false);
-            Property(a => a.WaimaiAppSecret).HasMaxLength(50).IsRequired().IsUnicode(false);
-            Property(a => a.TuangouAppKey).HasMaxLength(50).IsRequired().IsUnicode(false);
-            Property(a => a.TuangouAppSecret).HasMaxLength(50).IsRequired().IsUnicode(false);
+            Property(a => a.WaimaiAppId).HasMaxLength(20).IsUnicode(false);
+            Property(a => a.WaimaiAppSecret).HasMaxLength(50).IsUnicode(false);
+            Property(a => a.TuangouAppKey).HasMaxLength(50).IsUnicode(false);
+            Property(a => a.TuangouAppSecret).HasMaxLength(50).IsUnicode(false);
 
             //
             HasRequired(a => a.User).WithMany(a => a.Mt_Accounts).HasForeignKey(a => a.UserId).WillCascadeOnDelete(false);

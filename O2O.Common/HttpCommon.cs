@@ -1,13 +1,11 @@
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using System.Web.Script.Serialization;
+using Newtonsoft.Json.Linq;
 
 namespace O2O.Common
 {
@@ -19,16 +17,16 @@ namespace O2O.Common
         /// <param name="url">Url地址</param>
         public static string Get(string url)
         {
-            WebRequest request = (WebRequest)HttpWebRequest.Create(url);
+            var request = (WebRequest)HttpWebRequest.Create(url);
             request.Method = "GET";
-            string result = string.Empty;
-            using (WebResponse response = request.GetResponse())
+            var result = string.Empty;
+            using (var response = request.GetResponse())
             {
                 if (response != null)
                 {
-                    using (Stream stream = response.GetResponseStream())
+                    using (var stream = response.GetResponseStream())
                     {
-                        using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+                        using (var reader = new StreamReader(stream, Encoding.UTF8))
                         {
                             result = reader.ReadToEnd();
                         }
@@ -45,13 +43,81 @@ namespace O2O.Common
         /// <returns></returns>
         public static string Post(string url)
         {
-            string result = "";
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
+            var result = "";
+            var req = (HttpWebRequest)WebRequest.Create(url);
             req.Method = "POST";
-            HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
-            Stream stream = resp.GetResponseStream();
+            var resp = (HttpWebResponse)req.GetResponse();
+            var stream = resp.GetResponseStream();
             //获取内容
-            using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+            using (var reader = new StreamReader(stream, Encoding.UTF8))
+            {
+                result = reader.ReadToEnd();
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 指定Post地址使用Get 方式获取全部字符串
+        /// </summary>
+        /// <param name="url">请求后台地址</param>
+        /// <returns></returns>
+        public static string PostJObject(string url, JObject model)
+        {
+            var result = "";
+            var req = (HttpWebRequest)WebRequest.Create(url);
+            req.Method = "POST";
+            req.ContentType = "x-www-form-urlencoded";
+
+            #region 添加Post 参数
+            var content = JsonConvert.SerializeObject(model);
+
+            var data = Encoding.UTF8.GetBytes(content);
+            req.ContentLength = data.Length;
+            using (var reqStream = req.GetRequestStream())
+            {
+                reqStream.Write(data, 0, data.Length);
+                reqStream.Close();
+            }
+            #endregion
+
+            var resp = (HttpWebResponse)req.GetResponse();
+            var stream = resp.GetResponseStream();
+            //获取响应内容
+            using (var reader = new StreamReader(stream, Encoding.UTF8))
+            {
+                result = reader.ReadToEnd();
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 指定Post地址使用Get 方式获取全部字符串
+        /// </summary>
+        /// <param name="url">请求后台地址</param>
+        /// <returns></returns>
+        public static async Task<string> PostJObjectAsync(string url, JObject model)
+        {
+            var result = "";
+            var req = (HttpWebRequest)WebRequest.Create(url);
+            req.Method = "POST";
+            req.ContentType = "x-www-form-urlencoded";
+
+            #region 添加Post 参数
+            var content = JsonConvert.SerializeObject(model);
+
+            var data = Encoding.UTF8.GetBytes(content);
+            req.ContentLength = data.Length;
+            using (var reqStream = req.GetRequestStream())
+            {
+                reqStream.Write(data, 0, data.Length);
+                reqStream.Close();
+            }
+            #endregion
+
+            var resp = (HttpWebResponse)(await req.GetResponseAsync());
+            var stream = resp.GetResponseStream();
+            //获取响应内容
+            using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
                 result = reader.ReadToEnd();
             }
@@ -65,27 +131,27 @@ namespace O2O.Common
         /// <returns></returns>
         public static string Post(string url,object model)
         {
-            string result = "";
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
+            var result = "";
+            var req = (HttpWebRequest)WebRequest.Create(url);
             req.Method = "POST";
             req.ContentType = "x-www-form-urlencoded";
 
             #region 添加Post 参数
-            string content = JsonConvert.SerializeObject(model);
+            var content = JsonConvert.SerializeObject(model);
 
-            byte[] data = Encoding.UTF8.GetBytes(content);
+            var data = Encoding.UTF8.GetBytes(content);
             req.ContentLength = data.Length;
-            using (Stream reqStream = req.GetRequestStream())
+            using (var reqStream = req.GetRequestStream())
             {
                 reqStream.Write(data, 0, data.Length);
                 reqStream.Close();
             }
             #endregion
 
-            HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
-            Stream stream = resp.GetResponseStream();
+            var resp = (HttpWebResponse)req.GetResponse();
+            var stream = resp.GetResponseStream();
             //获取响应内容
-            using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+            using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
                 result = reader.ReadToEnd();
             }
@@ -99,13 +165,13 @@ namespace O2O.Common
         /// <returns></returns>
         public static string Post(string url, Dictionary<string, string> dic)
         {
-            string result = "";
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
+            var result = "";
+            var req = (HttpWebRequest)WebRequest.Create(url);
             req.Method = "POST";
             req.ContentType = "x-www-form-urlencoded";
             #region 添加Post 参数
-            StringBuilder builder = new StringBuilder();
-            int i = 0;
+            var builder = new StringBuilder();
+            var i = 0;
             foreach (var item in dic)
             {
                 if (i > 0)
@@ -113,18 +179,18 @@ namespace O2O.Common
                 builder.AppendFormat("{0}={1}", item.Key, item.Value);
                 i++;
             }
-            byte[] data = Encoding.UTF8.GetBytes(builder.ToString());
+            var data = Encoding.UTF8.GetBytes(builder.ToString());
             req.ContentLength = data.Length;
-            using (Stream reqStream = req.GetRequestStream())
+            using (var reqStream = req.GetRequestStream())
             {
                 reqStream.Write(data, 0, data.Length);
                 reqStream.Close();
             }
             #endregion
-            HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
-            Stream stream = resp.GetResponseStream();
+            var resp = (HttpWebResponse)req.GetResponse();
+            var stream = resp.GetResponseStream();
             //获取响应内容
-            using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+            using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
                 result = reader.ReadToEnd();
             }
@@ -140,25 +206,25 @@ namespace O2O.Common
         /// <returns></returns>
         public static string Post(string url, string content)
         {
-            string result = "";
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
+            var result = "";
+            var req = (HttpWebRequest)WebRequest.Create(url);
             req.Method = "POST";
             req.ContentType = "x-www-form-urlencoded";
 
             #region 添加Post 参数
-            byte[] data = Encoding.UTF8.GetBytes(content);
+            var data = Encoding.UTF8.GetBytes(content);
             req.ContentLength = data.Length;
-            using (Stream reqStream = req.GetRequestStream())
+            using (var reqStream = req.GetRequestStream())
             {
                 reqStream.Write(data, 0, data.Length);
                 reqStream.Close();
             }
             #endregion
 
-            HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
-            Stream stream = resp.GetResponseStream();
+            var resp = (HttpWebResponse)req.GetResponse();
+            var stream = resp.GetResponseStream();
             //获取响应内容
-            using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+            using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
                 result = reader.ReadToEnd();
             }
@@ -175,8 +241,8 @@ namespace O2O.Common
         /// <returns></returns>
         public static string Post(string url, string contentType, Dictionary<string, string> headers, string content)
         {
-            string result = "";
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
+            var result = "";
+            var req = (HttpWebRequest)WebRequest.Create(url);
             req.Method = "POST";
             req.ContentType = contentType;
             if (headers != null)
@@ -188,9 +254,9 @@ namespace O2O.Common
             }
 
             #region 添加Post 参数
-            byte[] data = Encoding.UTF8.GetBytes(content);
+            var data = Encoding.UTF8.GetBytes(content);
             req.ContentLength = data.Length;
-            using (Stream reqStream = req.GetRequestStream())
+            using (var reqStream = req.GetRequestStream())
             {
                 reqStream.Write(data, 0, data.Length);
                 reqStream.Close();
@@ -199,10 +265,10 @@ namespace O2O.Common
 
             try
             {
-                HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
-                Stream stream = resp.GetResponseStream();
+                var resp = (HttpWebResponse)req.GetResponse();
+                var stream = resp.GetResponseStream();
                 //获取响应内容
-                using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+                using (var reader = new StreamReader(stream, Encoding.UTF8))
                 {
                     result = reader.ReadToEnd();
                 }
@@ -229,13 +295,13 @@ namespace O2O.Common
         {
             var context = (HttpContext)objContext;
 
-            string res = "";
-            System.IO.Stream stream = context.Request.InputStream;
+            var res = "";
+            var stream = context.Request.InputStream;
             if (stream != null)
             {
                 if (stream.Length > 10)
                 {
-                    using (StreamReader reader = new StreamReader(stream))
+                    using (var reader = new StreamReader(stream))
                     {
                         res = reader.ReadToEnd();
                     }

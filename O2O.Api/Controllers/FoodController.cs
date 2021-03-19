@@ -36,7 +36,8 @@ namespace O2O.Api.Controllers
             }
             catch (Exception e)
             {
-                _log.DebugFormat("【错误】类型:GetFood  信息{0}", e.Message);
+                _log.DebugFormat("【系统错误】类型:GetFood  信息{0}", e.Message);
+                _log.DebugFormat("【系统错误】类型:GetFood  信息{0}", e.GetOriginalException().Message);
                 return Json(Tools.ResultErr(e.Message));
             }
         }
@@ -64,7 +65,31 @@ namespace O2O.Api.Controllers
             }
             catch (Exception e)
             {
-                _log.DebugFormat("【错误】UpdateStock  信息{0}", e.Message);
+                _log.DebugFormat("【系统错误】UpdateStock  信息{0}", e.Message);
+                _log.DebugFormat("【系统错误】UpdateStock  信息{0}", e.GetOriginalException().Message);
+                return Json(Tools.ResultErr(e.Message));
+            }
+        }
+
+        [Route("UpdateState")]
+        [HttpPost]
+        public IHttpActionResult UpdateState(string userId,string shopNo,int takeType,int state,[FromBody] JArray data)
+        {
+            try
+            {
+                if (takeType == 0)
+                {
+                    return Json<Result>(new MtFoodApiService(userId, shopNo).UpdateState(state, data));
+                }
+                else
+                { 
+                    return Json<Result>(new EleFoodService().UpdateState(userId, shopNo, state, data));
+                }
+            }
+            catch (Exception e)
+            {
+                _log.DebugFormat("【系统错误】UpdateState  信息{0}", e.Message);
+                _log.DebugFormat("【系统错误】UpdateState  信息{0}", e.GetOriginalException().Message);
                 return Json(Tools.ResultErr(e.Message));
             }
         }

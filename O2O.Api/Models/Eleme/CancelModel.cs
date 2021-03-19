@@ -5,22 +5,6 @@ using System.Web;
 
 namespace O2O.Api.Models.Eleme
 {
-    public class GoodsList
-    {
-        /// <summary>
-        /// 黑椒牛柳意大利面[重辣]
-        /// </summary>
-        public string name { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public int quantity { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public double price { get; set; }
-    }
-
     public class CancelModel
     {
         /// <summary>

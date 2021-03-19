@@ -14,7 +14,7 @@ namespace O2O.Service.Meituan
         public MtBaseApiService(string userId, string shopNo)
         {
             IMtAccountService service = new MtAccountService();
-            AccountDTO account = service.GetAccount(userId);
+            Mt_AccountDTO account = service.GetAccount(userId);
             if (account is null) return;
 
             _waimaiAppId = account.WaimaiAppId;

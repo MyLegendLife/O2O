@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace O2O.Web.App_Start
+namespace O2O.Web.Filter
 {
     public class CustomAuthorizeAttribute : AuthorizeAttribute
     {

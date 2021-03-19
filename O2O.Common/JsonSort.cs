@@ -42,29 +42,30 @@ namespace O2O.Common
                 foreach (var item in list)
                 {
                     JProperty jp = JProperty.Load(item.CreateReader());
-                    if (item.First.Type == JTokenType.Object)
-                    {
-                        JObject sub = new JObject();
-                        (obj as JObject).Add(jp.Name, sub);
-                        SortJson(item.First, sub);
-                    }
-                    else if (item.First.Type == JTokenType.Array)
-                    {
-                        JArray arr = item.First as JArray;
-                        if (obj.Type == JTokenType.Object)
-                        {
-                            (obj as JObject).Add(jp.Name, arr);
-                        }
-                        else if (obj.Type == JTokenType.Array)
-                        {
-                            (obj as JArray).Add(arr);
-                        }
-                        SortJson(item.First, arr);
-                    }
-                    else if (item.First.Type != JTokenType.Object && item.First.Type != JTokenType.Array)
-                    {
-                        (obj as JObject).Add(jp.Name, item.First);
-                    }
+                    (obj as JObject)?.Add(jp.Name, item.First);
+                    //if (item.First.Type == JTokenType.Object)
+                    //{
+                    //    JObject sub = new JObject();
+                    //    (obj as JObject).Add(jp.Name, sub);
+                    //    SortJson(item.First, sub);
+                    //}
+                    //else if (item.First.Type == JTokenType.Array)
+                    //{
+                    //    JArray arr = item.First as JArray;
+                    //    if (obj.Type == JTokenType.Object)
+                    //    {
+                    //        (obj as JObject).Add(jp.Name, arr);
+                    //    }
+                    //    else if (obj.Type == JTokenType.Array)
+                    //    {
+                    //        (obj as JArray).Add(arr);
+                    //    }
+                    //    SortJson(item.First, arr);
+                    //}
+                    //else if (item.First.Type != JTokenType.Object && item.First.Type != JTokenType.Array)
+                    //{
+                    //    (obj as JObject).Add(jp.Name, item.First);
+                    //}
                 }
             }
             else if (jobj.Type == JTokenType.Array)//数组  

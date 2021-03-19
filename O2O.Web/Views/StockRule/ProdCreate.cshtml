@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "添加商品";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="pd-20">
+    <form class="form form-horizontal" id="form1" οnsubmit="return false;">
+        <input type="hidden" id="StockRuleId" name="StockRuleId" value="@ViewData["StockRuleId"]">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>商品编号：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" id="ProdNo" name="ProdNo" datatype="*1-20" onkeydown="load_prod(event)" nullmsg="商品编号不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>商品名称：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="ProdName" name="ProdName" readonly="readonly" nullmsg="商品名称不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>美团安全库存：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="MtStock" datatype="n" name="MtStock">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>饿了么安全库存：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="EleStock" datatype="n" name="EleStock">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" id="btn" type="button" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+
+        $(function () {
+            var validForm = $("#form1").Validform({ tiptype: 2 });
+            $('#btn').click(function () {
+                var formData = $("#form1").serializeArray();
+                if (validForm.check(false)) {
+                    $.ajax({
+                        url: 'ProdCreate',
+                        type: 'post',
+                        data: formData,
+                        dataType: 'json',
+                        success: function (data) {
+                            if (data.state == 'ok') {
+                                layer.msg('添加成功', { icon: 1, time: 1000 });
+                                layer_close();
+                            } else {
+                                layer.msg(data.msg, { icon: 2, time: 1000 });
+                            }
+                        },
+                        error: function () {
+                            layer.msg('服务器异常', { icon: 2, time: 1000 });
+                        }
+                    });
+                }
+            });
+        });
+
+        document.onkeydown = function () {
+            var evt = window.event || arguments[0];
+            if (evt && evt.keyCode == 13) {
+                if (typeof evt.cancelBubble != "undefined")
+                    evt.cancelBubble = true;
+                if (typeof evt.stopPropagation == "function")
+                    evt.stopPropagation();
+                return false;
+            }
+            return true;
+        }
+
+        function load_prod(e) {
+            var evt = window.event || e;
+            if (evt.keyCode === 13) {
+                var input = $(evt.target);
+
+                var prodNo = $(input).val();
+
+                $.ajax({
+                    url: '../GetProd',
+                    type: 'post',
+                    data: { "prodNo": prodNo },
+                    dataType: 'json',
+                    success: function (res) {
+                        if (res.state === 'ok') {
+                            $("#ProdName").val(res.data.ProdName);
+                        } else {
+                            layer.msg(res.msg, { icon: 2, time: 1000 });
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+}
+

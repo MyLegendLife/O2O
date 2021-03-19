@@ -43,7 +43,7 @@ namespace O2O.Web.Areas.Eleme.Controllers
             return PartialView("List", list);
         }
 
-        public ActionResult GetProd(List<string> prodNos)
+        public ActionResult GetProd(string[] prodNos)
         {
             var prods = from m in _prodList
                         join n in prodNos on m.ProdNo equals n
@@ -60,9 +60,9 @@ namespace O2O.Web.Areas.Eleme.Controllers
         public string Tree()
         {
             //获取账户
-            List<Ele_AccountDTO> accounts = _serviceAccount.GetAccounts(Global.USER_ID);
+            var accounts = _serviceAccount.GetAccounts(Global.USER_ID);
 
-            List<ZTreeNode> nodes = new List<ZTreeNode>();
+            var nodes = new List<ZTreeNode>();
             foreach (var account in accounts)
             {
                 nodes.Add(new ZTreeNode
@@ -73,12 +73,12 @@ namespace O2O.Web.Areas.Eleme.Controllers
                     isParent = true
                 });
 
-                EleUserApiService serviceUser = new EleUserApiService();
+                var serviceUser = new EleUserApiService();
                 var res = serviceUser.GetUser(account.AccessToken);
                 if (res.error != null) continue;
 
-                JObject jObject = JObject.Parse(res.result.ToString());
-                JArray shops = JArray.Parse(jObject["authorizedShops"].ToString());
+                var jObject = JObject.Parse(res.result.ToString());
+                var shops = JArray.Parse(jObject["authorizedShops"].ToString());
 
                 foreach (var shop in shops)
                 {
@@ -93,7 +93,7 @@ namespace O2O.Web.Areas.Eleme.Controllers
             }
 
             //将获取的节点集合转换为json格式字符串，并返回
-            string json = JsonConvert.SerializeObject(nodes);
+            var json = JsonConvert.SerializeObject(nodes);
             return json;
         }
 
@@ -167,7 +167,7 @@ namespace O2O.Web.Areas.Eleme.Controllers
                 {
                     if (spec.specId == specId)
                     {
-                        spec.extendCode = prodNo;
+                        spec.extendCode = prodNo.Trim('X');
                         break;
                     }
                 }
@@ -236,17 +236,17 @@ namespace O2O.Web.Areas.Eleme.Controllers
 
         public List<FoodMap> GetFoodMapList(string token,long shopId)
         {
-            List<FoodMap> list = new List<FoodMap>();
+            var list = new List<FoodMap>();
 
-            EleResult resCate = _serviceFood.GetShopCategories(token, shopId);
+            var resCate = _serviceFood.GetShopCategories(token, shopId);
 
             if (resCate.error == null)
             {
-                List<OCategory> cates = JsonConvert.DeserializeObject<List<OCategory>>(resCate.result.ToString());
+                var cates = JsonConvert.DeserializeObject<List<OCategory>>(resCate.result.ToString());
 
                 foreach (var cate in cates)
                 {
-                    EleResult resItem = _serviceFood.GetItemsByCategoryId(token, cate.id);
+                    var resItem = _serviceFood.GetItemsByCategoryId(token, cate.id);
 
                     if (resItem.error != null) continue;
 
@@ -270,8 +270,8 @@ namespace O2O.Web.Areas.Eleme.Controllers
                             foodMap.Price = spec.price;
                             foodMap.Stock = spec.stock;
 
-                            string extendCode = spec.extendCode;
-                            string[] codes = extendCode.Split(new char[] { 'X' }, StringSplitOptions.RemoveEmptyEntries);
+                            var extendCode = spec.extendCode;
+                            var codes = extendCode.Split(new[] { 'X' }, StringSplitOptions.RemoveEmptyEntries);
 
                             var prodNo = "";
                             var prodName = "";
@@ -282,17 +282,17 @@ namespace O2O.Web.Areas.Eleme.Controllers
                                 var prod = _prodList.Find(a => a.ProdNo == code);
                                 if (prod != null)
                                 {
-                                    prodNo += prod.ProdNo;
-                                    prodName += prod.ProdName;
-                                    prodUnit += prod.ProdUnit;
-                                    price += prod.Price;
+                                    prodNo += $"{prod.ProdNo}\r\n";
+                                    prodName += $"{prod.ProdName}\r\n";
+                                    prodUnit += $"{prod.ProdUnit}\r\n";
+                                    price += $"{prod.Price}\r\n";
                                 }
                             }
 
-                            foodMap.ProdNo = prodNo;
-                            foodMap.ProdName = prodName;
-                            foodMap.ProdUnit = prodUnit;
-                            foodMap.SalePrice = price;
+                            foodMap.ProdNo = prodNo.Trim("\r\n".ToCharArray());
+                            foodMap.ProdName = prodName.Trim("\r\n".ToCharArray());
+                            foodMap.ProdUnit = prodUnit.Trim("\r\n".ToCharArray());
+                            foodMap.SalePrice = price.Trim("\r\n".ToCharArray());
 
                             list.Add(foodMap);
                         }

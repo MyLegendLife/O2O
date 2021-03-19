@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "添加商户";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="pd-20">
+    <form class="form form-horizontal" id="form-admin-add">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>商户编号：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" id="Id" name="Id" datatype="*1-16" nullmsg="商户编号不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>商户名称：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="UserName" name="UserName" datatype="*1-20" nullmsg="商户名称不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>登录账号：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="LoginName" name="LoginName" datatype="*1-20" nullmsg="登录账号不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>密码：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="password" placeholder="密码" name="Password" autocomplete="off" value="" class="input-text" datatype="*6-16" nullmsg="密码不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>确认密码：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="password" placeholder="确认新密码" autocomplete="off" class="input-text Validform_error" errormsg="您两次输入的新密码不一致！" datatype="*6-16" nullmsg="请再输入一次新密码！" recheck="Password" id="PasswordCheck" name="PasswordCheck">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>商户密钥：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" placeholder="" name="Ket" id="Ket" datatype="*1-20" nullmsg="请输入商户密钥！">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>连接字符串：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" placeholder="" name="ConnString" id="ConnString" datatype="*1-200" nullmsg="请输入连接字符串！">
+            </div>
+            <div class=""></div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                示例：Data Source=数据库地址;Initial Catalog=数据库名称;User ID=账户;Password=密码;MultipleActiveResultSets=true;
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>描述：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <textarea class="input-text" style="height: 100px;" name="Description" nullmsg="请输入描述！"></textarea>
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" id="btn" type="button" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+
+        $(function () {
+            var validForm = $("#form-admin-add").Validform({ tiptype: 2, });
+            $('#btn').click(function () {
+                var dataFrom = $("#form-admin-add").serializeArray();
+                if (validForm.check(false)) {
+                    $.ajax({
+                        url: 'Add',
+                        type: 'post',
+                        data: dataFrom,
+                        dataType: 'json',
+                        success: function (data) {
+                            if (data.state == 'ok') {
+                                //layer.msg('添加成功', { icon: 1, time: 1000 });
+                                window.parent.location.reload(); //刷新父页面，光客户端校验不行，加上服务端校验
+                            } else {
+                                layer.msg('请填写完整信息', { icon: 2, time: 1000 });
+                            }
+                        },
+                        error: function () {
+                            layer.msg('服务器异常', { icon: 2, time: 1000 });
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
+}
+

@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "编辑";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="pd-20">
+    <form class="form form-horizontal" id="form-admin-add">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3" style="text-align:right;"><span class="c-red"></span>商品编号：</label>
+            <div class="formControls col-xs-5 col-sm-5">
+                <input type="text" class="input-text" readonly="readonly" value="@ViewBag.ProdNo" placeholder="" id="ProdNo" name="ProdNo">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3" style="text-align:right;"><span class="c-red"></span>商品名称：</label>
+            <div class="formControls col-xs-5 col-sm-5">
+                <input type="text" class="input-text" readonly="readonly" value="@ViewBag.ProdName" placeholder="" id="ProdName" name="ProdName">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3" style="text-align:right;"><span class="c-red">*</span>商品编号：</label>
+            <div class="formControls col-xs-5 col-sm-5">
+                <input type="text" class="input-text" value="" placeholder="" id="ProdNoNew" name="ProdNoNew" datatype="*" nullmsg="商品编号不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" id="btn" type="button" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+
+        $(function () {
+            var validForm = $("#form-admin-add").Validform({ tiptype: 2, });
+            $('#btn').click(function () {
+                var dataFrom = $("#form-admin-add").serializeArray();
+                if (validForm.check(false)) {
+                    $.ajax({
+                        url: 'Edit',
+                        type: 'post',
+                        data: dataFrom,
+                        dataType: 'json',
+                        success: function (data) {
+                            if (data.state == 'ok') {
+                                //layer.msg('添加成功', { icon: 1, time: 1000 });
+                                window.parent.location.reload(); //刷新父页面，光客户端校验不行，加上服务端校验
+                            } else {
+                                layer.msg('请填写完整信息', { icon: 2, time: 1000 });
+                            }
+                        },
+                        error: function () {
+                            layer.msg('服务器异常', { icon: 2, time: 1000 });
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
+}

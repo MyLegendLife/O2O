@@ -1,7 +1,8 @@
+using O2O.Model.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace O2O.Model.Maps.Meituan
+namespace O2O.Model.Maps
 {
     class UserMap : EntityTypeConfiguration<UserEntity>
     {

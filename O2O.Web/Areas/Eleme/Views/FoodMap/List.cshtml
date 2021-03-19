@@ -55,12 +55,12 @@
                 </td>
                 <td name="no">
                     @*@{
-                        if (item.ProdNo != null)
-                        {
-                            item.ProdNo = item.ProdNo.Replace(",","<br/>");
-                        }
-                    }*@
-                    @item.ProdNo
+            if (item.ProdNo != null)
+            {
+                item.ProdNo = item.ProdNo.Replace(",","<br/>");
+            }
+        }*@
+                    @Html.Raw(item.ProdNo.Replace("\r\n", "<br>"))
                 </td>
                 <td name="name">
                     @*@{
@@ -69,25 +69,25 @@
                             item.ProdName = item.ProdName.Replace(",", "<br/>");
                         }
                     }*@
-                    @item.ProdName
+                    @Html.Raw(item.ProdName.Replace("\r\n", "<br>"))
                 </td>
                 <td name="unit">
                     @*@{
-                        if (item.ProdUnit != null)
-                        {
-                            item.ProdUnit = item.ProdUnit.Replace(",", "<br/>");
-                        }
-                    }*@
-                    @item.ProdUnit
+            if (item.ProdUnit != null)
+            {
+                item.ProdUnit = item.ProdUnit.Replace(",", "<br/>");
+            }
+        }*@
+                    @Html.Raw(item.ProdUnit.Replace("\r\n", "<br>"))
                 </td>
                 <td name="price">
                     @*@{
-                        if (item.SalePrice != null)
-                        {
-                            item.SalePrice = item.SalePrice.Replace(",", "<br/>");
-                        }
-                    }*@
-                    @item.SalePrice
+            if (item.SalePrice != null)
+            {
+                item.SalePrice = item.SalePrice.Replace(",", "<br/>");
+            }
+        }*@
+                    @Html.Raw(item.SalePrice.Replace("\r\n", "<br>"))
                 </td>
                 <td>
                     <input class="btn radius btn-secondary-outline radius" type="button" value="映射" onclick="map(this)">

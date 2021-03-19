@@ -28,5 +28,10 @@ namespace O2O.DTO
 
         public int BuyState { get; set; } //365状态
         public int OrderType { get; set; } //0现购  1预订
+
+        public double RefundPartAmt { get; set; } //部分退款金额
+
+        public string DispatcherName { get; set; }  //骑手姓名
+        public string DispatcherMobile { get; set; }  //骑手姓名
     }
 }

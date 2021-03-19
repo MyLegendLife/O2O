@@ -1,10 +1,9 @@
+using O2O.Model.Entities.Eleme;
+using O2O.Model.Entities.Meituan;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace O2O.Model
+namespace O2O.Model.Entities
 {
     public class UserEntity
     {

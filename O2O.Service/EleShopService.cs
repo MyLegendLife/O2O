@@ -2,10 +2,11 @@
 using O2O.DTO.Eleme;
 using O2O.IService;
 using O2O.Model;
+using O2O.Model.Entities;
+using O2O.Model.Entities.Eleme;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Schema;
 
 namespace O2O.Service
 {

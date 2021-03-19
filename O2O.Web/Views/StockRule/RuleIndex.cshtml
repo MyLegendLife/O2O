@@ -1,0 +1,94 @@
+﻿@model List<StockRuleDTO>
+@{
+    ViewBag.Title = "库存规则设置";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="breadcrumb">
+    <i class="Hui-iconfont"></i>
+    管理
+    <span class="c-gray en">&gt;</span>
+    库存模板管理
+</nav>
+<div class="cl pd-5 bg-1 bk-gray mt-20">
+    <span class="r" style="padding-right: 20px;">
+        <a class="btn btn-primary radius" data-title="下载模板" href="../StockRule/Download">
+            <i class="Hui-iconfont"></i> 下载模板
+        </a>
+    </span>
+    <span class="r" style="padding-right: 20px;">
+        <a class="btn btn-success radius" data-title="添加模板" onclick="add('添加模板', '../StockRule/RuleCreate', '800', '600')" href="javascript:;">
+            <i class="Hui-iconfont"></i> 添加模板
+        </a>
+    </span>
+</div>
+<div class="page-container">
+    <table class="table table-border table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>模板名称</th>
+                <th>描述</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.RuleName
+                    </td>
+                    <td>
+                        @item.Description
+                    </td>
+                    <td>
+                        @item.CreateDateTime
+                    </td>
+                    <td>
+                        <input class="btn btn-danger-outline radius" type="button" value="删除" onclick="del(this,'@item.Id')">
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+
+        function add(title, url, w, h) {
+            layer_show(title, url, w, h);
+        }
+
+        function edit(title, url, w, h) {
+            layer_show(title, url, w, h);
+        }
+
+        function del(obj, id) {
+            layer.confirm('确认要删除吗？', function (index) {
+                //利用Ajax进行删除操作
+                $.ajax({
+                    url: '../StockRule/Delete',
+                    //type: 'get',
+                    type: 'post', //此处推荐用post请求，避免攻击
+                    data: { 'id': id },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.state == 'ok') {
+                            $(obj).parents("tr").remove();
+                            layer.msg('已删除!', { icon: 1, time: 1000 });
+                        } else {
+                            layer.msg(data.msg, { icon: 2, time: 2000 });
+                        }
+                    },
+                    error: function () {
+                        layer.msg('删除失败!', { icon: 2, time: 1000 });
+                    }
+                });
+            });
+        }
+
+    </script>
+}

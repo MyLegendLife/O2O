@@ -1,0 +1,104 @@
+﻿@model O2O.Web.Models.MtAccountEditGet
+@{
+    ViewBag.Title = "编辑美团账户";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="pd-20">
+    <form class="form form-horizontal" id="form-admin-add">
+        <input type="hidden" value="@Model.Id" id="Id" name="Id">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>商户：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                @Html.DropDownList("UserId", new SelectList(Model.Users, "Id", "UserName"), new { @class = "select-box" })
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>账户编号：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="@Model.AccountNo" placeholder="" id="AccountNo" name="AccountNo" datatype="*1-20" nullmsg="账户编号不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>账户名称：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="@Model.AccountName" placeholder="" id="AccountName" name="AccountName" datatype="*1-20" nullmsg="账户名称不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>外卖App：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="@Model.WaimaiAppId" placeholder="" id="WaimaiAppId" name="WaimaiAppId">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>外卖Secert：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="@Model.WaimaiAppSecret" placeholder="" id="WaimaiAppSecret" name="WaimaiAppSecret">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>团购App：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="@Model.TuangouAppKey" placeholder="" id="TuangouAppKey" name="TuangouAppKey">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>团购Secert：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="@Model.TuangouAppSecret" placeholder="" id="TuangouAppSecret" name="TuangouAppSecret">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>描述：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <textarea class="input-text" style="height: 100px;" name="Description" nullmsg="请输入描述！">@Model.Description</textarea>
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" id="btn" type="button" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+
+        $(function () {
+            var validForm = $("#form-admin-add").Validform({ tiptype: 2, });
+            $('#btn').click(function () {
+                var dataFrom = $("#form-admin-add").serializeArray();
+                if (validForm.check(false)) {
+                    $.ajax({
+                        url: 'Edit',
+                        type: 'post',
+                        data: dataFrom,
+                        dataType: 'json',
+                        success: function (data) {
+                            if (data.state == 'ok') {
+                                //layer.msg('添加成功', { icon: 1, time: 1000 });
+                                window.parent.location.reload(); //刷新父页面，光客户端校验不行，加上服务端校验
+                            } else {
+                                layer.msg('请填写完整信息', { icon: 2, time: 1000 });
+                            }
+                        },
+                        error: function () {
+                            layer.msg('服务器异常', { icon: 2, time: 1000 });
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
+}

@@ -16,7 +16,6 @@ namespace O2O.Api.App_Start
         /// 负责创建WebApi控制器类的对象（调用控制器中的有参构造函数）,接管DefaultControllerFactory的工作
         /// </summary>
         public static void Register()
-
         {
             // 实例化一个autofac的创建容器
             var builder = new ContainerBuilder();

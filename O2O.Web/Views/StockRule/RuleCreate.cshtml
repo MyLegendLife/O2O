@@ -1,0 +1,82 @@
+﻿@model List<UserDTO>
+@{
+    ViewBag.Title = "添加库存模板";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="pd-20">
+    <form class="form form-horizontal" id="form1">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>模板名称：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="RuleName" name="RuleName" datatype="*1-20" nullmsg="模板名称不能为空">
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>描述：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <textarea class="input-text" style="height: 100px;" name="Description" nullmsg="请输入描述！"></textarea>
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red"></span>模板文件：</label>
+            <div class="formControls col-xs-8 col-sm-6">
+                <input class="input-text" type="file" id="file-input" name="file" />
+            </div>
+            <div class=""> </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" id="btn" type="button" value="&nbsp;&nbsp;确定&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+
+@section footScript
+{
+    <script type="text/javascript">
+
+        $(function() {
+            var validForm = $("#form1").Validform({ tiptype: 2, });
+            $('#btn').click(function() {
+                if ($('#file-input').val() == null || $('#file-input').val() == '') {
+                    layer.msg('请选择文件', { icon: 2, time: 1000 });
+                    return;
+                }
+                var fileContent = $('#file-input').val();
+                var fileext = fileContent.substring(fileContent.lastIndexOf("."), fileContent.length) //截取.后面文件类型
+                fileext = fileext.toLowerCase()
+                if (fileext != '.xls' && fileext != '.xlsx') {
+                    layer.msg("请选择Excel文件", { icon: 2, time: 1000 });
+                    return;
+                }
+
+                var formData  = new FormData($("#form1")[0]);
+                if (validForm.check(false)) {
+                    $.ajax({
+                        url: 'RuleCreate',
+                        type: 'post',
+                        data: formData,
+                        contentType: false,  
+                        processData: false,
+                        success: function(data) {
+                            if (data.state == 'ok') {
+                                //layer.msg('添加成功', { icon: 1, time: 1000 });
+                                window.parent.location.reload(); //刷新父页面，光客户端校验不行，加上服务端校验
+                            } else {
+                                layer.msg('请填写完整信息', { icon: 2, time: 1000 });
+                            }
+                        },
+                        error: function() {
+                            layer.msg('服务器异常', { icon: 2, time: 1000 });
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
+}
+

@@ -1,18 +1,25 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using O2O.Common;
-using O2O.Common.Eleme;
-using O2O.DTO.Eleme;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
 
 namespace O2O.Service.Eleme
 {
     public class EleFoodApiService : EleBaseApiService
     {
+        /// <summary>
+        /// 分页获取店铺下的商品
+        /// </summary>
+        /// <param name="_shopId"></param>
+        /// <returns></returns>
+        public EleResult QueryItemByPage(string token, long shopId, long offset = 0, long limit = 300)
+        {
+            var model = new { queryPage = new { limit = limit, offset = offset, shopId = shopId } };
+            SignParams sign = GetSign(token, model, "eleme.product.item.queryItemByPage");
+            string content = MakeNopEntity(sign, model);
+            string res = HttpCommon.Post(EleConfig.API_URL, "application/json;charset=utf-8", null, content);
+            return JsonConvert.DeserializeObject<EleResult>(res);
+        }
+
         /// <summary>
         /// 查询店铺商品分类
         /// </summary>
@@ -74,13 +81,43 @@ namespace O2O.Service.Eleme
         /// </summary>
         /// <param name="listItem"></param>
         /// <returns></returns>
-        public EleResult BatchUpdateStock(string token, Dictionary<string, int> stockMap)
+        public EleResult BatchUpdateStock(string token, Dictionary<long, int> stockMap)
         {
             var model = new { stockMap = stockMap };
             SignParams sign = GetSign(token, model, "eleme.product.item.batchUpdateStock");
             string content = MakeNopEntity(sign, model);
             string ret = HttpCommon.Post(EleConfig.API_URL, "application/json;charset=utf-8", null, content);
             return JsonConvert.DeserializeObject<EleResult>(ret);
+        }
+
+        /// <summary>
+        /// 批量上架商品
+        /// </summary>
+        /// <param name="token"></param>
+        /// <param name="itemIds"></param>
+        /// <returns></returns>
+        public EleResult BatchListItems(string token, List<long> itemIds)
+        {
+            var model = new { itemIds = itemIds };
+            var sign = GetSign(token, model, "eleme.product.item.batchListItems");
+            var content = MakeNopEntity(sign, model);
+            var response = HttpCommon.Post(EleConfig.API_URL, "application/json;charset=utf-8", null, content);
+            return JsonConvert.DeserializeObject<EleResult>(response);
+        }
+
+        /// <summary>
+        /// 批量下架商品
+        /// </summary>
+        /// <param name="token"></param>
+        /// <param name="itemIds"></param>
+        /// <returns></returns>
+        public EleResult BatchDelistItems(string token, List<long> itemIds)
+        {
+            var model = new { itemIds = itemIds };
+            var sign = GetSign(token, model, "eleme.product.item.batchDelistItems");
+            var content = MakeNopEntity(sign, model);
+            var response = HttpCommon.Post(EleConfig.API_URL, "application/json;charset=utf-8", null, content);
+            return JsonConvert.DeserializeObject<EleResult>(response);
         }
     }
 }

@@ -1,7 +1,8 @@
+using O2O.Model.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace O2O.Model.Maps.Meituan
+namespace O2O.Model.Maps
 {
     public class OrderMap : EntityTypeConfiguration<OrderEntity>
     {
@@ -18,11 +19,15 @@ namespace O2O.Model.Maps.Meituan
             Property(a => a.UserName).HasMaxLength(100).IsUnicode(false);
             Property(a => a.UserMobile).HasMaxLength(100).IsUnicode(false);
             Property(a => a.DeliverAddress).HasMaxLength(500).IsUnicode(false);
-            Property(a => a.CancelCode).HasMaxLength(20).IsUnicode(false);
-            Property(a => a.CancelReason).HasMaxLength(100).IsUnicode(false);
-            Property(a => a.RefundCode).HasMaxLength(20).IsUnicode(false);
-            Property(a => a.RefundReason).HasMaxLength(100).IsUnicode(false);
+            Property(a => a.CancelCode).HasMaxLength(50).IsUnicode(false);
+            Property(a => a.CancelReason).HasMaxLength(200).IsUnicode(false);
+            Property(a => a.RefundCode).HasMaxLength(50).IsUnicode(false);
+            Property(a => a.RefundReason).HasMaxLength(200).IsUnicode(false);
             Property(a => a.UserId).HasMaxLength(20).IsRequired().IsUnicode(false);
+            Property(a => a.RefundPartAmt).IsRequired();
+            Property(a => a.DispatcherName).HasMaxLength(40).IsUnicode(false);
+            Property(a => a.DispatcherMobile).HasMaxLength(40).IsUnicode(false);
+            Property(a => a.Greeting).HasMaxLength(500).IsUnicode(false);
         }
     }
 }

@@ -5,62 +5,6 @@ using System.Web;
 
 namespace O2O.Api.Models.Eleme
 {
-    public class Items
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        public long id { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public long skuId { get; set; }
-        /// <summary>
-        /// 红烧肉[重辣]
-        /// </summary>
-        public string name { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public long categoryId { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public double price { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public int quantity { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public double total { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public List<string> additions { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public string extendCode { get; set; }
-    }
-
-    public class Groups
-    {
-        /// <summary>
-        /// 1号篮子
-        /// </summary>
-        public string name { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public string type { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public List<Items> items { get; set; }
-    }
-
     public class OrderModel
     {
         /// <summary>
@@ -127,7 +71,7 @@ namespace O2O.Api.Models.Eleme
         /// 测试餐厅001
         /// </summary>
         public string shopName { get; set; }
-        /// <summary>
+        /// <summary>g
         /// 
         /// </summary>
         public int daySn { get; set; }
@@ -207,6 +151,8 @@ namespace O2O.Api.Models.Eleme
         /// 
         /// </summary>
         public double vipDeliveryFeeDiscount { get; set; }
+
+        public UserExtraInfo userExtraInfo { get; set; }
     }
 
 }
